@@ -79,7 +79,7 @@ export default function DossierPage() {
         <ul className="
           text-left 
           font-plex-mono 
-          space-y-1 sm:space-y-2 md:space-y-2
+          space-y-2 sm:space-y-2 md:space-y-2
           mb-5 
           text-[12px] sm:text-[18px] md:text-[20px] 
           leading-snug sm:leading-normal
