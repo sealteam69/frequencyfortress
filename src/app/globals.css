@@ -295,7 +295,7 @@ body {
 /* SEGA GENESIS FONT STYLE HEHE */ 
 
 .blocky-glow {
-  font-family: 'Honk', sans-serif;
+  font-family: var(--font-honk), sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
 }

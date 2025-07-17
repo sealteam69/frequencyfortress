@@ -1,6 +1,6 @@
 // src/app/layout.js
 import './globals.css'
-import { ibmPlexMono, inter, pirata } from '@/fonts'
+import { ibmPlexMono, inter, pirata, honk } from '@/fonts'
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
@@ -87,7 +87,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable}`}>
+    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${honk.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
