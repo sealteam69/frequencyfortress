@@ -1,5 +1,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
+import { honk } from "@/fonts"
 
 export function SocialLinksNeon() {
   const socials = [
@@ -46,7 +47,7 @@ export function SocialLinksNeon() {
             boxShadow: "0 0 24px #FF5C00, 0 0 48px #FF5C00",
           }}
           className="
-            blocky-glow 
+            ${honk.className} blocky-glow 
             px-3 py-1 sm:px-4 sm:py-2 md:px-5 md:py-2 
             text-[18px] sm:text-[26px] md:text-[28px] lg:text-[32px]
             rounded-[16px] sm:rounded-[20px] md:rounded-[24px]
