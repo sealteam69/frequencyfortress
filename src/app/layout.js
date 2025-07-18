@@ -67,10 +67,10 @@ export const metadata = {
     siteName: 'Frequency Fortress',
     images: [
       {
-        url: '/assets/st69_patch.png', 
+        url: '/assets/og_image.png',
         width: 1200,
         height: 630,
-        alt: 'ST69 Seal',
+        alt: 'ST69 Patch',
       },
     ],
     type: 'website',
@@ -83,13 +83,21 @@ export const metadata = {
     description: 'Council-approved override terminal for New Earth command.',
     images: ['/assets/st69_patch.png'],
   },
+  icons: {
+    icon: [
+      { rel: 'icon', url: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', url: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', url: '/favicon-16x16.png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable}`}>
         <head>
-          <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
