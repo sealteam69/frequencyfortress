@@ -34,8 +34,9 @@ export default function OrgasmButton({ eddieAudioRef }) {
         style={{ fontFamily: "ocr-a-std" }}
         className="
             text-white 
-            text-[14px] sm:text-[20px] md:text-[24px] lg:text-[24px] 
-            tracking-wider 
+            text-[14px] sm:text-[20px] md:text-[24px] lg:text-[24px]
+            px-6 py-3
+            sm:px-6 sm:py-3
             bg-[#FF0038] 
             px-5 py-2 sm:px-7 sm:py-4 md:px-7 md:py-4
             rounded-[14px] sm:rounded-[16px] md:rounded-[18px] 
@@ -44,6 +45,8 @@ export default function OrgasmButton({ eddieAudioRef }) {
             hover:scale-110 
             cursor-pointer
             items-center
+            whitespace-nowrap 
+            font-bold 
         "
         >
         DO NOT PRESS

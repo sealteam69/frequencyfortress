@@ -1,11 +1,21 @@
-import { motion } from "framer-motion"
+'use client'
+import { motion } from 'framer-motion'
 
 export default function SexualSovereignOverride() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20, scale: 0.95 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        hidden: { opacity: 0, y: 30, scale: 0.9 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 1, ease: 'easeOut', delay: 0.2 }
+        }
+      }}
       className="
         w-full 
         max-w-[540px] 

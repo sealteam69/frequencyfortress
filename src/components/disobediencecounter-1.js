@@ -13,7 +13,7 @@ export default function DisobedienceCounter({ counterKey = "orgasmPressCount" })
   return (
     <p className="
       font-['DynaPuff'] 
-      text-[16px] sm:text-[22px] md:text-[26px] 
+      text-[16px] sm:text-[22px] md:text-[24px] 
       text-white 
       font-medium 
       mt-4 
