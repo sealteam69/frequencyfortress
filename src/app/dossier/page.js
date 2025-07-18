@@ -78,7 +78,7 @@ export default function DossierPage() {
       <div className="flex justify-center items-center px-4 sm:px-6 md:px-8">
         <ul className="
           text-left 
-          font-plex-mono 
+          font-mono 
           space-y-2 sm:space-y-2 md:space-y-2
           mb-5 
           text-[12px] sm:text-[18px] md:text-[20px] 
