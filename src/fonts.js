@@ -1,5 +1,5 @@
 // src/fonts.js
-import { IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk } from 'next/font/google'
+import { IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk, Press_Start_2P } from 'next/font/google'
 
 export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -74,5 +74,12 @@ export const honk = Honk({
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-honk",
+  display: "swap",
+});
+
+export const pressstart2p = Press_Start_2P({
+  subsets: ["latin"],
+  weight: ["400"], 
+  variable: "--font-pressstart2p", 
   display: "swap",
 });

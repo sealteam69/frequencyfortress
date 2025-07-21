@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,6 +30,10 @@ body {
     font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   }
 }
+
+/* Something for the /Home page because it was misbehaving */
+
+
 
 /* ===================== CUSTOM ANIMATIONS ADDED TO FREQUENCY FORTRESS ===================== */
 
@@ -106,14 +111,23 @@ body {
   pointer-events: none;
   z-index: 50;
   background: repeating-linear-gradient(
-    rgba(255, 255, 255, 0.03) 0px,
-    rgba(255, 255, 255, 0.03) 1px,
-    transparent 2px,
-    transparent 6px
+    rgba(255, 255, 255, 0.025) 0px,
+    rgba(255, 255, 255, 0.025) 1px,
+    transparent 6px,
+    transparent 11px
   );
   mix-blend-mode: overlay;
   animation: crtScroll 12s linear infinite;
   background-size: 100% 200%; /* Optional: makes scrolling smoother */
+}
+
+@keyframes crtScroll {
+  0%, 100% {
+    background-position: 0 0%;
+  }
+  50% {
+    background-position: 0 100%;
+  }
 }
 
 /* ===================== CHROMATIC ABERRATION ===================== */
@@ -295,15 +309,19 @@ body {
 /* SEGA GENESIS FONT STYLE HEHE */ 
 
 .blocky-glow {
-  font-family: 'Honk', sans-serif;
+  font-family: "Press Start 2P", monospace;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  text-transform: none; /* optional: keep original casing */
 }
 
-.retro-gradient {
-  background: linear-gradient(to right, #ff00ff, #00ffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  48% { opacity: 0.8; }
+  52% { opacity: 1; }
+  60% { opacity: 0.6; }
+}
+.animate-flicker {
+  animation: neon-flicker 4s infinite ease-in-out;
 }
 
 /* ======= PEACH WIGGLE HEHE ======= */
@@ -323,7 +341,7 @@ body {
   }
 }
 
-/* ======= TIP OF THE MEME ANIMATIONS ======= */
+/* ======= TIP OF THE MEME ANIMATIONS INSHALLAH ======= */
 
 @keyframes pulse-border-bg {
   0% {
@@ -344,7 +362,7 @@ body {
   animation: pulse-border-bg 2.4s infinite;
 }
 
-/* ======= SOVEREIGN SEXUAL ANIMATIONS ======= */
+/* ======= SOVEREIGN SEXUAL ANIMATIONS YES DADDY ======= */
 
 @keyframes pulseBorder {
   0% {
@@ -369,4 +387,28 @@ body {
 
 .font-megavolt {
   font-family: 'Megavolt', sans-serif;
+}
+
+@keyframes smoothLetterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(0.3em) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* font for the socials component, talk to me Steven */ 
+
+.font-pressstart {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.glyph-glitch:hover {
+  text-shadow: 
+    2px 0 red, 
+    2px 0 cyan, 
+    0 2px lime;
 }

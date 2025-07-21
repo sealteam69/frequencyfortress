@@ -12,14 +12,16 @@ export default function DisobedienceCounter({ counterKey = "orgasmPressCount" })
 
   return (
     <p className="
-      font-['DynaPuff'] 
-      text-[16px] sm:text-[22px] md:text-[24px] 
-      text-white 
-      font-medium 
-      mt-4 
-      text-center 
-      tracking-wide 
-      drop-shadow-[0_0_6px_#FFFFFF]
+      font-['DynaPuff']
+      text-white text-center font-medium tracking-wide drop-shadow-[0_0_6px_#FFFFFF]
+      
+      text-[20px] top-[40px]            // xs: 0–639px
+      sm:text-[22px] sm:top-[40px]     // sm: 640–767px
+      md:text-[24px] md:top-[50px]     // md: 768–1023px
+      lg:text-[26px] lg:top-[50px]     // lg: 1024–1279px
+      xl:text-[26px] xl:top-[50px]     // xl: 1280–1535px
+
+      relative
     ">
       <span className="inline-block -rotate-[5deg]">
         Naughty Level: {count}

@@ -103,7 +103,17 @@ export function MagneticCipherButton() {
           y.set(0)
           e.currentTarget.style.transform = `translate(0px, 0px)`
         }}
-        className="bg-transparent border-2 border-[#0014A8] text-[#0014A8] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] px-4 sm:px-6 py-2 sm:py-3 font-bold tracking-widest font-mono uppercase transition-transform duration-200 ease-out cursor-pointer hover:scale-105"
+          className="
+            bg-transparent border-2 border-[#0014A8] text-[#0014A8]
+            uppercase font-bold tracking-widest font-mono cursor-pointer transition-transform duration-200 ease-out hover:scale-105
+
+            text-[11px] px-3 py-2       
+            sm:text-[12px] sm:px-3.5 sm:py-1.5
+            md:text-[14px] md:px-4 md:py-2
+            lg:text-[16px] lg:px-4.5 lg:py-2.5
+            xl:text-[18px] xl:px-5 xl:py-3
+
+          "
       >
         {text}
       </motion.button>

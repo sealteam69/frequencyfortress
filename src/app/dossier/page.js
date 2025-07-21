@@ -5,7 +5,7 @@ import OrgasmButton from "@/components/orgasmbutton";
 import EddieSigil from '../../components/eddiesigil';
 import TipOfTheMemeFooter from "@/components/tipofthememe";
 import SexualSovereignOverride from "@/components/sexualsovereignoverride";
-import { SocialLinksNeon } from "@/components/socials";
+import SocialLinksNeon from "@/components/socials";
 import MegavoltBlock from '@/components/megavolt'
 
 export default function DossierPage() {
@@ -56,7 +56,7 @@ export default function DossierPage() {
       >
         <h2
           className="
-            text-[16px] sm:text-[26px] md:text-[30px] lg:text-[36px]
+            text-[20px] sm:text-[26px] md:text-[30px] lg:text-[36px]
             tracking-wide sm:tracking-wider
             text-[#4A4545]
           "
@@ -66,7 +66,7 @@ export default function DossierPage() {
 
         <p
           className="
-            text-[12px] sm:text-[18px] md:text-[20px] lg:text-[20px]
+            text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px]
             tracking-wide sm:tracking-wider
             text-[#4A4545]
           "
@@ -81,11 +81,11 @@ export default function DossierPage() {
           font-mono 
           space-y-2 sm:space-y-2 md:space-y-2
           mb-5 
-          text-[12px] sm:text-[18px] md:text-[20px] 
+          text-[13px] sm:text-[18px] md:text-[20px] 
           leading-snug sm:leading-normal
           max-w-full sm:max-w-[600px] md:max-w-[720px]
         ">
-          <li className="text-[#4A4545] text-[12px] sm:text-[18px] md:text-[20px] pt-2">
+          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-2">
             📎 Mission Dossier:
           </li>
 
@@ -116,7 +116,7 @@ export default function DossierPage() {
             </a>
           </li>
 
-          <li className="text-[#4A4545] text-[12px] sm:text-[18px] md:text-[20px] pt-4">
+          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-4">
             📑 Additional Files:
           </li>
 
@@ -172,7 +172,7 @@ export default function DossierPage() {
             alt="Green Ski Boot"
             className="
               object-contain hover:stomp 
-              w-40 sm:w-64 md:w-72 lg:w-80 
+              w-50 sm:w-64 md:w-72 lg:w-80 
               transition-transform duration-300
             "
           />
@@ -181,7 +181,7 @@ export default function DossierPage() {
             alt="Red Latex Thong"
             className="
               object-contain hover:twerk 
-              w-46 sm:w-72 md:w-80 lg:w-[420px] 
+              w-60 sm:w-72 md:w-80 lg:w-[420px] 
               transition-transform duration-300
             "
           />
@@ -224,7 +224,7 @@ export default function DossierPage() {
         {/* Text: fades out on hover */}
         <p className="
           relative z-10 
-          text-[8px] 
+          text-[10px] 
           sm:text-[14px] 
           md:text-[16px] 
           tracking-wide 

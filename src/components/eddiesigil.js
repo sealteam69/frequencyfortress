@@ -23,7 +23,7 @@ export default function EddieSigil({ audioRef }) {
         alt="Eddie Santiago Sigil"
         className="
             sigil-animation cursor-pointer hover:scale-75 transition-transform
-            w-[220px] sm:w-[320px] md:w-[400px] lg:w-[460px]
+            w-[240px] sm:w-[320px] md:w-[400px] lg:w-[460px]
         "
         />
 

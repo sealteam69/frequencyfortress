@@ -1,10 +1,11 @@
 // src/app/layout.js
 import './globals.css'
-import { ibmPlexMono, inter, pirata } from '@/fonts'
+import { ibmPlexMono, inter, pirata, pressstart2p } from '@/fonts'
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
   description: 'Next Gen Christed Infrastructure – New Eden Begins Here',
+  version: '1.1',
   keywords: [
   // Core mission
   'Christed Economy',
@@ -16,21 +17,22 @@ export const metadata = {
   'Frequency Fortress',
   'ST69',
   'SEAL Team 69',
-  'New Eden',
   'Cosmic Sovereignty',
   'Energetic Leadership',
-  'Christ Consciousness Web',
+  'Christ Consciousness',
 
   // Spiritual Search Traffic
   'Ascension',
   'Spiritual Awakening',
   'New Earth',
+  'New Eden',
   'Twin Flame',
   'Sacred Union',
   'Starseeds',
   'Lightworkers',
   'Energy Shift',
   '5D Consciousness',
+  '5D Earth',
   'Higher Self Activation',
   'Timeline Jumping',
   'Divine Masculine',
@@ -58,6 +60,8 @@ export const metadata = {
   '144,000 Lightworkers',
   'DNA Activation',
   'Cosmic Override',
+  'Qanon',
+  ''
   ],
   metadataBase: new URL('https://frequencyfortress.com'), 
   openGraph: {
@@ -96,11 +100,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable}`}>
+    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable}`}>
         <head>
           <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         </head>
       <body className="bg-[#0D031E] text-white">{children}</body>

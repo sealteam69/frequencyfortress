@@ -2,7 +2,10 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 
   theme: {
@@ -13,6 +16,8 @@ module.exports = {
         pirata: ['var(--font-pirata)', ...fontFamily.serif],
         megavolt: ['megavolt', ...fontFamily.sans],
         ocrA: ['ocr-a-std', 'monospace'], 
+        panel: ['panel-mono', 'monospace'],
+        press-start: ['var(--press-start-2p)', ...fontFamily.mono], 
       },
       keyframes: {
         wiggle: {
@@ -22,6 +27,7 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 0.4s ease-in-out infinite',
+        'pulse-slow': 'pulse 4s ease-in-out infinite',
       },
     },
   },
