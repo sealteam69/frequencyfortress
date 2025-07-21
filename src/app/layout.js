@@ -1,6 +1,7 @@
 // src/app/layout.js
 import './globals.css'
 import { ibmPlexMono, inter, pirata, pressstart2p } from '@/fonts'
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
@@ -101,13 +102,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable}`}>
-        <head>
-          <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-          <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
-        </head>
-      <body className="bg-[#0D031E] text-white">{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
+      </head>
+      <body className="bg-[#0D031E] text-white">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
