@@ -119,8 +119,8 @@ keywords: [
     card: 'summary_large_image',
     site: '@st69lol',
     title: 'FREQUENCY FORTRESS',
-    description: 'Council-approved override terminal for New Earth command.',
-    images: ['/assets/st69_patch.png'],
+    description: 'Council-approved Override Terminal for New Earth Command.',
+    images: ['/assets/og_image.png'],
   },
   icons: {
     icon: [
