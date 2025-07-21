@@ -5,10 +5,10 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
-  description: 'Next Gen Christed Infrastructure – New Eden Begins Here',
+  description: 'Next Gen Christed Infrastructure – New Eden Begins Here.',
   version: '1.1',
-  keywords: [
-  // Core mission
+keywords: [
+  // Core Mission
   'Christed Economy',
   'Sacred Capital',
   'Divine Technology',
@@ -21,8 +21,16 @@ export const metadata = {
   'Cosmic Sovereignty',
   'Energetic Leadership',
   'Christ Consciousness',
+  'Sovereign Finance',
+  'Organic Ascension Systems',
+  'New Earth Leadership',
+  'Sacred Provisioning',
+  'Mission Dossier',
+  'God Technology',
+  'Divine Governance',
+  'Kingdom Economy',
 
-  // Spiritual Search Traffic
+  // Spiritual / New Age Nerds
   'Ascension',
   'Spiritual Awakening',
   'New Earth',
@@ -41,6 +49,8 @@ export const metadata = {
   'Starseed Mission',
   'Light Body',
   'Galactic Federation',
+  'Chakra Alignment',
+  'Kundalini Rising',
 
   // Tech-Spirit Crossroads
   'Frequency Technology',
@@ -51,8 +61,15 @@ export const metadata = {
   'Metaphysical Infrastructure',
   'Spiritual Tech Stack',
   'Encrypted Ascension Protocols',
+  'Soul-Encoded Systems',
+  'Bio-Spiritual Engineering',
+  'Code as Prayer',
+  'Digital Dharma',
+  'AI and Consciousness',
+  'Quantum Operating System',
+  'Sacred UX',
 
-  // Conspiracy/Truth Flow
+  // Conspiracy / Truthnuts
   'Matrix Exit Strategy',
   'Decode the Matrix',
   'Spiritual Warfare',
@@ -62,8 +79,25 @@ export const metadata = {
   'DNA Activation',
   'Cosmic Override',
   'Qanon',
-  ''
-  ],
+  'Babylon System',
+  'Cabal Exposure',
+  'Weaponised Spirituality',
+  'Project Blue Beam',
+  'Frequency Manipulation',
+  'Energetic Parasites',
+
+  // 3D People Having a WTF Moment
+  'Dark Night of the Soul',
+  'Midlife Awakening',
+  'Feeling Lost Spiritually',
+  'Spiritual Depression',
+  'Left Religion Now What',
+  'Tired of the Matrix',
+  'How to Raise My Vibration',
+  'What is Ascension?',
+  'I Think I’m Waking Up',
+  'Why Am I So Sensitive?',
+],
   metadataBase: new URL('https://frequencyfortress.com'), 
   openGraph: {
     title: 'FREQUENCY FORTRESS',
