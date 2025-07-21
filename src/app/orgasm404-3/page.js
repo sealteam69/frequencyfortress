@@ -20,9 +20,10 @@ export default function Orgasm404() {
       <h1
         className="
           m-2 
-          text-[18px] 
-          sm:text-[32px] 
-          md:text-[36px] 
+          text-[26px] 
+          sm:text-[28px] 
+          md:text-[30px] 
+          lg:text-[36px] 
           italic 
           text-[#8A00C4] 
           font-inter 
@@ -35,9 +36,10 @@ export default function Orgasm404() {
       <p
         className="
           m-2 
-          text-[18px] 
-          sm:text-[32px] 
-          md:text-[36px] 
+          text-[20px] 
+          sm:text-[28px] 
+          md:text-[30px]
+          lg:text-[36px] 
           italic 
           text-[#8A00C4] 
           font-inter 
