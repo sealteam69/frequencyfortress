@@ -116,7 +116,7 @@ keywords: [
     locale: 'en_GB',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     site: '@st69lol',
     title: 'FREQUENCY FORTRESS',
     description: 'Council-approved Override Terminal for New Earth Command.',
