@@ -141,6 +141,12 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@st69lol" />
+        <meta name="twitter:title" content="FREQUENCY FORTRESS" />
+        <meta name="twitter:description" content="Council-approved Override Terminal for New Earth Command." />
+        <meta name="twitter:image" content="https://frequencyfortress.com/assets/og_image.png" />
       </head>
       <body className="bg-[#0D031E] text-white">
         {children}
