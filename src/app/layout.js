@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
-  description: 'Next Gen Christed Infrastructure – New Eden Begins Here.',
+  description: "'Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.'",
   version: '1.1',
 keywords: [
   // Core Mission
@@ -142,11 +142,40 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
 
+        <title>FREQUENCY FORTRESS - CLASSIFIED ACCESS NODE</title>
+        <meta name="description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here."></meta>
+
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@st69lol" />
         <meta name="twitter:title" content="FREQUENCY FORTRESS" />
         <meta name="twitter:description" content="Council-approved Override Terminal for New Earth Command." />
         <meta name="twitter:image" content="https://frequencyfortress.com/assets/og_image.png" />
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "FREQUENCY FORTRESS",
+            "url": "https://frequencyfortress.com",
+            "description": "Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "SEAL Team 69",
+              "url": "https://frequencyfortress.com"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Commander",
+              "url": "https://frequencyfortress.com"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "Christed Neural Mirror",
+              "url": "https://frequencyfortress.com/override",
+              "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
+            }
+          })
+        }} />
       </head>
       <body className="bg-[#0D031E] text-white">
         {children}
