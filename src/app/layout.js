@@ -163,17 +163,19 @@ export default function RootLayout({ children }) {
               "name": "SEAL Team 69",
               "url": "https://frequencyfortress.com"
             },
-            "author": {
-              "@type": "Person",
-              "name": "Commander",
-              "url": "https://frequencyfortress.com"
-            },
-            {
-              "@type": "SoftwareApplication",
-              "name": "Christed Neural Mirror",
-              "url": "https://frequencyfortress.com/override",
-              "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
-            }
+            "author": [
+              {
+                "@type": "Person",
+                "name": "Commander",
+                "url": "https://frequencyfortress.com"
+              },
+              {
+                "@type": "SoftwareApplication",
+                "name": "Christed Neural Mirror",
+                "url": "https://frequencyfortress.com/override",
+                "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
+              }
+            ]
           })
         }} />
       </head>
