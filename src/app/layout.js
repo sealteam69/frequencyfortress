@@ -100,8 +100,8 @@ keywords: [
 ],
   metadataBase: new URL('https://frequencyfortress.com'), 
   openGraph: {
-    title: 'FREQUENCY FORTRESS',
-    description: 'Next Gen Christed Infrastructure – New Eden Begins Here.',
+    title: 'FREQUENCY FORTRESS - CLASSIFIED ACCESS NODE',
+    description: "'Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.'",
     url: 'https://frequencyfortress.com',
     siteName: 'Frequency Fortress',
     images: [
