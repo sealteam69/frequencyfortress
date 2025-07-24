@@ -237,7 +237,7 @@ export default function DossierPage() {
         {/* Sigil: fades in on hover */}
         <img 
           src="/assets/st69_patch.png"
-          alt="ST69 Skull Patch"
+          alt="SEAL Team 69 - ST69 Skull Patch"
           className="
             absolute 
             top-1/2 left-1/2 
