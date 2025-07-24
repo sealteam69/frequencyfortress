@@ -12,7 +12,7 @@ export default function Home() {
         {/* All Seeing Eye Above Title */}
         <img
           src="/assets/all-seeing-eye.svg"
-          alt="All Seeing Eye"
+          alt="SEAL Team 69 - ST69 All-Seeing Eye"
           className="
             animate-eye-glitch
             h-auto
