@@ -167,7 +167,11 @@ export default function RootLayout({ children }) {
               {
                 "@type": "Person",
                 "name": "Commander",
-                "url": "https://frequencyfortress.com"
+                "url": "https://frequencyfortress.com",
+                "sameAs": [
+                  "https://x.com/andrewpletnev",
+                  "https://www.linkedin.com/in/andrew-pletnev-82769940"
+                ]
               },
               {
                 "@type": "SoftwareApplication",
