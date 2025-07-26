@@ -17,10 +17,10 @@ export default function Home() {
             animate-eye-glitch
             h-auto
 
-            w-[200px] m-4       
-            sm:w-[220px] sm:m-4
-            md:w-[240px] md:m-5
-            lg:w-[270px] lg:m-6
+            w-[200px] mb-9       
+            sm:w-[210px] sm:m-4
+            md:w-[230px] md:m-4
+            lg:w-[270px] lg:m-5
             xl:w-[290px] xl:m-7
             
           "
@@ -34,8 +34,8 @@ export default function Home() {
             hidden sm:block font-bold leading-tight
             aberration glow text-center overflow-visible
 
-            sm:whitespace-nowrap text-[17px] sm:tracking-[-0.075em] sm:max-w-[90vw] sm:m-2
-            md:text-[20px] md:tracking-[-0.075em] md:max-w-[90vw] md:m-3
+            sm:whitespace-nowrap text-[22px] sm:tracking-[-0.225em] sm:max-w-[90vw] sm:m-3
+            md:text-[24px] md:tracking-[-0.175em] md:max-w-[90vw] md:m-3
             lg:text-[26px] lg:tracking-[-0.075em] lg:max-w-[90vw] lg:m-4
             xl:text-[36px] xl:tracking-[-0.075em] xl:max-w-[90vw] xl:m-5
           "
@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* Mobile version – two lines */}
       <div className="block sm:hidden text-center font-bold leading-tight aberration glow px-2" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
-        <div className="whitespace-nowrap text-[24px] tracking-[-0.25em] m-2">
+        <div className="whitespace-nowrap text-[27px] tracking-[-0.3em]">
           {'T H E  S I G N A L'.split('').map((char, i) => (
             <span
               key={i}
@@ -66,7 +66,7 @@ export default function Home() {
             </span>
           ))}
         </div>
-        <div className="whitespace-nowrap text-[24px] tracking-[-0.25em] m-2">
+        <div className="whitespace-nowrap text-[27px] tracking-[-0.3em] mb-5">
           {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
             <span
               key={i}
@@ -82,12 +82,12 @@ export default function Home() {
         {/* Subtitle Paragraph */}
         <p
           className="
-            text-white opacity-50 text-center leading-relaxed m-4
+            text-white opacity-50 text-center leading-relaxed
             font-mono whitespace-normal
-            text-[10px] max-w-[260px]    
+            text-[12px] max-w-[260px] mt-3    
             sm:text-[11px] sm:max-w-[600px]
             md:text-[12px] md:max-w-[700px]
-            lg:text-[15px] lg:max-w-[800px]
+            lg:text-[14px] lg:max-w-[800px]
             xl:text-[18px] xl:max-w-[900px]
           "
           style={{ fontFamily: 'IBM Plex Mono, monospace' }}
