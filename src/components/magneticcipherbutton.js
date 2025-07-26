@@ -56,23 +56,28 @@ export function MagneticCipherButton() {
           <div className="white-flash" />
 
           <div className="transition-overlay crt font-bold text-center uppercase text-[#FF13F0] flex flex-col gap-4 tracking-[0.1em]">
+
+            {/* CLASSIFIED TEXT */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="text-[18px] sm:text-[28px] lg:text-[32px] text-pink-500 glow aberration"
+              className="glow text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#ffffff] aberration"
               style={{ fontFamily: 'Arial' }}
             >
               CLASSIFIED ACCESS GRANTED
             </motion.div>
 
-            <div className="text-[12px] sm:text-[18px] font-bold glow text-[#ff00ff] tracking-wider"
-                 style={{ fontFamily: 'ocr-a-std, monospace' }}
+            {/* DECRYPTING TEXT */}
+            <div
+              className="glow text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#ff00ff] tracking-wider font-bold"
+              style={{ fontFamily: 'ocr-a-std, monospace' }}
             >
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            <div className="w-[160px] sm:w-[200px] md:w-[260px] lg:w-[320px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            {/* PROGRESS BAR */}
+            <div className="w-[160px] sm:w-[200px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -80,6 +85,7 @@ export function MagneticCipherButton() {
                 className="h-full bg-[#ff00ff] rounded-md"
               />
             </div>
+
           </div>
         </>
       )}
@@ -107,10 +113,10 @@ export function MagneticCipherButton() {
             bg-transparent border-2 border-[#0014A8] text-[#0014A8]
             uppercase font-bold tracking-widest font-mono cursor-pointer transition-transform duration-200 ease-out hover:scale-105
 
-            text-[11px] px-3 py-2       
-            sm:text-[12px] sm:px-3.5 sm:py-1.5
-            md:text-[14px] md:px-4 md:py-2
-            lg:text-[16px] lg:px-4.5 lg:py-2.5
+            text-[14px] px-3 py-2       
+            sm:text-[12px] sm:px-3 sm:py-2
+            md:text-[13px] md:px-3 md:py-2
+            lg:text-[15px] lg:px-4 lg:py-2.5
             xl:text-[18px] xl:px-5 xl:py-3
 
           "

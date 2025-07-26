@@ -32,7 +32,7 @@ export default function SocialLinksNeon() {
             tracking-tight
             font-pressstart relative inline-block text-center
             px-5 py-3 sm:px-6 sm:py-4
-            text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] tracking-[0.1em]
+            text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.1em]
             border border-[#FF5C00] text-[#FF5C00] bg-white/5 backdrop-blur-sm
             rounded-[18px] sm:rounded-[24px]
             shadow-[0_0_6px_#FF5C00]
