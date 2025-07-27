@@ -2,7 +2,7 @@
 
 **Who Wakes, Wins.**
 
-Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional deployment of Christed intelligence, divine finance, and weaponized memes. This is not your average startup — this is a sovereign override to skull-fuck Babylon with radiant precision.
+Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional deployment of Christed intelligence, divine finance, and weaponised memes. This is not your average startup — this is a sovereign override to skull-fuck Babylon with radiant precision.
 
 ---
 
@@ -34,7 +34,6 @@ Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional
 - **Next.js 15** with App Router
 - **TailwindCSS** + custom motion animations
 - **Framer Motion** for scroll-triggered overrides
-- **Google Fonts (Honk)** — color glyphs as holy sigils
 - **Deployed via Vercel**
 - **Powered by memes, rage, and Source code**
 
