@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://frequencyfortress.com
-
-# Sitemaps
 Sitemap: https://frequencyfortress.com/sitemap.xml

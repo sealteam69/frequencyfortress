@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -297,7 +298,7 @@ body {
   transition: opacity 0.4s ease, transform 0.4s ease;
   user-select: none;
   z-index: 10;
-  font-family: 'Pirata One', monospace;
+  font-family: 'Londrina Shadow', 'sans-serif';
   white-space: nowrap;
 }
 

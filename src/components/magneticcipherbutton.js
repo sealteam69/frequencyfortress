@@ -62,7 +62,7 @@ export function MagneticCipherButton() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="glow text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#ffffff] aberration"
+              className="glow text-[20px] sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#ffffff] aberration"
               style={{ fontFamily: 'Arial' }}
             >
               CLASSIFIED ACCESS GRANTED
@@ -77,7 +77,7 @@ export function MagneticCipherButton() {
             </div>
 
             {/* PROGRESS BAR */}
-            <div className="w-[160px] sm:w-[200px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

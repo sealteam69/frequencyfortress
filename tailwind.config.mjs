@@ -15,9 +15,10 @@ module.exports = {
         inter: ['var(--font-inter)', ...fontFamily.sans],
         pirata: ['var(--font-pirata)', ...fontFamily.serif],
         megavolt: ['megavolt', ...fontFamily.sans],
-        ocrA: ['ocr-a-std', 'monospace'], 
+        ocrA: ['ocr-a-std', 'monospace'],
         panel: ['panel-mono', 'monospace'],
-        press-start: ['var(--press-start-2p)', ...fontFamily.mono], 
+        londrinashadow: ['"Londrina Shadow"', 'sans-serif'],
+        pressStart: ['var(--press-start-2p)', ...fontFamily.mono],
       },
       keyframes: {
         wiggle: {
