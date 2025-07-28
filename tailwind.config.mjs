@@ -17,7 +17,7 @@ module.exports = {
         megavolt: ['megavolt', ...fontFamily.sans],
         ocrA: ['ocr-a-std', 'monospace'],
         panel: ['panel-mono', 'monospace'],
-        londrinashadow: ['"Londrina Shadow"', 'sans-serif'],
+        unifrakturmaguntia: ['"UnifrakturMaguntia"', 'cursive'],
         pressStart: ['var(--press-start-2p)', ...fontFamily.mono],
       },
       keyframes: {
