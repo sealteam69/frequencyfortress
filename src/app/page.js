@@ -84,7 +84,7 @@ export default function Home() {
           className="
             text-white opacity-50 text-center leading-relaxed
             font-mono whitespace-normal
-            text-[12px] max-w-[260px] mt-3    
+            text-[11px] max-w-[260px] mt-2    
             sm:text-[11px] sm:max-w-[600px]
             md:text-[12px] md:max-w-[700px]
             lg:text-[14px] lg:max-w-[800px]

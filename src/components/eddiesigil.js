@@ -28,14 +28,13 @@ export default function EddieSigil({ audioRef }) {
         />
 
             <div className="
-            font-pirata 
             sigil-hover-text 
-            uppercase 
+            font-bold
             text-center 
             drop-shadow-md 
             text-[#ff00ff]
-            text-[14px] sm:text-[20px] md:text-[24px] lg:text-[28px]
-            tracking-normal sm:tracking-wide md:tracking-wider lg:tracking-widest
+            text-[18px] sm:text-[24px] md:text-[30px] lg:text-[34px]
+            tracking-normal 
             ">
             Tap the Sigil. Feel the Pulse.
             </div>
