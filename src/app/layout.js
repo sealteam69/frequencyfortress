@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
         <title>FREQUENCY FORTRESS - CLASSIFIED ACCESS NODE</title>
         <meta name="description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here."></meta>
