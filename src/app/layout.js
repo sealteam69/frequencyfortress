@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "@id": "https://frequencyfortress.com/#organization",
-              "name": "FREQUENCY FORTRESS",
+              "name": "Frequency Fortress",
               "url": "https://frequencyfortress.com/",
               "logo": "https://frequencyfortress.com/assets/og_image.png",
               "sameAs": [
