@@ -46,6 +46,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable}`}>
       <head>
 
+        <link rel="canonical" href="https://frequencyfortress.com/" />
+        
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
