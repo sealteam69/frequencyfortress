@@ -54,6 +54,16 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
+        <meta property="og:title" content="FREQUENCY FORTRESS – CLASSIFIED ACCESS NODE" />
+        <meta property="og:description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
+        <meta property="og:image" content="https://frequencyfortress.com/assets/og_image.png" />
+        <meta property="og:image:secure_url" content="https://frequencyfortress.com/assets/og_image.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://frequencyfortress.com/" />
+        <meta property="og:type" content="website" />
+
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify([
             {
