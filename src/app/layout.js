@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://frequencyfortress.com/" />
         <meta property="og:type" content="website" />
+        <meta name="description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify([
