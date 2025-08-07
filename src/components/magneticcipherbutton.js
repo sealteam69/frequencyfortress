@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 import { motion, useMotionValue } from 'framer-motion'
+import { useRouter, usePathname } from 'next/navigation'
 
 export function MagneticCipherButton() {
   const [text, setText] = React.useState("ENTER THE DOSSIER")
-  const [loading, setLoading] = React.useState(false)
   const original = "ENTER THE DOSSIER"
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
@@ -14,16 +14,22 @@ export function MagneticCipherButton() {
 
   const [isLargeScreen, setIsLargeScreen] = React.useState(false)
 
+  const router = useRouter()
+  const pathname = usePathname()
+  const [prevPath, setPrevPath] = React.useState(null)
+  const [loading, setLoading] = React.useState(false)
+
   React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const updateSize = () => {
-        setIsLargeScreen(window.innerWidth >= 1024) // Tailwind lg
-      }
-      updateSize()
-      window.addEventListener('resize', updateSize)
-      return () => window.removeEventListener('resize', updateSize)
+    // Track the previous route
+    setPrevPath((prev) => (prev !== pathname ? pathname : prev))
+  }, [pathname])
+
+  React.useEffect(() => {
+    // Reset HUD if we're coming *back* to /
+    if (pathname === '/' && prevPath && prevPath !== '/') {
+      setLoading(false)
     }
-  }, [])
+  }, [pathname, prevPath])
 
   const scramble = () => {
     const interval = setInterval(() => {
@@ -44,7 +50,7 @@ export function MagneticCipherButton() {
   const handleClick = () => {
     setLoading(true)
     setTimeout(() => {
-      window.location.href = "/dossier"
+      router.push('/dossier')
     }, 3300)
   }
 
