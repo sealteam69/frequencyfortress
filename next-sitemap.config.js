@@ -13,6 +13,5 @@ module.exports = {
   ],
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
-    additionalSitemaps: ['https://frequencyfortress.com/sitemap.xml']
   }
 };
