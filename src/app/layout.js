@@ -4,12 +4,12 @@ import { ibmPlexMono, inter, pirata, pressstart2p } from '@/fonts'
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
-  title: 'FREQUENCY FORTRESS – CLASSIFIED ACCESS NODE',
-  description: "Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+  title: 'FREQUENCY FORTRESS',
+  description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
   metadataBase: new URL('https://frequencyfortress.com/'),
   openGraph: {
-    title: 'FREQUENCY FORTRESS – CLASSIFIED ACCESS NODE', // for LinkedIn + FB
-    description: "Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+    title: 'FREQUENCY FORTRESS', // for LinkedIn + FB
+    description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
     url: 'https://frequencyfortress.com/',
     siteName: 'Frequency Fortress',
     images: [
@@ -54,8 +54,8 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
-        <meta property="og:title" content="FREQUENCY FORTRESS – CLASSIFIED ACCESS NODE" />
-        <meta property="og:description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
+        <meta property="og:title" content="FREQUENCY FORTRESS" />
+        <meta property="og:description" content="CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
         <meta property="og:image" content="https://frequencyfortress.com/assets/og_image.png" />
         <meta property="og:image:secure_url" content="https://frequencyfortress.com/assets/og_image.png" />
         <meta property="og:image:type" content="image/png" />
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://frequencyfortress.com/" />
         <meta property="og:type" content="website" />
-        <meta name="description" content="Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
+        <meta name="description" content="CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify([
@@ -71,9 +71,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "@id": "https://frequencyfortress.com/#website",
-              "name": "FREQUENCY FORTRESS - CLASSIFIED ACCESS NODE",
+              "name": "FREQUENCY FORTRESS",
               "url": "https://frequencyfortress.com/",
-              "description": "Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+              "description": "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
               "publisher": {
                 "@id": "https://frequencyfortress.com/#organization"
               },

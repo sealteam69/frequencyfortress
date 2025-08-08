@@ -31,6 +31,17 @@ export function MagneticCipherButton() {
     }
   }, [pathname, prevPath])
 
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const updateSize = () => {
+        setIsLargeScreen(window.innerWidth >= 1024) // Tailwind lg
+      }
+      updateSize()
+      window.addEventListener('resize', updateSize)
+      return () => window.removeEventListener('resize', updateSize)
+    }
+  }, [])
+
   const scramble = () => {
     const interval = setInterval(() => {
       setText(
