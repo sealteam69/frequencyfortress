@@ -109,6 +109,8 @@ export function MagneticCipherButton() {
 
       {/* CIPHER BUTTON */}
       <motion.button
+        type="button"
+        aria-label="Open the Frequency Fortress dossier"
         onClick={handleClick}
         onMouseEnter={scramble}
         onMouseMove={(e) => {

@@ -7,6 +7,7 @@ import TipOfTheMemeFooter from "@/components/tipofthememe";
 import SexualSovereignOverride from "@/components/sexualsovereignoverride";
 import SocialLinksNeon from "@/components/socials";
 import MegavoltBlock from '@/components/megavolt'
+import Script from "next/script";
 
 export default function DossierPage() {
   const audioRef = useRef(null);
@@ -21,7 +22,8 @@ export default function DossierPage() {
   }
 
   return (
-    <main 
+    <main
+
       className="
         min-h-screen
         overflow-x-hidden
@@ -34,6 +36,47 @@ export default function DossierPage() {
         md:px-12 md:py-16
       "
     >
+
+      <Script id="schema-dossier" type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",               // subtype of WebPage fits a list of docs
+              "@id": "https://frequencyfortress.com/dossier/#webpage",
+              "url": "https://frequencyfortress.com/dossier",
+              "name": "Dossier",
+              "inLanguage": "en-GB",
+              "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
+              "about": { "@id": "https://frequencyfortress.com/#organization" },
+              "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://frequencyfortress.com/assets/og_image.png"
+              },
+              "breadcrumb": { "@id": "https://frequencyfortress.com/dossier/#breadcrumb" }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "@id": "https://frequencyfortress.com/dossier/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://frequencyfortress.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Dossier",
+                  "item": "https://frequencyfortress.com/dossier"
+                }
+              ]
+            }
+          ])
+        }}
+      />
 
       <audio
         id="eddie-audio"
@@ -54,7 +97,7 @@ export default function DossierPage() {
           font-mono
         "
       >
-        <h2
+        <h1
           className="
             text-[20px] sm:text-[26px] md:text-[30px] lg:text-[36px]
             tracking-wide sm:tracking-wider
@@ -62,9 +105,9 @@ export default function DossierPage() {
           "
         >
           TRANSMISSION CONFIRMED.
-        </h2>
+        </h1>
 
-        <p
+        <h2
           className="
             text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px]
             tracking-wide sm:tracking-wider
@@ -72,7 +115,7 @@ export default function DossierPage() {
           "
         >
           The Frequency Fortress Phase I Dossier is now unlocked below.
-        </p>
+        </h2>
       </div>
 
       <div className="flex justify-center items-center px-4 sm:px-6 md:px-8">
