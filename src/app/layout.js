@@ -6,7 +6,8 @@ import { Analytics } from "@vercel/analytics/next"
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
   description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
-  metadataBase: new URL('https://frequencyfortress.com/'),
+  metadataBase: new URL('https://frequencyfortress.com'),
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'FREQUENCY FORTRESS', // for LinkedIn + FB
     description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
@@ -46,24 +47,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable}`}>
       <head>
 
-        <link rel="canonical" href="https://frequencyfortress.com/" />
-        
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
-
-        <meta property="og:title" content="FREQUENCY FORTRESS" />
-        <meta property="og:description" content="CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
-        <meta property="og:image" content="https://frequencyfortress.com/assets/og_image.png" />
-        <meta property="og:image:secure_url" content="https://frequencyfortress.com/assets/og_image.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://frequencyfortress.com/" />
-        <meta property="og:type" content="website" />
-        <meta name="description" content="CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here." />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify([
@@ -122,14 +110,6 @@ export default function RootLayout({ children }) {
                 "https://www.linkedin.com/in/andrew-pletnev-82769940"
               ]
             },
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "@id": "https://frequencyfortress.com/#christedmirror",
-              "name": "Christed Neural Mirror",
-              "url": "https://frequencyfortress.com/",
-              "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
-            }
           ])
         }} />
 
