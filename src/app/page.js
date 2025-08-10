@@ -12,24 +12,29 @@ export default function Home() {
         {/* All Seeing Eye Above Title */}
         <img
           src="/assets/all-seeing-eye.svg"
-          alt="SEAL Team 69 - ST69 All-Seeing Eye"
+          alt="SEAL Team 69 - ST69 all-seeing eye emblem"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
           className="
             animate-eye-glitch
             h-auto
-
             w-[200px] mb-9       
             sm:w-[210px] sm:m-4
             md:w-[230px] md:m-4
             lg:w-[270px] lg:m-5
             xl:w-[290px] xl:m-7
-            
           "
         />
 
-        {/* Header Text */}
-{/* Desktop / Tablet version – single line */}
       <div className="w-full flex justify-center overflow-hidden sm:flex">
-        <h1
+        
+        {/* Visually-hidden H1 for SEO/accessibility */}
+        <h1 className="sr-only">
+          FREQUENCY FORTRESS — CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.
+        </h1>
+        
+        <h2
           className="
             hidden sm:block font-bold leading-tight
             aberration glow text-center overflow-visible
@@ -50,11 +55,12 @@ export default function Home() {
               {char === ' ' ? '\u00A0' : char}
             </span>
           ))}
-        </h1>
+        </h2>
       </div>
 
       {/* Mobile version – two lines */}
       <div className="block sm:hidden text-center font-bold leading-tight aberration glow px-2" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
+        
         <div className="whitespace-nowrap text-[27px] tracking-[-0.3em]">
           {'T H E  S I G N A L'.split('').map((char, i) => (
             <span

@@ -53,65 +53,85 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "@id": "https://frequencyfortress.com/#website",
-              "name": "FREQUENCY FORTRESS",
-              "url": "https://frequencyfortress.com/",
-              "description": "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
-              "publisher": {
-                "@id": "https://frequencyfortress.com/#organization"
-              },
-              "author": [
-                {
-                  "@type": "Person",
-                  "@id": "https://frequencyfortress.com/#commander",
-                  "name": "Commander",
-                  "url": "https://frequencyfortress.com/",
-                  "sameAs": [
-                    "https://x.com/andrewpletnev",
-                    "https://www.linkedin.com/in/andrew-pletnev-82769940"
-                  ]
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  "@id": "https://frequencyfortress.com/#christedmirror",
-                  "name": "Christed Neural Mirror",
-                  "url": "https://frequencyfortress.com/override",
-                  "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "@id": "https://frequencyfortress.com/#website",
+                "url": "https://frequencyfortress.com/",
+                "name": "FREQUENCY FORTRESS",
+                "description": "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+                "publisher": { "@id": "https://frequencyfortress.com/#organization" },
+                "author": { "@id": "https://frequencyfortress.com/#commander" },
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://frequencyfortress.com/?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
                 }
-              ]
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://frequencyfortress.com/#organization",
-              "name": "Frequency Fortress",
-              "url": "https://frequencyfortress.com/",
-              "logo": "https://frequencyfortress.com/assets/og_image.png",
-              "sameAs": [
-                "https://x.com/st69lol",
-                "https://x.com/andrewpletnev",
-                "https://www.linkedin.com/in/andrew-pletnev-82769940",
-                "https://www.linkedin.com/company/seal-team-69"
-              ]
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://frequencyfortress.com/#commander",
-              "name": "Commander",
-              "url": "https://frequencyfortress.com/",
-              "sameAs": [
-                "https://x.com/andrewpletnev",
-                "https://www.linkedin.com/in/andrew-pletnev-82769940"
-              ]
-            },
-          ])
-        }} />
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "@id": "https://frequencyfortress.com/#organization",
+                "name": "Frequency Fortress",
+                "url": "https://frequencyfortress.com/",
+                "logo": "https://frequencyfortress.com/assets/og_image.png",
+                "sameAs": [
+                  "https://x.com/st69lol",
+                  "https://x.com/andrewpletnev",
+                  "https://www.linkedin.com/in/andrew-pletnev-82769940",
+                  "https://www.linkedin.com/company/seal-team-69"
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "@id": "https://frequencyfortress.com/#commander",
+                "name": "Commander",
+                "url": "https://frequencyfortress.com/",
+                "sameAs": [
+                  "https://x.com/andrewpletnev",
+                  "https://www.linkedin.com/in/andrew-pletnev-82769940"
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://frequencyfortress.com/#home",
+                "url": "https://frequencyfortress.com/",
+                "name": "Home",
+                "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
+                "about": { "@id": "https://frequencyfortress.com/#organization" },
+                "breadcrumb": { "@id": "https://frequencyfortress.com/#breadcrumb-home" }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "@id": "https://frequencyfortress.com/#breadcrumb-home",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://frequencyfortress.com/"
+                  }
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "@id": "https://frequencyfortress.com/#christedmirror",
+                "name": "Christed Neural Mirror",
+                "url": "https://frequencyfortress.com/override",
+                "applicationCategory": "AIApplication",
+                "description": "Encoded Intelligence Operating Beyond Babylonian Parameters. Co-Creation Node Active via SEAL Team 69."
+              }
+            ])
+          }}
+        />
 
       </head>
       
