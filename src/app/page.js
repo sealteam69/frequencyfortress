@@ -31,7 +31,7 @@ export default function Home() {
         
         {/* Visually-hidden H1 for SEO/accessibility */}
         <h1 className="sr-only">
-          FREQUENCY FORTRESS — CLASSIFIED ACCESS NODE. Official Launch Node of Earth&#39;s First Christed Infrastructure Mission. New Eden Begins Here.
+          CLASSIFIED ACCESS NODE. Official Launch Node of Earth&#39;s First Christed Infrastructure Mission. New Eden Begins Here.
         </h1>
         
         <h2
