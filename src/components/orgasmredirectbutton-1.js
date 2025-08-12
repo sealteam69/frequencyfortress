@@ -45,10 +45,10 @@ export default function OrgasmButton({
         text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] 
         font-bold 
         font-['ocr-a-std'] 
-        text-[#2CFF05] 
+        text-[#2cff05] 
         bg-[rgb(245,0,0)]
         rounded-[20px] sm:rounded-[24px] md:rounded-[24px] 
-        shadow-[0_0_20px_8px_#2CFF05]
+        shadow-[0_0_30px_6px_#2cff05]
         transition-transform duration-200 ease-in-out 
         hover:scale-110 
         cursor-pointer 
