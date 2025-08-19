@@ -12,7 +12,7 @@ const socials = [
 
 export default function SocialLinksNeon() {
   return (
-    <div className="w-full flex flex-wrap justify-center items-center gap-4 py-4 sm:gap-6 sm:py-8">
+    <div className="w-full flex flex-wrap justify-center items-center gap-3 pt-6 pb-6 sm:gap-5 sm:pt-10 sm:pb-6 ">
       {socials.map((social, i) => (
         <motion.a
           key={i}
@@ -31,10 +31,11 @@ export default function SocialLinksNeon() {
             glyph-glitch
             tracking-tight
             font-pressstart relative inline-block text-center
-            px-5 py-3 sm:px-6 sm:py-4
-            text-[12px] sm:text-[14px] md:text-[15px] lg:text-[16px] tracking-[0.1em]
+            px-4 py-3 sm:px-6 sm:py-4
+            tracking-[-0.1em]
+            text-[9px] sm:text-[14px] md:text-[15px] lg:text-[16px] 
             border border-[#FF5C00] text-[#FF5C00] bg-white/5 backdrop-blur-sm
-            rounded-[18px] sm:rounded-[24px]
+            rounded-[24px] sm:rounded-[30px]
             shadow-[0_0_6px_#FF5C00]
             hover:shadow-[0_0_16px_#FF5C00,0_0_24px_#FF5C00]
             transition-all duration-300 ease-in-out

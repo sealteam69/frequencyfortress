@@ -33,7 +33,7 @@ export default function EddieSigil({ audioRef }) {
             text-center 
             drop-shadow-md 
             text-[#ff00ff]
-            text-[18px] sm:text-[24px] md:text-[30px] lg:text-[34px]
+            text-[22px] sm:text-[24px] md:text-[30px] lg:text-[34px]
             tracking-normal 
             ">
             Tap the Sigil. Feel the Pulse.
