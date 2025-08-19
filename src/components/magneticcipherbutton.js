@@ -12,36 +12,23 @@ export function MagneticCipherButton() {
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
-  const [isLargeScreen, setIsLargeScreen] = React.useState(false)
-
   const router = useRouter()
   const pathname = usePathname()
   const [prevPath, setPrevPath] = React.useState(null)
   const [loading, setLoading] = React.useState(false)
 
+  // Track last path for HUD reset
   React.useEffect(() => {
-    // Track the previous route
     setPrevPath((prev) => (prev !== pathname ? pathname : prev))
   }, [pathname])
 
   React.useEffect(() => {
-    // Reset HUD if we're coming *back* to /
     if (pathname === '/' && prevPath && prevPath !== '/') {
       setLoading(false)
     }
   }, [pathname, prevPath])
 
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const updateSize = () => {
-        setIsLargeScreen(window.innerWidth >= 1024) // Tailwind lg
-      }
-      updateSize()
-      window.addEventListener('resize', updateSize)
-      return () => window.removeEventListener('resize', updateSize)
-    }
-  }, [])
-
+  // Scramble text effect
   const scramble = () => {
     const interval = setInterval(() => {
       setText(
@@ -58,6 +45,22 @@ export function MagneticCipherButton() {
     }, 500)
   }
 
+  // Magnetism effect (shared for mouse + touch)
+  const applyMagnetism = (target, clientX, clientY) => {
+    const rect = target.getBoundingClientRect()
+    const xVal = clientX - rect.left - rect.width / 2
+    const yVal = clientY - rect.top - rect.height / 2
+    x.set(xVal)
+    y.set(yVal)
+    target.style.transform = `translate(${xVal * 0.3}px, ${yVal * 0.3}px)`
+  }
+
+  const resetMagnetism = (target) => {
+    x.set(0)
+    y.set(0)
+    target.style.transform = `translate(0px, 0px)`
+  }
+
   const handleClick = () => {
     setLoading(true)
     setTimeout(() => {
@@ -67,14 +70,12 @@ export function MagneticCipherButton() {
 
   return (
     <>
-      {/* CLASSIFIED HUD OVERLAY */}
+      {/* HUD Overlay */}
       {loading && (
         <>
           <div className="white-flash" />
-
           <div className="transition-overlay crt font-bold text-center uppercase text-[#FF13F0] flex flex-col gap-4 tracking-[0.1em]">
 
-            {/* CLASSIFIED TEXT */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
@@ -85,7 +86,6 @@ export function MagneticCipherButton() {
               CLASSIFIED ACCESS GRANTED
             </motion.div>
 
-            {/* DECRYPTING TEXT */}
             <div
               className="glow text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#ff00ff] tracking-wider font-bold"
               style={{ fontFamily: 'ocr-a-std, monospace' }}
@@ -93,7 +93,6 @@ export function MagneticCipherButton() {
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            {/* PROGRESS BAR */}
             <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
@@ -102,48 +101,40 @@ export function MagneticCipherButton() {
                 className="h-full bg-[#ff00ff] rounded-md"
               />
             </div>
-
           </div>
         </>
       )}
 
-      {/* CIPHER BUTTON */}
+      {/* Cipher Button */}
       <motion.button
         type="button"
         aria-label="Open the Frequency Fortress dossier"
         onClick={handleClick}
         onMouseEnter={scramble}
-        onMouseMove={(e) => {
-          if (!isLargeScreen) return
-          const rect = e.currentTarget.getBoundingClientRect()
-          const xVal = e.clientX - rect.left - rect.width / 2
-          const yVal = e.clientY - rect.top - rect.height / 2
-          x.set(xVal)
-          y.set(yVal)
-          e.currentTarget.style.transform = `translate(${xVal * 0.3}px, ${yVal * 0.3}px)`
+        onTouchStart={scramble}
+        onMouseMove={(e) => applyMagnetism(e.currentTarget, e.clientX, e.clientY)}
+        onTouchMove={(e) => {
+          const touch = e.touches[0]
+          if (touch) applyMagnetism(e.currentTarget, touch.clientX, touch.clientY)
         }}
-        onMouseLeave={(e) => {
-          if (!isLargeScreen) return
-          x.set(0)
-          y.set(0)
-          e.currentTarget.style.transform = `translate(0px, 0px)`
-        }}
-          className="
-            bg-transparent border-2 border-[#0014A8] text-[#0014A8]
-            uppercase font-bold tracking-widest font-mono cursor-pointer transition-transform duration-200 ease-out hover:scale-105
+        onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
+        onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
+        className="
+          bg-transparent border-2 border-[#0014A8] text-[#0014A8]
+          uppercase font-bold tracking-widest font-mono cursor-pointer 
+          transition-transform duration-200 ease-out hover:scale-105
 
-            text-[15px] px-3 py-2       
-            sm:text-[12px] sm:px-3 sm:py-2
-            md:text-[13px] md:px-3 md:py-2
-            lg:text-[15px] lg:px-4 lg:py-2.5
-            xl:text-[18px] xl:px-5 xl:py-3
-
-          "
+          text-[16px] px-4 py-3       
+          sm:text-[12px] sm:px-4 sm:py-2.5
+          md:text-[13px] md:px-4 md:py-2.5
+          lg:text-[15px] lg:px-4 lg:py-2.5
+          xl:text-[18px] xl:px-5 xl:py-3
+        "
       >
         {text}
       </motion.button>
 
-      {/* Dot Cycle Animation */}
+      {/* Dot Cycle */}
       <style>
         {`
           .dotCycle::after {
