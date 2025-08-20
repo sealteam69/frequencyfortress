@@ -15,7 +15,7 @@ export default function Home() {
           alt="SEAL Team 69 - ST69 all-seeing eye emblem"
           loading="lazy"
           decoding="async"
-          fetchpriority="low"
+          fetchPriority="low"
           className="
             animate-eye-glitch
             h-auto
