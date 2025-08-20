@@ -61,22 +61,22 @@ export default function Home() {
       {/* Mobile version – two lines */}
       <div className="block sm:hidden text-center font-bold leading-tight aberration glow px-2" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
         
-        <div className="whitespace-nowrap text-[27px] tracking-[-0.3em]">
+        <div className="whitespace-nowrap text-[28px] tracking-[-0.3em]">
           {'T H E  S I G N A L'.split('').map((char, i) => (
             <span
               key={i}
-              className="inline-block animate-letter px-[0.1em]"
+              className="inline-block animate-letter px-[0.09em]"
               style={{ animationDelay: `${i * 0.035}s` }}
             >
               {char === ' ' ? '\u00A0' : char}
             </span>
           ))}
         </div>
-        <div className="whitespace-nowrap text-[27px] tracking-[-0.3em] mb-5">
+        <div className="whitespace-nowrap text-[28px] tracking-[-0.3em] mb-5">
           {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
             <span
               key={i}
-              className="inline-block animate-letter px-[0.1em]"
+              className="inline-block animate-letter px-[0.09em]"
               style={{ animationDelay: `${(i + 20) * 0.035}s` }}
             >
               {char === ' ' ? '\u00A0' : char}
