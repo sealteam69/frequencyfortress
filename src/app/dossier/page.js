@@ -252,44 +252,42 @@ export default function DossierPage() {
 
         </div>
 
-      <div className="
-        relative group 
-        w-full 
-        max-w-[720px] 
-        mx-auto 
-        my-4 sm:my-6 
-        px-4 py-4 
-        sm:px-6 sm:py-6 
-        text-center 
-        font-mono 
-        text-[#4A4545]
-      ">
-        {/* Text: fades out on hover */}
-        <p className="
-          relative z-10 
-          text-[10px] 
-          sm:text-[14px] 
-          md:text-[16px] 
-          tracking-wide 
-          transition-opacity duration-300 
-          group-hover:opacity-0
-        ">
+      <div
+        className="
+          relative group
+          w-full max-w-[720px] mx-auto my-4 sm:my-6 px-4 py-4 sm:px-6 sm:py-6
+          text-center font-mono text-[#4A4545]
+          select-none
+        "
+        role="button" tabIndex={0} aria-label="Footer seal reveal"
+      >
+
+        <p
+          className="
+            relative z-10
+            text-[10px] sm:text-[14px] md:text-[16px] tracking-wide
+            transition-opacity duration-300
+            group-hover:opacity-0
+            group-active:opacity-0
+            focus-within:opacity-0
+            focus:opacity-0
+          "
+        >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </p>
 
-        {/* Sigil: fades in on hover */}
-        <img 
+
+        <img
           src="/assets/st69_patch.png"
-          alt="SEAL Team 69 - ST69 Skull Patch"
+          alt="SEAL Team 69 – ST69 Skull Patch"
           className="
-            absolute 
-            top-1/2 left-1/2 
-            w-20 sm:w-24 md:w-28 
-            opacity-0 
-            group-hover:opacity-100 
-            transform -translate-x-1/2 -translate-y-1/2 
-            transition-opacity duration-300 
-            pointer-events-none select-none
+            absolute top-1/2 left-1/2 w-20 sm:w-24 md:w-28
+            transform -translate-x-1/2 -translate-y-1/2
+            opacity-0 transition-opacity duration-300 pointer-events-none select-none
+            group-hover:opacity-100
+            group-active:opacity-100
+            focus-within:opacity-100
+            focus:opacity-100
           "
         />
       </div>
