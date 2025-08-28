@@ -8,6 +8,7 @@ export const metadata = {
   description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
   metadataBase: new URL('https://frequencyfortress.com'),
   alternates: { canonical: '/' },
+  robots: { index: true, follow: true },
   openGraph: {
     title: 'FREQUENCY FORTRESS', // for LinkedIn + FB
     description: "Council-approved Override Terminal for New Earth Command.",
@@ -15,7 +16,7 @@ export const metadata = {
     siteName: 'Frequency Fortress',
     images: [
       {
-        url: '/assets/og_image.png',
+        url: 'https://frequencyfortress.com/assets/og_image.png',
         width: 1200,
         height: 630,
         alt: 'ST69 Patch',
@@ -29,7 +30,7 @@ export const metadata = {
     site: '@st69lol',
     title: 'FREQUENCY FORTRESS', // cleaner for X
     description: "Council-approved Override Terminal for New Earth Command.",
-    images: ['/assets/og_image.png'],
+    images: ['https://frequencyfortress.com/assets/og_image.png'],
   },
   icons: {
     icon: [
