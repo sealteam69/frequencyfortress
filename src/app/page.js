@@ -9,23 +9,25 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center text-center w-full">
 
-        {/* All Seeing Eye Above Title */}
-        <img
-          src="/assets/all-seeing-eye.svg"
-          alt="SEAL Team 69 - ST69 all-seeing eye emblem"
-          loading="lazy"
-          decoding="async"
-          fetchPriority="low"
-          className="
-            animate-eye-glitch
-            h-auto
-            w-[200px] mb-9       
-            sm:w-[210px] sm:m-4
-            md:w-[230px] md:m-4
-            lg:w-[270px] lg:m-5
-            xl:w-[290px] xl:m-7
-          "
-        />
+        <div data-nosnippet aria-hidden="true">
+          {/* All Seeing Eye Above Title */}
+          <img
+            src="/assets/all-seeing-eye.svg"
+            alt="SEAL Team 69 - ST69 all-seeing eye emblem"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
+            className="
+              animate-eye-glitch
+              h-auto
+              w-[200px] mb-9       
+              sm:w-[210px] sm:m-4
+              md:w-[230px] md:m-4
+              lg:w-[270px] lg:m-5
+              xl:w-[290px] xl:m-7
+            "
+          />
+        </div>
 
       <div className="w-full flex justify-center overflow-hidden sm:flex">
         

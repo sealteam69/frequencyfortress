@@ -188,7 +188,7 @@ export default function DossierPage() {
           <li>
             <a
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/7_christed_glossary.pdf"
+              href="/pdfs/07_christed_glossary.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -199,7 +199,7 @@ export default function DossierPage() {
           <li>
             <a
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/9_how_to_reach_the_commander.pdf"
+              href="/pdfs/09_how_to_reach_the_commander.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
