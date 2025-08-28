@@ -129,7 +129,7 @@ export default function DossierPage() {
           max-w-full sm:max-w-[600px] md:max-w-[720px]
         ">
           <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-2">
-            📎 Mission Dossier:
+            💼 Mission Dossier:
           </li>
 
           <li>
@@ -160,7 +160,7 @@ export default function DossierPage() {
           </li>
 
           <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-4">
-            📑 Additional Files:
+            📎 Additional Files:
           </li>
 
           <li>
@@ -170,7 +170,7 @@ export default function DossierPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              🛰️ Christed Override – One-Pager
+              ⚠️ Christed Override – One-Pager
             </a>
           </li>
 
@@ -181,7 +181,7 @@ export default function DossierPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              🪐 Frequency Fortress: Public Mission Brief
+              🌎 Frequency Fortress: Public Mission Brief
             </a>
           </li>
 
@@ -203,7 +203,7 @@ export default function DossierPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              🛡️ How to Reach the Commander
+              📡 How to Reach the Commander
             </a>
           </li>
         </ul>
