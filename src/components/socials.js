@@ -31,17 +31,16 @@ export default function SocialLinksNeon() {
             glyph-glitch
             font-pressstart relative inline-block text-center
             px-4 py-3 sm:px-6 sm:py-4
-            tracking-[-0.1em]
             text-[10.5px] sm:text-[14px] md:text-[15px] lg:text-[16px] 
             border border-[#FF5C00] text-[#FF5C00] bg-white/5 backdrop-blur-sm
             rounded-[24px] sm:rounded-[30px]
             shadow-[0_0_6px_#FF5C00]
             hover:shadow-[0_0_16px_#FF5C00,0_0_24px_#FF5C00]
-            transition-all duration-300 ease-in-out
+            transition-all duration-200 ease-in-out
             before:content-[''] before:absolute before:inset-0 before:rounded-[18px]
-            before:border before:border-[#FF5C00]/40 before:blur-md before:opacity-60 before:z-10
+            before:border before:border-[#FF5C00]/40 before:blur-md before:opacity-60 before:z-1
             hover:scale-[1.1]
-            active:scale-95
+            active:scale-[1.1]
             active:shadow-[0_0_16px_#FF5C00,0_0_24px_#FF5C00]
             touch-manipulation   
             `}

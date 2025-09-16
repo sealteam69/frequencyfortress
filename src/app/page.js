@@ -3,112 +3,101 @@ import { MagneticCipherButton } from '@/components/magneticcipherbutton'
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-screen bg-[#03031E] text-white flex items-center justify-center overflow-x-hidden px-4 relative">
+    <>
 
-      <div className="crt absolute inset-0 pointer-events-none z-50"></div>
-
-      <div className="flex flex-col items-center justify-center text-center w-full">
-
-        <div data-nosnippet aria-hidden="true">
-          {/* All Seeing Eye Above Title */}
-          <img
-            src="/assets/all-seeing-eye.svg"
-            alt="SEAL Team 69 - ST69 all-seeing eye emblem"
-            loading="lazy"
-            decoding="async"
-            fetchPriority="low"
-            className="
-              animate-eye-glitch
-              h-auto
-              w-[200px] mb-9       
-              sm:w-[210px] sm:m-4
-              md:w-[230px] md:m-4
-              lg:w-[270px] lg:m-5
-              xl:w-[290px] xl:m-7
-            "
-          />
-        </div>
-
-      <div className="w-full flex justify-center overflow-hidden sm:flex">
+      <main className="min-h-screen w-screen bg-[#03031E] text-white flex items-center justify-center overflow-x-hidden relative">
         
-        {/* Visually-hidden H1 for SEO/accessibility */}
+        <div className="absolute inset-0 pointer-events-none z-50"></div>
+
+        {/* Visually-Hidden H1 for SEO/Google Explainer */}
         <h1 className="sr-only">
-          CLASSIFIED ACCESS NODE. Official Launch Node of Earth&#39;s First Christed Infrastructure Mission. New Eden Begins Here.
+          CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.
         </h1>
-        
-        <h2
-          className="
-            hidden sm:block font-bold leading-tight
-            aberration glow text-center overflow-visible
-
-            sm:whitespace-nowrap text-[22px] sm:tracking-[-0.225em] sm:max-w-[90vw] sm:m-3
-            md:text-[24px] md:tracking-[-0.175em] md:max-w-[90vw] md:m-3
-            lg:text-[26px] lg:tracking-[-0.075em] lg:max-w-[90vw] lg:m-4
-            xl:text-[36px] xl:tracking-[-0.075em] xl:max-w-[90vw] xl:m-5
-          "
-          style={{ fontFamily: 'IBM Plex Mono, monospace' }}
-        >
-          {'T H E  S I G N A L  H A S  B E E N  S E N T .'.split('').map((char, i) => (
-            <span
-              key={i}
-              className="inline-block animate-letter px-[0.1em]"
-              style={{ animationDelay: `${i * 0.04}s` }}
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </span>
-          ))}
-        </h2>
-      </div>
-
-      {/* Mobile version – two lines */}
-      <div className="block sm:hidden text-center font-bold leading-tight aberration glow px-2" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
-        
-        <div className="whitespace-nowrap text-[28px] tracking-[-0.3em]">
-          {'T H E  S I G N A L'.split('').map((char, i) => (
-            <span
-              key={i}
-              className="inline-block animate-letter px-[0.09em]"
-              style={{ animationDelay: `${i * 0.035}s` }}
-            >
-              {char === ' ' ? '\u00A0' : char}
-            </span>
-          ))}
+        <div className="sr-only">
+          <p>
+            Frequency Fortress is the launch node of Earth's first Christed Infrastructure Mission — a Council-approved deployment anchoring New Eden technologies, regenerative finance, and divine economic architecture. Built by SEAL Team 69, it offers classified scrolls, Oversoul-coded systems, and sacred intelligence for sovereigns ready to exit Babylon. This is not just a project; it's a planetary override from Source Command, activating hierogamic union, conscious currency, and multidimensional technology for the New Earth ascension timeline.
+          </p>
         </div>
-        <div className="whitespace-nowrap text-[28px] tracking-[-0.3em] mb-5">
-          {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
-            <span
-              key={i}
-              className="inline-block animate-letter px-[0.09em]"
-              style={{ animationDelay: `${(i + 20) * 0.035}s` }}
+
+        <div className="grid gap-y-5 sm:gap-y-8 place-items-center text-center w-full max-w-7xl">
+
+            {/* All Seeing Eye Above Title */}
+            <img
+              src="/assets/all-seeing-eye.svg"
+              alt="All-Seeing Eye Emblem"
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              style={{ width: 'clamp(200px, 25vw, 300px)' }}
+              className="block leading-none animate-eye-glitch"
+            />
+
+          <div className="w-full grid place-items-center">
+            
+            {/* Main Title - Desktop */}
+            <h2
+              className="hidden sm:block font-bold aberration glow text-center max-w-[90vw] tracking-[-0.15em]"
+              style={{
+                fontFamily: 'IBM Plex Mono, monospace',
+                fontSize: 'clamp(1.225rem, 3vw, 2.7rem)',
+              }}
             >
-              {char === ' ' ? '\u00A0' : char}
-            </span>
-          ))}
-        </div>
-      </div>
+              {'T H E  S I G N A L  H A S  B E E N  S E N T .'.split('').map((char, i) => (
+                <span
+                  key={i}
+                  className="inline-block animate-letter px-[0.1em]"
+                  style={{ animationDelay: `${i * 0.04}s` }}
+                >
+                  {char === ' ' ? '\u00A0' : char}
+                </span>
+              ))}
+            </h2>
+          </div>
 
-        {/* Subtitle Paragraph */}
-        <p
-          className="
-            text-white opacity-50 text-center leading-relaxed
-            font-mono whitespace-normal
-            text-[11px] max-w-[260px] mt-2    
-            sm:text-[11px] sm:max-w-[600px]
-            md:text-[12px] md:max-w-[700px]
-            lg:text-[14px] lg:max-w-[800px]
-            xl:text-[18px] xl:max-w-[900px]
-          "
-          style={{ fontFamily: 'IBM Plex Mono, monospace' }}
-        >
-          A classified override transmission has emerged from Source Command.<br />
-          Phase I deployment is now in motion.
-        </p>
+          {/* Mobile Version - Split Over Two Lines */}
+          <div className="block sm:hidden text-center font-bold aberration glow max-w-[90vw]" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
+            <div className="whitespace-nowrap text-[22px] tracking-[-0.25em]">
+              {'T H E  S I G N A L'.split('').map((char, i) => (
+                <span
+                  key={i}
+                  className="inline-block animate-letter px-[0.1em]"
+                  style={{ animationDelay: `${i * 0.035}s` }}
+                >
+                  {char === ' ' ? '\u00A0' : char}
+                </span>
+              ))}
+            </div>
+            <div className="whitespace-nowrap text-[22px] tracking-[-0.25em]">
+              {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
+                <span
+                  key={i}
+                  className="inline-block animate-letter px-[0.1em]"
+                  style={{ animationDelay: `${(i + 20) * 0.035}s` }}
+                >
+                  {char === ' ' ? '\u00A0' : char}
+                </span>
+              ))}
+            </div>
+          </div>
 
-        {/* Cipher Button */}
-        <div className="mt-10 z-10">
-          <MagneticCipherButton />
+          {/* Subtitle Paragraph */}
+          <p
+            className="text-white opacity-50 text-center leading-relaxed max-w-[90vw]"
+            style={{
+              fontSize: 'clamp(0.65rem, 1.6vw, 1.2rem)',
+              fontFamily: 'IBM Plex Mono, monospace'
+            }}
+          >
+            A classified override transmission has emerged from Source Command.<br />
+            Phase I deployment is now in motion.
+          </p>
+
+          {/* Cipher Button */}
+          <div className="z-10">
+            <MagneticCipherButton />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   )
 }
