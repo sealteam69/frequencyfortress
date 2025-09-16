@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
-  description: "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+  description: "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
   metadataBase: new URL('https://frequencyfortress.com'),
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
@@ -54,6 +54,8 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -72,7 +74,7 @@ export default function RootLayout({ children }) {
                   "height": 630
                 },
                 "inLanguage": "en-GB",
-                "description": "CLASSIFIED ACCESS NODE. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+                "description": "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
                 "publisher": { "@id": "https://frequencyfortress.com/#organization" },
                 "author": { "@id": "https://frequencyfortress.com/#commander" },
                 "potentialAction": {
@@ -120,6 +122,7 @@ export default function RootLayout({ children }) {
                 "@id": "https://frequencyfortress.com/#home",
                 "url": "https://frequencyfortress.com/",
                 "name": "Home",
+                "headline": "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
                 "inLanguage": "en-GB",
                 "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
                 "about": { "@id": "https://frequencyfortress.com/#organization" },

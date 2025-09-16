@@ -107,8 +107,8 @@ export function MagneticCipherButton() {
 
       {/* Cipher Button */}
       <motion.button
-        type="button"
-        aria-label="Open the Frequency Fortress dossier"
+        type="Button"
+        aria-label="Open the Frequency Fortress Dossier"
         onClick={handleClick}
         onMouseEnter={scramble}
         onTouchStart={scramble}
@@ -124,11 +124,11 @@ export function MagneticCipherButton() {
           uppercase font-bold tracking-widest font-mono cursor-pointer 
           transition-transform duration-200 ease-out hover:scale-105
 
-          text-[14px] px-4 py-2.5       
-          sm:text-[13px] sm:px-4 sm:py-2.5
-          md:text-[13px] md:px-4 md:py-2.5
-          lg:text-[15px] lg:px-4 lg:py-2.5
-          xl:text-[18px] xl:px-5 xl:py-3
+          text-[14px] px-4 py-2.5 mt-5      
+          sm:text-[14px] sm:px-4 sm:py-2.5 sm:mt-0
+          md:text-[14px] md:px-4 md:py-2.5 
+          lg:text-[16px] lg:px-4 lg:py-2.5 
+          xl:text-[18px] xl:px-5 xl:py-3 
         "
       >
         {text}
