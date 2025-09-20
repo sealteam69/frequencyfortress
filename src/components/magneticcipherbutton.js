@@ -74,26 +74,26 @@ export function MagneticCipherButton() {
       {loading && (
         <>
           <div className="white-flash" />
-          <div className="transition-overlay crt font-bold text-center uppercase text-[#FF13F0] flex flex-col gap-4 tracking-[0.1em]">
+          <div className="transition-overlay crt font-bold text-center uppercase text-[#FF13F0] flex flex-col gap-4">
 
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="glow text-[25px] sm:text-[26px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#ffffff] aberration"
-              style={{ fontFamily: 'Arial' }}
+              className="font-bold text-[25px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-[#CCCCFF]"
+              style={{ fontFamily: 'Sofia Sans Semi Condensed' }}
             >
               CLASSIFIED ACCESS GRANTED
             </motion.div>
 
             <div
-              className="glow text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#ff00ff] tracking-wider font-bold"
+              className="text-[13.5px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#FF13F0] tracking-wider font-bold"
               style={{ fontFamily: 'ocr-a-std, monospace' }}
             >
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            <div className="w-[160px] sm:w-[220px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -107,7 +107,7 @@ export function MagneticCipherButton() {
 
       {/* Cipher Button */}
       <motion.button
-        type="Button"
+        type="button"
         aria-label="Open the Frequency Fortress Dossier"
         onClick={handleClick}
         onMouseEnter={scramble}
@@ -124,10 +124,10 @@ export function MagneticCipherButton() {
           uppercase font-bold tracking-widest font-mono cursor-pointer 
           transition-transform duration-200 ease-out hover:scale-105
 
-          text-[14px] px-4 py-2.5 mt-5      
-          sm:text-[14px] sm:px-4 sm:py-2.5 sm:mt-0
-          md:text-[14px] md:px-4 md:py-2.5 
-          lg:text-[16px] lg:px-4 lg:py-2.5 
+          text-[14px] px-4 py-3 mt-5      
+          sm:text-[14px] sm:px-4 sm:py-3 sm:mt-0
+          md:text-[14px] md:px-4 md:py-3 
+          lg:text-[18px] lg:px-5 lg:py-3 
           xl:text-[18px] xl:px-5 xl:py-3 
         "
       >

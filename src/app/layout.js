@@ -1,16 +1,16 @@
 // src/app/layout.js
 import './globals.css'
-import { ibmPlexMono, inter, pirata, pressstart2p } from '@/fonts'
+import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed } from '@/fonts'
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
-  title: 'FREQUENCY FORTRESS',
-  description: "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+  title: 'CLASSIFIED ACCESS NODE',
+  description: "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   metadataBase: new URL('https://frequencyfortress.com'),
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'FREQUENCY FORTRESS', // for LinkedIn + FB
+    title: 'CLASSIFIED ACCESS NODE',
     description: "Council-approved Override Terminal for New Earth Command.",
     url: 'https://frequencyfortress.com/',
     siteName: 'Frequency Fortress',
@@ -28,7 +28,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     site: '@st69lol',
-    title: 'FREQUENCY FORTRESS', // cleaner for X
+    title: 'FREQUENCY FORTRESS', 
     description: "Council-approved Override Terminal for New Earth Command.",
     images: ['https://frequencyfortress.com/assets/og_image.png'],
   },
@@ -45,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable}`}>
+    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable} ${sofiaSansSemiCondensed.variable}`}>
       <head>
 
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
