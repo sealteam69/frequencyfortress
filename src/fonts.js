@@ -1,5 +1,5 @@
 // src/fonts.js
-import { IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk, Press_Start_2P } from 'next/font/google'
+import { Sofia_Sans_Semi_Condensed, IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk, Press_Start_2P } from 'next/font/google'
 
 export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -83,3 +83,10 @@ export const pressstart2p = Press_Start_2P({
   variable: "--font-pressstart2p", 
   display: "swap",
 });
+
+export const sofiaSansSemiCondensed = Sofia_Sans_Semi_Condensed({
+  subsets: ["latin"],
+  variable: "--font-sofia-sans-semi-condensed",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900", "1000"], // full axis
+  style: ["normal", "italic"],
+})
