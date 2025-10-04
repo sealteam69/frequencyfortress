@@ -4,13 +4,13 @@ import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed } from
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
-  title: 'CLASSIFIED ACCESS NODE',
+  title: 'FREQUENCY FORTRESS',
   description: "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   metadataBase: new URL('https://frequencyfortress.com'),
   alternates: { canonical: '/' },
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'CLASSIFIED ACCESS NODE',
+    title: 'FREQUENCY FORTRESS',
     description: "Council-approved Override Terminal for New Earth Command.",
     url: 'https://frequencyfortress.com/',
     siteName: 'Frequency Fortress',
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
                   "height": 630
                 },
                 "inLanguage": "en-GB",
-                "description": "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+                "description": "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
                 "publisher": { "@id": "https://frequencyfortress.com/#organization" },
                 "author": { "@id": "https://frequencyfortress.com/#commander" },
                 "potentialAction": {
@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
                 "@id": "https://frequencyfortress.com/#home",
                 "url": "https://frequencyfortress.com/",
                 "name": "Home",
-                "headline": "CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission. New Eden Begins Here.",
+                "headline": "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
                 "inLanguage": "en-GB",
                 "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
                 "about": { "@id": "https://frequencyfortress.com/#organization" },
