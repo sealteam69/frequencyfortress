@@ -7,7 +7,7 @@ const socials = [
   { label: "X", url: "https://x.com/st69lol" },
   { label: "LinkedIn", url: "https://www.linkedin.com/company/seal-team-69/" },
   { label: "Google Drive", url: "https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing" },
-  { label: "GitHub", url: "https://github.com/SEALTeam69/frequencyfortress" },
+  { label: "GitHub", url: "https://github.com/sealteam69/frequencyfortress" },
 ]
 
 export default function SocialLinksNeon() {

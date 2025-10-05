@@ -48,7 +48,7 @@ export default function OrgasmButton({
         text-[#2cff05] 
         bg-[rgb(245,0,0)]
         rounded-[20px] sm:rounded-[24px] md:rounded-[24px] 
-        shadow-[0_0_30px_6px_#2cff05]
+        shadow-[0_0_0_3px_#2cff05]
         transition-transform duration-200 ease-in-out 
         hover:scale-110 
         cursor-pointer 

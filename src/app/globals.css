@@ -239,12 +239,12 @@ body {
 /* Pink electric glow */
 @keyframes sigilGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 6px #ff00ff)
-            drop-shadow(0 0 12px #ff00ff);
+    filter: drop-shadow(0 0 12px #ff00ff)
+            drop-shadow(0 0 24px #ff00ff);
   }
   50% {
-    filter: drop-shadow(0 0 16px #ff13f0)
-            drop-shadow(0 0 24px #ff13f0);
+    filter: drop-shadow(0 0 36px #ff13f0)
+            drop-shadow(0 0 48px #ff13f0);
   }
 }
 

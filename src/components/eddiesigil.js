@@ -29,7 +29,6 @@ export default function EddieSigil({ audioRef }) {
 
             <div className="
             sigil-hover-text 
-            
             text-center 
             drop-shadow-md 
             text-[#ff00ff]

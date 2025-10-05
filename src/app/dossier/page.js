@@ -22,8 +22,8 @@ export default function DossierPage() {
   }
 
   return (
+    
     <main
-
       className="
         min-h-screen
         overflow-x-hidden
@@ -100,7 +100,7 @@ export default function DossierPage() {
         <h1
           className="
             text-[20px] sm:text-[26px] md:text-[30px] lg:text-[36px]
-            tracking-wide sm:tracking-wider
+            tracking-wider 
             text-[#4A4545]
           "
         >
@@ -110,7 +110,7 @@ export default function DossierPage() {
         <h2
           className="
             text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px]
-            tracking-wide sm:tracking-wider
+            tracking-wider 
             text-[#4A4545]
           "
         >
@@ -134,12 +134,7 @@ export default function DossierPage() {
 
           <li>
             <a
-              className="
-                underline decoration-transparent hover:decoration-inherit
-                text-blue-500 hover:text-[#FF13F0]
-                transition-all duration-200
-                tracking-normal
-              "
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -161,6 +156,28 @@ export default function DossierPage() {
 
           <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-4">
             📎 Additional Files:
+          </li>
+
+          <li>
+            <a
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              href="/pdfs/08_funding_portals.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🤑 Fund the Commander
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              href="/pdfs/09_how_to_reach_the_commander.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📡 How to Reach the Commander
+            </a>
           </li>
 
           <li>
@@ -196,16 +213,6 @@ export default function DossierPage() {
             </a>
           </li>
 
-          <li>
-            <a
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/09_how_to_reach_the_commander.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📡 How to Reach the Commander
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -276,7 +283,6 @@ export default function DossierPage() {
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </p>
 
-
         <img
           src="/assets/st69_patch.png"
           alt="SEAL Team 69 – ST69 Skull Patch"
@@ -293,5 +299,6 @@ export default function DossierPage() {
       </div>
 
     </main>
+
   );
 }

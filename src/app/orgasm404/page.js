@@ -51,7 +51,7 @@ export default function Orgasm404() {
         <OrgasmButton />
       </div>
 
-      <div className="mt-5">
+      <div className="mt-3">
         <DisobedienceCounter />
       </div>
     </main>

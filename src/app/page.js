@@ -11,7 +11,7 @@ export default function Home() {
 
         {/* Visually-Hidden H1 for SEO/Google Explainer */}
         <h1 className="sr-only">
-          CLASSIFIED ACCESS NODE. Deployed by SEAL Team 69. Official Launch Node of Earth&apos;s First Christed Infrastructure Mission. New Eden Begins Here.
+          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth&apos;s First Christed Infrastructure Mission.
         </h1>
         <div className="sr-only">
           <p>
