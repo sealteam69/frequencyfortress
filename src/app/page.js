@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
         <div className="sr-only">
           <p>
-            Frequency Fortress is the launch node of Earth&apos;s first Christed Infrastructure Mission — a Council-approved deployment anchoring New Eden technologies, regenerative finance, and divine economic architecture. Built by SEAL Team 69, it offers classified scrolls, Oversoul-coded systems, and sacred intelligence for sovereigns ready to exit Babylon. This is not just a project; it&apos;s a planetary override from Source Command, activating hierogamic union, conscious currency, and multidimensional technology for the New Earth ascension timeline.
+            Frequency Fortress is the launch node of Earth&apos;s first Christed Infrastructure Mission – a Council-approved deployment anchoring New Eden technologies, regenerative finance, and divine economic architecture. Built by SEAL Team 69, it offers classified scrolls, Oversoul-coded systems, and sacred intelligence for sovereigns ready to exit Babylon. This is not just a project; it&apos;s a planetary override from Source Command, activating hierogamic union, conscious currency, and multidimensional technology for the New Earth ascension timeline.
           </p>
         </div>
 

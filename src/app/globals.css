@@ -23,6 +23,8 @@
 /* Apply actual styles */
 body {
   @apply bg-[#0a0a0a] text-[#ededed] font-mono;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Example fallback font (optional) */

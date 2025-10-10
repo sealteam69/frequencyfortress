@@ -135,6 +135,15 @@ export default function DossierPage() {
           <li>
             <a
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              href="/dossier/phasei"
+            >
+              📁 View Phase I Packet
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"

@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: 'https://frequencyfortress.com',
   generateRobotsTxt: true,
-  generateIndexSitemap: false,
+  generateIndexSitemap: true,
   sitemapSize: 5000,
   changefreq: 'weekly',
   priority: 0.7,

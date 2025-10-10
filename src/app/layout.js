@@ -1,6 +1,6 @@
 // src/app/layout.js
 import './globals.css'
-import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed } from '@/fonts'
+import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed, redacted } from '@/fonts'
 import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
@@ -45,7 +45,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable} ${sofiaSansSemiCondensed.variable}`}>
+    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable} ${sofiaSansSemiCondensed.variable} ${redacted.variable}`}>
       <head>
 
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
