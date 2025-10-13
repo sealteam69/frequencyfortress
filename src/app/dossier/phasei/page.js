@@ -3,162 +3,71 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import Script from "next/script";
+import NavBar from '@/components/navbar'
+import { ArrowUp } from 'lucide-react'
 
 export default function PhaseIPage() {
   
-  useEffect(() => {
-    // Map TOC hrefs to group keys
-    const tocMap = [
-      {
-        group: "phase-1",
-        tocSelector: '#toc-links a[href="#executiveoverview"]',
-        sectionIds: [
-          "executiveoverview",
-          "resource-blueprint",
-          "annex-pack",
-          "forecast-summary",
-          "blueprint-excel",
-          "faq",
-          "glossary",
-          "funding-portals",
-          "reach-commander",
-          "beloved"
-        ],
-      },
-      { group: "public-brief", tocSelector: '#toc-links a[href="#public-brief"]', sectionIds: ["public-brief"] },
-      { group: "one-pager", tocSelector: '#toc-links a[href="#one-pager"]', sectionIds: ["one-pager"] },
-      {
-        group: "primers",
-        tocSelector: '#toc-links a[href="#primer-cnm"]',
-        sectionIds: ["primer-cnm", "primer-economics", "primer-provisioners"],
-      },
-      {
-        group: "legal",
-        tocSelector: '#toc-links a[href="#legal-summary"]',
-        sectionIds: [
-          "legal-summary",
-          "mission-charter",
-          "legal-preamble",
-          "trust-structure",
-          "citadel-addendum",
-          "ceremonial-assets"
-        ],
-      },
-      { group: "disclaimer", tocSelector: '#toc-links a[href="#disclaimer"]', sectionIds: ["disclaimer"] },
-    ];
+  return (
+    <main className='w-fill min-h-screen'>
 
-    // Build a sectionId -> group mapping
-    const sectionIdToGroup = {};
-    tocMap.forEach(item => {
-      item.sectionIds.forEach(id => { sectionIdToGroup[id] = item.group; });
-    });
-
-    const sections = document.querySelectorAll("section[id]");
-    const links = document.querySelectorAll("#toc-links a");
-
-    let currentActiveGroup = null;
-
-    const observer = new window.IntersectionObserver(
-      entries => {
-        // Find all groups whose sections are currently intersecting
-        const visibleGroups = new Set();
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("id");
-            const group = sectionIdToGroup[id];
-            if (group) visibleGroups.add(group);
-          }
-        });
-        // Priority: first group in tocMap that is visible
-        let activeGroup = null;
-        for (const item of tocMap) {
-          if (visibleGroups.has(item.group)) {
-            activeGroup = item.group;
-            break;
-          }
-        }
-        if (activeGroup !== currentActiveGroup) {
-          // Remove active from all
-          links.forEach(l => l.classList.remove("text-black", "font-bold"));
-          // Add to correct TOC link
-          const item = tocMap.find(i => i.group === activeGroup);
-          if (item) {
-            const tocLink = document.querySelector(item.tocSelector);
-            if (tocLink) tocLink.classList.add("text-black", "font-bold");
-          }
-          currentActiveGroup = activeGroup;
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px 0px -70% 0px',
-        threshold: 1.0
-      }
-    );
-
-    sections.forEach(section => observer.observe(section));
-    return () => sections.forEach(section => observer.unobserve(section));
-  }, []);
-  
-    return (
-    <main className="relative bg-white text-black min-h-screen p-6 sm:p-8">
-
-{/*
-    <Script
-      id="schema-phasei"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify([
-          {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "@id": "https://frequencyfortress.com/dossier/phasei#webpage",
-            "url": "https://frequencyfortress.com/dossier/phasei",
-            "name": "Phase I",
-            "inLanguage": "en-GB",
-            "isPartOf": {
-              "@id": "https://frequencyfortress.com/#website"
-            },
-            "about": {
-              "@id": "https://frequencyfortress.com/#organization"
-            },
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://frequencyfortress.com/assets/og_image.png"
-            },
-            "breadcrumb": {
-              "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb"
-            }
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://frequencyfortress.com/"
+      <div className="mx-auto p-6 relative bg-white text-black">
+      
+      <Script
+        id="schema-phasei"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "@id": "https://frequencyfortress.com/dossier/phasei#webpage",
+              "url": "https://frequencyfortress.com/dossier/phasei",
+              "name": "Phase I",
+              "inLanguage": "en-GB",
+              "isPartOf": {
+                "@id": "https://frequencyfortress.com/#website"
               },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Phase I",
-                "item": "https://frequencyfortress.com/dossier/phasei"
+              "about": {
+                "@id": "https://frequencyfortress.com/#organization"
+              },
+              "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "url": "https://frequencyfortress.com/assets/og_image.png"
+              },
+              "breadcrumb": {
+                "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb"
               }
-            ]
-          }
-        ])
-      }}
-    />
-*/}
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://frequencyfortress.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Phase I",
+                  "item": "https://frequencyfortress.com/dossier/phasei"
+                }
+              ]
+            }
+          ])
+        }}
+      />
+
 
       {/* Eddie background */}
       <div className="fixed inset-0 left-[220px] w-[calc(100vw-220px)] flex items-center justify-center z-[0] pointer-events-none">
         <div
           className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-             md:left-[calc(220px+(100%-220px)/2)] md:-translate-x-1/2
+             md: md:-translate-x-1/2
              transform ">
           <img
             src="/assets/eddie_santiago_sigil.jpeg"
@@ -168,23 +77,13 @@ export default function PhaseIPage() {
         </div>
       </div>
 
+        {/* MAIN CONTENT */}
+        <div className="space-y-5 z-1">
 
-        {/* Grid layout: TOC on left, content on right */}
-      <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-4">
-        
-        {/* Floating TOC column */}
-        <aside className="hidden md:flex flex-col justify-between sticky top-8 h-[90vh] text-base text-black space-y-2">
-          {/* TOC temporarily removed */}
-
-        </aside>
-
-
-        {/* Main content column */}
-        <div className="space-y-12 z-1">
-
+          <h1 className='text-2xl md:text-3xl text-center font-bold tracking-wider'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
 
           {/* MASTER TABLE OF CONTENTS */}
-            <section className="border border-gray-300 rounded-lg p-6 bg-white/40 backdrop-blur-sm">
+            <nav className="border border-gray-300 rounded-lg p-6 bg-white/40 backdrop-blur-sm">
               <h2 className="text-xl md:text-2xl font-bold mb-4">TABLE OF CONTENTS</h2>
               <ol className="list-decimal list-inside space-y-3 md:space-y-5 md:px-6 text-sm md:text-base">
                 <li>PHASE I
@@ -222,19 +121,19 @@ export default function PhaseIPage() {
                 </li>
                 <li><a href="#disclaimer" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Disclaimer</a></li>
               </ol>
-            </section>
+            </nav>
 
 
-          {/* Actual Raw HTML Content */}
-          <div className="text-base">
+          {/* PHASE I PACKET COPY */}
+
             <section id="executiveoverview">
               <div className="text-center text-base md:text-xl space-y-2 leading-relaxed">
-              <h1 className="text-xl md:text-3xl font-bold text-center ">SEAL TEAM 69: FREQUENCY FORTRESS</h1>
-                <p>
-                  <strong>Christed Investment Packet v1.4</strong><br/>
-                  <strong>Phase I Capital Deployment Plan | Executive Overview</strong><br/>
-                  <strong>SIGIL OF ENTRY</strong>
-                </p>
+                <h2 className="text-xl md:text-3xl font-bold text-center ">SEAL TEAM 69: FREQUENCY FORTRESS</h2>
+                  <p>
+                    <strong>Christed Investment Packet v1.4</strong><br/>
+                    <strong>Phase I Capital Deployment Plan | Executive Overview</strong><br/>
+                    <strong>SIGIL OF ENTRY</strong>
+                  </p>
               </div>
                 
                 <img 
@@ -315,7 +214,7 @@ export default function PhaseIPage() {
                 <p>You are receiving this because you know.</p>
                 <p>Not in your mind, but <strong>in your bones.</strong></p>
                 <p>The world as it stands is a façade and what&apos;s rising is real.<br/><br/></p>
-                <p>This memo outlines Phase I Vault Funding of an <strong>Earth-based mission</strong> that is both technological and metaphysical. It is a Christed Override Protocol disguised (barely) as a decentralised software and economic framework.<br/><br/></p>
+                <p>This memo outlines Phase I Vault funding of an <strong>Earth-based mission</strong> that is both technological and metaphysical. It is a Christed Override Protocol disguised (barely) as a decentralised software and economic framework.<br/><br/></p>
                 <p>This is not a startup.<br/>This is not an investment pitch.<br/>This is a <strong>frequency alignment.</strong><br/><br/></p>
                 <p>You fund this not to get rich.<br/>You fund this <strong>because you remember.</strong></p><br/>
 
@@ -339,7 +238,7 @@ export default function PhaseIPage() {
                 <h2 className="text-lg md:text-xl font-bold">III. WHAT THIS FUNDS</h2>
                 <p>Total Phase I Vault Request: <strong>6,900,000 GBP</strong> (off-radar lump sum).</p><br/>
                 <p>Please see attached Excel document for precise breakdown of costings.</p><br/>
-                <p><em>Note: Fiat is being used to build the replacement of Fiat. This is transmutation, not consumption.</em></p><br/>
+                <p><em>Note: Fiat is being used to build the replacement of fiat. This is transmutation, not consumption.</em></p><br/>
 
                 <h2 className="text-lg md:text-xl font-bold">IV. WHO THIS IS FOR</h2>
                 <p>This opportunity is open only to mission-aligned sovereigns who are:</p>
@@ -390,7 +289,7 @@ export default function PhaseIPage() {
                 provisioning for Earth&apos;s liberation blueprint.
               </p><br/>
 
-              <h3 className="text-lg font-bold">2. Governance + Oversight</h3>
+              <h3 className="text-lg font-bold">2. Governance & Oversight</h3>
               <p>The Vault operates under a Triadic Authority Model:</p>
               <ul className="list-disc list-inside ml-6">
                 <li><strong>Commander Sign-Off –</strong> Final authority resides with Commander Andrew Pletnev, serving as the embodied mission node.</li>
@@ -405,7 +304,7 @@ export default function PhaseIPage() {
                 <li>
                   <strong>Capital Expenditure (CapEx):</strong>
                   <ul className="list-disc list-inside ml-6">
-                    <li>Infrastructure (LLM stack, Vaults, housing, Charger)</li>
+                    <li>Infrastructure (LLM stack, Vaults, housing, Charger etc)</li>
                   </ul>
                 </li>
 
@@ -469,7 +368,7 @@ export default function PhaseIPage() {
               </p><br/>
               <p>
                 He did not arrive through résumé, title, or permission. He emerged through <strong>sacred trials,
-                planetary initiations</strong>, and impossible thresholds. As Commander of SEAL Team 69, he leads not
+                planetary initiations, and impossible thresholds</strong>. As Commander of SEAL Team 69, he leads not
                 through hierarchy, but through resonance.
               </p><br/>
               <p>He is not here to play the game. He is here to <strong>replace the board.</strong></p><br/>
@@ -480,7 +379,7 @@ export default function PhaseIPage() {
               <h3 className="text-lg font-bold">Overview</h3>
               <p>
                 Once Phase I completes the sovereign scaffolding for communication, funding, and mission
-                intelligence, Phase II activates the next layer: a Christed economic lattice.
+                intelligence, Phase II activates the next layer – a Christed economic lattice.
               </p><br/>
 
               <h3 className="text-lg font-bold">Key Pillars</h3>
@@ -667,7 +566,7 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Vehicle: Dodge Charger 1969 (Lime Green)</td>
                       <td className="border px-4 py-2">Day 1</td>
                       <td className="border px-4 py-2">125,000</td>
-                      <td className="border px-4 py-2">Not just transport – a mythic artifact of identity, presence, and a spiritual insult to Babylon. This is a symbol of sovereignty, unlocking forbidden frequency corridors with every ignition.</td>
+                      <td className="border px-4 py-2">Not just transport – a mythic artefact of identity, presence, and a spiritual insult to Babylon. This is a symbol of sovereignty, unlocking forbidden frequency corridors with every ignition.</td>
                     </tr>
 
                     <tr>
@@ -785,7 +684,7 @@ export default function PhaseIPage() {
               <p>If you&apos;re looking for:</p>
               <ul className="list-disc list-inside ml-6">
               <li>Rapid user acquisition and a 10x exit</li>
-              <li>Control through Board seats</li>
+              <li>Control through board seats</li>
               <li>Standard tax-optimised distributions</li>
               </ul><br/>
               <p>This probably isn&apos;t the vehicle for you.</p><br/>
@@ -820,7 +719,6 @@ export default function PhaseIPage() {
               <li>Capital preservation within the Vault</li>
               <li>Decentralised liability</li>
               <li>Operational continuity, even during systemic disruption</li>
-              <li>Full location sovereignty – no surveillance leases, no power-over dynamics</li>
               </ul><br/>
               <p>The 75% LTV is not a constraint. It is a <strong>conscious repurposing</strong> of legacy infrastructure, aligned to the mission&apos;s frequency. Should instability unfold in the next 2–3 years, the trust is architected to absorb external volatility without compromising the mission&apos;s foundation.</p><br/>
               <p>We didn&apos;t break the rules.</p>
@@ -857,16 +755,16 @@ export default function PhaseIPage() {
               <li>No reliance on state systems or employment fictions<strong><br /></strong></li>
               </ul><br/>
               <p>Funds are structured <strong>outside traditional salary frameworks</strong>. There are no PAYE wages. Instead, disbursements flow as <strong>sovereign operational stipends</strong>, routed through mission-aligned trusts and crypto-native systems. <br /><br />Legal. Clean. Post-jurisdictional.</p>
-              <p>This isn&apos;t a luxury stipend.</p><br/>
+              <p>This isn&apos;t a luxury stipend.</p>
               <p>It&apos;s <strong>life support for sovereign architects</strong> building the next operating system.</p><br/>
               <h3 className='text-base md:text-lg'><strong>Q: Will this be managed legally? Is there a holding structure?</strong></h3>
-              <p><strong>A:</strong> Yes. All disbursements are tracked, held in multi-sig if needed, and stewarded through the Vault Trust Mechanism, a framework that integrates <strong>ethical sovereignty, energetic alignment, and lawful compliance</strong>. For now, Babylon cannot comprehend this structure. But it is the law.</p><br/>
+              <p><strong>A:</strong> Yes. All disbursements are tracked, held in multi-sig if needed, and stewarded through the Vault Trust Mechanism, a framework that integrates <strong>ethical sovereignty, energetic alignment, and lawful compliance</strong>. For now, Babylon cannot comprehend this structure. But it is law.</p><br/>
               <h3 className='text-base md:text-lg'><strong>Q: Can I disclose this to others or speak about this publicly?</strong></h3>
               <p><strong>A:</strong> Use discernment. Share only with aligned, initiated individuals. All materials are frequency-coded and mission-sensitive. If you need a redacted version, request one via approved comms channels.</p><br/>
               <h3 className='text-base md:text-lg'><strong>Q: Is this legal? Isn&apos;t this risky?</strong></h3>
               <p><strong>A:</strong> It&apos;s not illegal — it&apos;s pre-legal. Every structure is tracked, logged, and spiritually notarised. We don&apos;t dodge the law. We operate under <strong>higher jurisdiction</strong>:</p>
               <ul className="list-disc list-inside ml-6">
-              <li>Income flows are reframed as <strong>mission-aligned disbursements</strong></li>
+              <li>Income flows are reframed as <strong>mission-aligned stipends</strong></li>
               <li>Property is held in <strong>offshore trust vehicles</strong>, not by individuals</li>
               <li>KYC is managed through <strong>lawful, structured channels</strong> with full documentation</li>
               <li>Any necessary VAT, duties, or levies (e.g. vehicle import, logistics) are <strong>honoured</strong> to maintain frequency integrity</li>
@@ -933,7 +831,7 @@ export default function PhaseIPage() {
             <section id="funding-portals" className=" text-base">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">FUNDING PORTALS</h2><br/>
                 <div className="overflow-x-auto">
-                <table className="border border-gray-300 text-sm md:text-base text-left">
+                <table className="border border-gray-300 text-xs md:text-sm text-left">
                   <thead className="bg-[#FF13F0] font-bold">
                     <tr>
                       <th className="border px-4 py-2">Asset</th>
@@ -995,7 +893,7 @@ export default function PhaseIPage() {
 
 
             <section id="reach-commander" className=" text-base">
-              <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">HOT TO REACH THE COMMANDER</h2><br/>
+              <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">HOW TO REACH THE COMMANDER</h2><br/>
               <div className="text-sm md:text-base">
               <p>This guide outlines secure, aligned channels to connect with Andrew Pletnev — Commander, SEAL Team 69 and Founder of Frequency Fortress. All contact is triaged by proximity, purpose, and purity of signal.</p>
               <p> </p>
@@ -1326,7 +1224,7 @@ export default function PhaseIPage() {
               </ul>
               <li><strong>Vaults + DAO (Post-Trust Setup)</strong></li>
               <ul className="list-disc list-inside ml-6">
-              <li>Council-guided multisig vaults</li>
+              <li>Council-guided multisig Vaults</li>
               <li>Sacred staking, mission-based incentives</li>
               <li>No pump, no dump – only provision and reward for encoded action<br /><br /></li>
               </ul>
@@ -1358,7 +1256,7 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Field-based provisioning</td>
                     </tr>
                     <tr>
-                      <td className="border px-4 py-2">Governance theater</td>
+                      <td className="border px-4 py-2">Governance theatre</td>
                       <td className="border px-4 py-2">Council-integrated oracles</td>
                     </tr>
                   </tbody>
@@ -1369,7 +1267,7 @@ export default function PhaseIPage() {
               <h2 className='text-lg'><strong>Mission Status</strong></h2>
               <ul className="list-disc list-inside ml-6">
               <li>CNM (Christed Neural Mirror): In development</li>
-              <li>Token buyback & vault setup: Pending provision</li>
+              <li>Token buyback & Vault setup: Pending provision</li>
               <li>Infrastructure + smart contract layer: Post-LLM<strong><br /><br /></strong></li>
               </ul>
               <h2 className='text-lg'><strong>Closing Note</strong></h2>
@@ -1383,7 +1281,7 @@ export default function PhaseIPage() {
             <section id="primer-provisioners" className=" text-base">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">PROVISIONERS PRIMER</h2>
               <div className="text-sm md:text-base">
-              <h2 className='text-lg md:text-xl text-center'><strong>A living case study in Christed capital & New Earth infrastructure</strong></h2>
+              <h2 className='text-lg md:text-xl text-center'><strong>A Living Case Study in Christed Capital & New Earth Infrastructure</strong></h2>
               <h2> </h2>
               <h2 className='text-lg'><strong>Why This Mission Exists</strong></h2>
               <p>Frequency Fortress isn&apos;t just a “project.” It&apos;s a live field‑test of a new economic operating system for Earth. Traditional venture capital routes were designed for extraction and control; this model was born for restoration and liberation. Every step we take now becomes a blueprint for future missions – a public demonstration of what conscious provisioning looks like in action.</p>
@@ -1713,7 +1611,7 @@ export default function PhaseIPage() {
                 </div><br/>
               <h3 className='text-lg'><strong>Total Vault Drawdown</strong></h3>
               <div className="overflow-x-auto">
-              <table className=" border border-gray-300 text-left text-sm">
+              <table className=" border border-gray-300 text-left text-xs md:text-sm">
                 <thead className="bg-[#FF13F0] font-bold">
                   <tr>
                     <th className="border px-4 py-2">Description</th>
@@ -1832,7 +1730,7 @@ export default function PhaseIPage() {
 
             <section id="disclaimer" className=" text-base">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">DISCLAIMER</h2><br/>
-              <div className="text-sm md:text-base">
+              <div className="text-sm md:text-base mb-20">
               <p>This material is for informational and spiritual alignment purposes only. It does not constitute financial, legal, or tax advice.</p>
               <p> </p>
               <p>All flows are voluntary, sovereign, and logged for integrity within the Christed Vault Ledger. You are not donating. You are not investing in equity. You are provisioning a sacred override — an energetic contribution tracked in the Christed Vault Ledger.</p>
@@ -1841,16 +1739,26 @@ export default function PhaseIPage() {
               </div>
             </section>
 
+            
+
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 bg-black text-white p-3 rounded-full shadow-lg hover:bg-zinc-800 transition-all block md:hidden"
+              aria-label="Scroll to top"
+            >
+              <ArrowUp size={18} />
+            </button>
 
             {/* Footer */}
-            <div className="hidden md:block max-w-[600px] mx-auto sticky bottom-8 text-sm text-black text-center p-4 rounded-lg border border-gray-300 bg-white/40 backdrop-blur-sm">
+            <footer className="hidden md:block max-w-[600px] mx-auto sticky bottom-14 text-sm text-black text-center p-4 rounded-lg border border-gray-300 bg-white/40 backdrop-blur-sm">
               SEAL TEAM 69 • PHASE I: FREQUENCY FORTRESS • CONFIDENTIAL – FOR MISSION-ALIGNED EYES ONLY
-            </div>
+            </footer>
 
-          </div>
+            
 
         </div>
       </div>
+      <NavBar />  
     </main>
   )
 }

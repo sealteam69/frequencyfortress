@@ -8,6 +8,8 @@ import SexualSovereignOverride from "@/components/sexualsovereignoverride";
 import SocialLinksNeon from "@/components/socials";
 import MegavoltBlock from '@/components/megavolt'
 import Script from "next/script";
+import NavBar from '@/components/navbar'
+import ProvisionButton from '@/components/provisionbutton'
 
 export default function DossierPage() {
   const audioRef = useRef(null);
@@ -23,8 +25,9 @@ export default function DossierPage() {
 
   return (
     
-    <main
-      className="
+    <main>
+
+    <div       className="
         min-h-screen
         overflow-x-hidden
         bg-white 
@@ -36,7 +39,6 @@ export default function DossierPage() {
         md:px-12 md:py-16
       "
     >
-
       <Script id="schema-dossier" type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
@@ -127,6 +129,7 @@ export default function DossierPage() {
           text-[13px] sm:text-[18px] md:text-[20px] 
           leading-snug sm:leading-normal
           max-w-full sm:max-w-[600px] md:max-w-[720px]
+          tracking-normal md:tracking-wider
         ">
           <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-2">
             💼 Mission Dossier:
@@ -152,41 +155,8 @@ export default function DossierPage() {
             </a>
           </li>
 
-          <li>
-            <a
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="https://github.com/SEALTeam69/frequencyfortress/tree/main/public/pdfs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📁 View Phase I Packet on GitHub
-            </a>
-          </li>
-
           <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-4">
             📎 Additional Files:
-          </li>
-
-          <li>
-            <a
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/08_funding_portals.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🤑 Fund the Commander
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/09_how_to_reach_the_commander.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📡 How to Reach the Commander
-            </a>
           </li>
 
           <li>
@@ -214,6 +184,17 @@ export default function DossierPage() {
           <li>
             <a
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              href="/pdfs/10_temple_key_the_beloved_acknowledgement.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              👑 Temple Key: The Beloved Acknowledgement
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/pdfs/07_christed_glossary.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -224,6 +205,11 @@ export default function DossierPage() {
 
         </ul>
       </div>
+
+        <div className='p-10'> 
+          <ProvisionButton />
+        </div>
+       
 
         <div className="flex flex-col justify-center items-center gap-6 px-4 sm:px-6 md:px-8 py-8">
           <img
@@ -271,7 +257,7 @@ export default function DossierPage() {
       <div
         className="
           relative group
-          w-full max-w-[720px] mx-auto my-4 sm:my-6 px-4 py-4 sm:px-6 sm:py-6
+          w-full max-w-[720px] mx-auto my-8 sm:my-6 px-4 py-4 sm:px-6 sm:py-6
           text-center font-mono text-[#4A4545]
           select-none
         "
@@ -306,6 +292,9 @@ export default function DossierPage() {
           "
         />
       </div>
+      </div>
+
+      <NavBar />
 
     </main>
 

@@ -2,6 +2,7 @@
 import './globals.css'
 import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed, redacted } from '@/fonts'
 import { Analytics } from "@vercel/analytics/next"
+import ScrollWrapper from '@/components/scrollwrapper'
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
@@ -167,7 +168,7 @@ export default function RootLayout({ children }) {
 
       </head>
       
-      <body className="bg-[#0D031E] text-white">
+      <body>
         {children}
         <Analytics />
       </body>
