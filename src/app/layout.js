@@ -1,7 +1,7 @@
-// src/app/layout.js
 import './globals.css'
 import { ibmPlexMono, inter, pirata, pressstart2p, sofiaSansSemiCondensed, redacted, barlowcondensed } from '@/fonts'
 import { Analytics } from "@vercel/analytics/next"
+import Script from 'next/script';
 
 export const metadata = {
   title: 'FREQUENCY FORTRESS',
@@ -51,13 +51,12 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <script
+        <Script
           type="application/ld+json"
+          id="frequencyfortress-schema-home"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify
             ([

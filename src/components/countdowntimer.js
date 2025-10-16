@@ -10,11 +10,11 @@ export default function VaultCountdownTimer() {
   })
 
   useEffect(() => {
-    const launchDate = new Date('2025-07-07T06:00:00Z') // 07:00 UK time
+    const launchDate = new Date('2025-07-07T06:00:00Z') // 07:00 BST
 
     const update = () => {
       const now = new Date()
-      const diff = Math.floor((now - launchDate) / 1000)
+      const diff = Math.floor((now.getTime() - launchDate.getTime()) / 1000)
 
       const days = Math.floor(diff / (60 * 60 * 24))
       const hours = Math.floor((diff % (60 * 60 * 24)) / 3600)
@@ -30,11 +30,8 @@ export default function VaultCountdownTimer() {
   }, [])
 
   return (
-    <span className="countdown font-mono text-2xl md:text-3xl">
-      <span style={{ ['--value']: time.days }} aria-label={`${time.days} days`} />d
-      <span style={{ ['--value']: time.hours }} aria-label={`${time.hours} hours`} />h
-      <span style={{ ['--value']: time.minutes }} aria-label={`${time.minutes} minutes`} />m
-      <span style={{ ['--value']: time.seconds }} aria-label={`${time.seconds} seconds`} />s
+    <span className="countdown text-xl md:text-3xl">
+      {time.days}d {time.hours}h {time.minutes}m {time.seconds}s
     </span>
   )
 }

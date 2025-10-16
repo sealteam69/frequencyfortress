@@ -1,20 +1,23 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function NavBar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#03031E]/5 backdrop-blur-md font-mono text-[12px] sm:text-[15px] tracking-wider">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#03031E]/5 backdrop-blur-md text-[12px] sm:text-[15px] tracking-wider">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
         
         {/* Eddie Sigil */}
         <Link href="/" className="flex items-center gap-2">
-          <img
+          <Image
             src="/assets/eddie_santiago_sigil.jpeg"
             alt="Eddie Sigil"
             className="w-9 sm:w-14 h-9 sm:h-15 object-contain"
+            width={300}
+            height={300}
           />
           <span className="text-black uppercase hidden sm:block">
             FREQUENCY FORTRESS

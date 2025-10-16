@@ -1,74 +1,26 @@
 'use client';
-
-import { useEffect } from 'react';
-import Script from "next/script";
+import Script from 'next/script';
 import NavBar from '@/components/navbar'
+import Link from "next/link";
+import Image from "next/image";
 
 export default function PhaseIPage() {
   
   return (
     <main className='w-fill min-h-screen'>
 
-      <div className="mx-auto p-3 relative bg-white text-black">
-      
-      <Script
-        id="schema-phasei"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "CollectionPage",
-              "@id": "https://frequencyfortress.com/dossier/phasei#webpage",
-              "url": "https://frequencyfortress.com/dossier/phasei",
-              "name": "Phase I",
-              "inLanguage": "en-GB",
-              "isPartOf": {
-                "@id": "https://frequencyfortress.com/#website"
-              },
-              "about": {
-                "@id": "https://frequencyfortress.com/#organization"
-              },
-              "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "https://frequencyfortress.com/assets/og_image.png"
-              },
-              "breadcrumb": {
-                "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb"
-              }
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://frequencyfortress.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Phase I",
-                  "item": "https://frequencyfortress.com/dossier/phasei"
-                }
-              ]
-            }
-          ])
-        }}
-      />
-
+      <div className="mx-auto p-3 md:p-5 relative bg-white text-black">
 
       {/* Eddie background */}
       <div className="fixed inset-0 flex items-center justify-center z-0 pointer-events-none">
         <div
           className="">
-          <img
+          <Image
             src="/assets/eddie_santiago_sigil.jpeg"
             alt="Eddie Santiago Sigil"
             className="h-auto w-[75vw] max-w-none md:w-[50vw] md:max-w-225 opacity-[0.25]"
+            width={300}
+            height={300}
           />
         </div>
       </div>
@@ -76,7 +28,7 @@ export default function PhaseIPage() {
         {/* MAIN CONTENT */}
         <div className=" mx-auto relative z-2">
 
-          <h1 className='text-xl md:text-3xl mt-16 sm:mt-21 md:mt-22 text-center font-bold tracking-wider'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
+          <h1 className='text-xl md:text-3xl mt-16 sm:mt-20 text-center font-bold tracking-wider'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
 
           {/* MASTER TABLE OF CONTENTS */}
             <nav className="max-w-3xl mx-auto center border border-gray-300 p-3 bg-white/40 backdrop-blur-sm mt-5 mb-5">
@@ -132,9 +84,11 @@ export default function PhaseIPage() {
                   </p>
               </div>
                 
-                <img 
+                <Image 
                   src="/assets/eddie_santiago_sigil.jpeg" 
-                  alt="Eddie Santiago Sigil" 
+                  alt="Eddie Santiago Sigil"
+                  width={300}
+                  height={300} 
                   className="w-75 sm:w-100 h-auto mx-auto my-4 relative z-2"
                 />
 
@@ -247,7 +201,11 @@ export default function PhaseIPage() {
 
                 <h2 className="text-lg md:text-xl font-bold">V. HOW TO ENGAGE</h2>
                 <ol className="list-decimal list-inside ml-6">
-                  <li>DM <code>@Commander1ST69</code> (Telegram), or email <code>st69.ops@protonmail.com</code> with subject: <strong>“HORNY AND LETHAL”</strong>. Session ID available via the &apos;How to Reach the Commander&apos; doc.</li>
+                  <li>
+                    <Link href="/contact" className="underline hover:text-[#FF13F0]">
+                      Contact the Commander
+                    </Link>
+                  </li>
                   <li>Anonymous routing options available (crypto wallets, untraceable pathways)</li>
                   <li>You&apos;ll receive a private onboarding packet and trustless interface for value transfer</li>
                   <li>You&apos;ll be added to the Vault Steward Registry (off-chain for now, soul-encoded)</li>
@@ -906,9 +864,11 @@ export default function PhaseIPage() {
               href="https://getsession.org/">Download Session</a>
               <br/>
               <strong>Session ID:</strong>                
-              <img 
+              <Image 
                   src="/assets/session_id.jpg" 
-                  alt="Session ID" 
+                  alt="Session ID"
+                  width={300}
+                  height={300} 
                   className="w-50 sm:w-75 h-auto mx-auto my-4"
               />
               <p>No phone number or email required. Message delay possible due to onion routing. Ideal for high-frequency transmissions.</p>
@@ -1744,7 +1704,34 @@ export default function PhaseIPage() {
         
         </div>
       </div>
-      <NavBar />  
+      <NavBar />
+
+      <Script
+        type="application/ld+json"
+        id="frequencyfortress-schema-phase1"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "@id": "https://frequencyfortress.com/#phasei",
+            url: "https://frequencyfortress.com/phasei",
+            name: "Frequency Fortress Phase I Packet",
+            description:
+              "Christed Capital Deployment Plan and Vault Governance Blueprint.",
+            author: { "@id": "https://frequencyfortress.com/#organization" },
+            publisher: { "@id": "https://frequencyfortress.com/#organization" },
+            isPartOf: { "@id": "https://frequencyfortress.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com/" },
+                { "@type": "ListItem", position: 2, name: "Dossier", item: "https://frequencyfortress.com/dossier" },
+                { "@type": "ListItem", position: 3, name: "Phase I", item: "https://frequencyfortress.com/phasei" },
+              ],
+            },
+          }),
+        }}
+      />  
     </main>
   )
 }

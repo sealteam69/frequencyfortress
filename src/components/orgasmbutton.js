@@ -53,15 +53,12 @@ export default function OrgasmButton({ eddieAudioRef }) {
       style={{ fontFamily: 'ocr-a-std' }}
       className="
         inline-flex items-center justify-center select-none
-        font-bold text-white
+        font-bold text-black
         text-[16px] sm:text-[20px] md:text-[22px] lg:text-[24px]
         px-6 py-4 sm:px-8 sm:py-5
-        bg-[#FF0038] rounded-[28px] sm:rounded-[32px] lg:rounded-[36px] shadow-lg
+        bg-[#FF0038] rounded-[28px] sm:rounded-[32px] lg:rounded-[36px]
         transition-transform duration-200 ease-in-out
-        /* Desktop hover, mobile/keyboard press */
         md:hover:scale-125 active:scale-115
-        /* Focus ring for a11y */
-        focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#FF0038]/60 focus-visible:ring-offset-black
         whitespace-nowrap
         cursor-pointer
       "

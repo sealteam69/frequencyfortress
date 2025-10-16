@@ -1,23 +1,9 @@
-/* ===================== GOOGLE FONTS ===================== */
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-
-/* ===================== TAILWIND LAYERS ===================== */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* ===================== BASE COLOURS ===================== */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #000000;
 }
 
 /* ===================== GLOBAL BODY STYLES ===================== */
@@ -34,7 +20,7 @@ body {
 /* --- Example fallback font --- */
 @layer base {
   html {
-    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-family: 'IBM Plex Mono', ui-monospace;
   }
 }
 
@@ -315,7 +301,7 @@ body {
 }
 
 .sigil-wrapper:hover img {
-  opacity: 0.25;
+  opacity: 1;
 }
 
 /* == GLOWING TEXT PROMPT OVERLAY == */
@@ -325,12 +311,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 0 0 12px #ff00ff, 0 0 24px #ff00ff;
+  text-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff;
   pointer-events: none;
   transition: opacity 0.4s ease, transform 0.4s ease;
   user-select: none;
   z-index: 10;
-  font-family: 'UnifrakturMaguntia', 'cursive';
+  font-family: "Pirata One", system-ui;
   white-space: nowrap;
 }
 

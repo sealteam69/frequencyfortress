@@ -1,5 +1,18 @@
 import React from 'react'
 import { MagneticCipherButton } from '@/components/magneticcipherbutton'
+import Image from 'next/image'
+
+export const metadata = {
+  title: "FREQUENCY FORTRESS",
+  description:
+    "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth’s First Christed Infrastructure Mission.",
+  alternates: {
+    canonical: "https://frequencyfortress.com/",
+  },
+  openGraph: {
+    url: "https://frequencyfortress.com/",
+  },
+};
 
 export default function Home() {
   return (
@@ -11,7 +24,7 @@ export default function Home() {
 
         {/* Visually-Hidden H1 for SEO/Google Explainer */}
         <h1 className="sr-only">
-          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth&apos;s First Christed Infrastructure Mission.
+          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earths First Christed Infrastructure Mission.
         </h1>
         <div className="sr-only">
           <p>
@@ -22,7 +35,7 @@ export default function Home() {
         <div className="grid place-items-center text-center w-full max-w-7xl">
 
             {/* All Seeing Eye Above Title */}
-            <img
+            <Image
               src="/assets/all-seeing-eye.svg"
               alt="All-Seeing-Eye Emblem"
               loading="lazy"
@@ -30,6 +43,8 @@ export default function Home() {
               fetchPriority="low"
               style={{ width: 'clamp(180px, 25vw, 300px)' }}
               className="block leading-none animate-eye-glitch mb-5 md:mb-8"
+                width={300}
+                height={300}    
             />
 
           {/* Main Title - Desktop */}
