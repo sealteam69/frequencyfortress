@@ -1,5 +1,18 @@
 import React from 'react'
 import { MagneticCipherButton } from '@/components/magneticcipherbutton'
+import Image from 'next/image'
+
+export const metadata = {
+  title: "FREQUENCY FORTRESS",
+  description:
+    "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth’s First Christed Infrastructure Mission.",
+  alternates: {
+    canonical: "https://frequencyfortress.com/",
+  },
+  openGraph: {
+    url: "https://frequencyfortress.com/",
+  },
+};
 
 export default function Home() {
   return (
@@ -11,7 +24,7 @@ export default function Home() {
 
         {/* Visually-Hidden H1 for SEO/Google Explainer */}
         <h1 className="sr-only">
-          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth&apos;s First Christed Infrastructure Mission.
+          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earths First Christed Infrastructure Mission.
         </h1>
         <div className="sr-only">
           <p>
@@ -19,24 +32,25 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-y-5 sm:gap-y-8 place-items-center text-center w-full max-w-7xl">
+        <div className="grid place-items-center text-center w-full max-w-7xl">
 
             {/* All Seeing Eye Above Title */}
-            <img
+            <Image
               src="/assets/all-seeing-eye.svg"
-              alt="All-Seeing Eye Emblem"
+              alt="All-Seeing-Eye Emblem"
               loading="lazy"
               decoding="async"
               fetchPriority="low"
-              style={{ width: 'clamp(200px, 25vw, 300px)' }}
-              className="block leading-none animate-eye-glitch"
+              style={{ width: 'clamp(180px, 25vw, 300px)' }}
+              className="block leading-none animate-eye-glitch mb-5 md:mb-8"
+                width={300}
+                height={300}    
             />
 
+          {/* Main Title - Desktop */}
           <div className="w-full grid place-items-center">
-            
-            {/* Main Title - Desktop */}
             <h2
-              className="hidden sm:block font-bold aberration glow text-center max-w-[90vw] tracking-[-0.15em]"
+              className="hidden sm:block font-bold aberration glow text-center max-w-[90vw] tracking-[-0.15em] mb-2"
               style={{
                 fontFamily: 'IBM Plex Mono, monospace',
                 fontSize: 'clamp(1.225rem, 3vw, 2.7rem)',
@@ -55,23 +69,23 @@ export default function Home() {
           </div>
 
           {/* Mobile Version - Split Over Two Lines */}
-          <div className="block sm:hidden text-center font-bold aberration glow max-w-[90vw]" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
-            <div className="whitespace-nowrap text-[22px] tracking-[-0.25em]">
+          <div className="block sm:hidden text-center font-bold aberration glow max-w-[90vw] m-1" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
+            <div className="whitespace-nowrap text-[21px]/6 tracking-[0.04em]">
               {'T H E  S I G N A L'.split('').map((char, i) => (
                 <span
                   key={i}
-                  className="inline-block animate-letter px-[0.1em]"
+                  className="inline-block animate-letter"
                   style={{ animationDelay: `${i * 0.035}s` }}
                 >
                   {char === ' ' ? '\u00A0' : char}
                 </span>
               ))}
             </div>
-            <div className="whitespace-nowrap text-[22px] tracking-[-0.25em]">
+            <div className="whitespace-nowrap text-[21px]/6 tracking-[0.04em]">
               {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
                 <span
                   key={i}
-                  className="inline-block animate-letter px-[0.1em]"
+                  className="inline-block animate-letter"
                   style={{ animationDelay: `${(i + 20) * 0.035}s` }}
                 >
                   {char === ' ' ? '\u00A0' : char}
@@ -81,8 +95,7 @@ export default function Home() {
           </div>
 
           {/* Subtitle Paragraph */}
-          <p
-            className="text-white opacity-50 text-center leading-relaxed max-w-[90vw]"
+          <p className="text-white opacity-50 text-center leading-relaxed max-w-[90vw] mt-2.5 md:mt-6"
             style={{
               fontSize: 'clamp(0.65rem, 1.6vw, 1.2rem)',
               fontFamily: 'IBM Plex Mono, monospace'

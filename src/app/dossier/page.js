@@ -8,8 +8,9 @@ import SexualSovereignOverride from "@/components/sexualsovereignoverride";
 import SocialLinksNeon from "@/components/socials";
 import MegavoltBlock from '@/components/megavolt'
 import Script from "next/script";
-import NavBar from '@/components/navbar'
-import ProvisionButton from '@/components/provisionbutton'
+import NavBar from '@/components/navbar';
+import FundingButton from '@/components/fundingbutton'
+import Image from 'next/image';
 
 export default function DossierPage() {
   const audioRef = useRef(null);
@@ -24,61 +25,31 @@ export default function DossierPage() {
   }
 
   return (
-    
-    <main>
+    <div className="flex flex-col min-h-screen">
+    <main className='relative'>
 
-    <div       className="
+      {/* Eddie background */}
+      <div className="fixed inset-0 flex items-center justify-center pointer-events-none">
+          <Image
+            src="/assets/eddie_santiago_sigil.jpeg"
+            alt="Eddie Santiago Sigil"
+            className="h-auto w-[75vw] md:w-[50vw] md:max-w-225 opacity-[0.25]"
+              width={300}
+              height={300}
+          />
+      </div>
+
+    <div className="
         min-h-screen
         overflow-x-hidden
         bg-white 
-        text-[#4A4545] 
-        tracking-wide 
-        font-mono
+        text-[#4A4545]  
         px-4 py-6 
-        sm:px-6 sm:py-8 
-        md:px-12 md:py-16
+        sm:px-6 
+        md:px-12
+ 
       "
     >
-      <Script id="schema-dossier" type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "CollectionPage",               // subtype of WebPage fits a list of docs
-              "@id": "https://frequencyfortress.com/dossier/#webpage",
-              "url": "https://frequencyfortress.com/dossier",
-              "name": "Dossier",
-              "inLanguage": "en-GB",
-              "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
-              "about": { "@id": "https://frequencyfortress.com/#organization" },
-              "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "https://frequencyfortress.com/assets/og_image.png"
-              },
-              "breadcrumb": { "@id": "https://frequencyfortress.com/dossier/#breadcrumb" }
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "@id": "https://frequencyfortress.com/dossier/#breadcrumb",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://frequencyfortress.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Dossier",
-                  "item": "https://frequencyfortress.com/dossier"
-                }
-              ]
-            }
-          ])
-        }}
-      />
 
       <audio
         id="eddie-audio"
@@ -96,13 +67,13 @@ export default function DossierPage() {
           pb-6 sm:pb-8 md:pb-10
           space-y-2
           px-4 sm:px-6 md:px-8
-          font-mono
+          relative z-10
         "
       >
         <h1
           className="
-            text-[20px] sm:text-[26px] md:text-[30px] lg:text-[36px]
-            tracking-wider 
+            text-[20px] sm:text-[30px] md:text-[36px] 
+            tracking-wider
             text-[#4A4545]
           "
         >
@@ -111,27 +82,26 @@ export default function DossierPage() {
 
         <h2
           className="
-            text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px]
+            text-[14px] sm:text-[18px] md:text-[20px] 
             tracking-wider 
             text-[#4A4545]
           "
         >
-          The Frequency Fortress Phase I Dossier is now unlocked below.
+          The Frequency Fortress Mission Dossier is now unlocked below.
         </h2>
       </div>
 
-      <div className="flex justify-center items-center px-4 sm:px-6 md:px-8">
+      <div className="flex justify-center items-center px-2 sm:px-6 md:px-8 relative z-10">
         <ul className="
           text-left 
-          font-mono 
-          space-y-2 sm:space-y-2 md:space-y-2
+          space-y-1 sm:space-y-2 
           mb-5 
-          text-[13px] sm:text-[18px] md:text-[20px] 
-          leading-snug sm:leading-normal
+          text-[14px] sm:text-[18px] md:text-[20px] 
           max-w-full sm:max-w-[600px] md:max-w-[720px]
-          tracking-normal md:tracking-wider
+          tracking-wider
+          relative z-10
         ">
-          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-2">
+          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px]">
             💼 Mission Dossier:
           </li>
 
@@ -206,24 +176,29 @@ export default function DossierPage() {
         </ul>
       </div>
 
-        <div className='p-10'> 
-          <ProvisionButton />
+        <div className='p-5 sm:p-10'> 
+          <FundingButton />
         </div>
        
 
-        <div className="flex flex-col justify-center items-center gap-6 px-4 sm:px-6 md:px-8 py-8">
-          <img
-            src="/assets/freetour_touring_ski_boots_green.jpeg"
+        <div className="relative z-10 flex flex-col justify-center items-center gap-6 px-4 sm:px-6 md:px-8 py-8">
+          <Image
+            src="/assets/freetour_touring_ski_boots_green.png"
             alt="Green Ski Boot"
+            width={300}
+            height={300}
             className="
               object-contain hover:stomp 
               w-50 sm:w-64 md:w-72 lg:w-80 
               transition-transform duration-300
+
             "
           />
-          <img
-            src="/assets/red_latex_thong.jpg"
+          <Image
+            src="/assets/red_latex_thong.png"
             alt="Red Latex Thong"
+            width={300}
+            height={300}
             className="
               object-contain hover:twerk 
               w-60 sm:w-72 md:w-80 lg:w-[420px] 
@@ -232,13 +207,13 @@ export default function DossierPage() {
           />
         </div>
 
-        <div className="flex justify-center mt-2 mb-4 sm:mt-1 sm:mb-1">
+        <div className="flex justify-center m-2 relative z-10">
 
           <OrgasmButton eddieAudioRef={audioRef} />
 
         </div>
 
-        <div className=" flex flex-col items-center justify-center space-y-1">
+        <div className=" flex flex-col items-center justify-center relative z-10">
 
           {/* Social Links */}
           <SocialLinksNeon />
@@ -254,49 +229,55 @@ export default function DossierPage() {
 
         </div>
 
-      <div
-        className="
-          relative group
-          w-full max-w-[720px] mx-auto my-8 sm:my-6 px-4 py-4 sm:px-6 sm:py-6
-          text-center font-mono text-[#4A4545]
-          select-none
-        "
-        role="button" tabIndex={0} aria-label="Footer seal reveal"
-      >
-
-        <p
-          className="
-            relative z-10
-            text-[10px] sm:text-[14px] md:text-[16px] tracking-wide
-            transition-opacity duration-300
-            group-hover:opacity-0
-            group-active:opacity-0
-            focus-within:opacity-0
-            focus:opacity-0
-          "
-        >
-          © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
-        </p>
-
-        <img
-          src="/assets/st69_patch.png"
-          alt="SEAL Team 69 – ST69 Skull Patch"
-          className="
-            absolute top-1/2 left-1/2 w-20 sm:w-24 md:w-28
-            transform -translate-x-1/2 -translate-y-1/2
-            opacity-0 transition-opacity duration-300 pointer-events-none select-none
-            group-hover:opacity-100
-            group-active:opacity-100
-            focus-within:opacity-100
-            focus:opacity-100
-          "
-        />
-      </div>
       </div>
 
       <NavBar />
 
-    </main>
+      <Script
+        type="application/ld+json"
+        id="frequencyfortress-schema-dossier"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://frequencyfortress.com/#dossier",
+            url: "https://frequencyfortress.com/dossier",
+            name: "Dossier",
+            description:
+              "Unlocked Mission Documents for the Frequency Fortress Operation.",
+            isPartOf: { "@id": "https://frequencyfortress.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com/" },
+                { "@type": "ListItem", position: 2, name: "Dossier", item: "https://frequencyfortress.com/dossier" },
+              ],
+            },
+          }),
+        }}
+      />
 
+    </main>
+      <div
+        className="relative group w-full max-w-[720px] mx-auto px-4 py-4 text-center text-[#4A4545] select-none mt-auto"
+        role="button"
+        tabIndex={0}
+        aria-label="ST69 Footer"
+      >
+        <p
+          className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+        >
+          © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
+        </p>
+
+        <Image
+          src="/assets/st69_patch.png"
+          alt="SEAL Team 69 Patch"
+          width={300}
+          height={300}
+          className="absolute top-1/2 left-1/2 w-14 sm:w-17 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 pointer-events-none select-none group-hover:opacity-100 group-active:opacity-100 focus-within:opacity-100 focus:opacity-100"
+        />
+      </div>
+    </div>
   );
 }

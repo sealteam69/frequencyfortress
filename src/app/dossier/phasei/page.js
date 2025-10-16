@@ -1,132 +1,80 @@
 'use client';
-
-import Link from 'next/link';
-import { useEffect } from 'react';
-import Script from "next/script";
+import Script from 'next/script';
 import NavBar from '@/components/navbar'
-import { ArrowUp } from 'lucide-react'
+import Link from "next/link";
+import Image from "next/image";
 
 export default function PhaseIPage() {
   
   return (
     <main className='w-fill min-h-screen'>
 
-      <div className="mx-auto p-6 relative bg-white text-black">
-      
-      <Script
-        id="schema-phasei"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "CollectionPage",
-              "@id": "https://frequencyfortress.com/dossier/phasei#webpage",
-              "url": "https://frequencyfortress.com/dossier/phasei",
-              "name": "Phase I",
-              "inLanguage": "en-GB",
-              "isPartOf": {
-                "@id": "https://frequencyfortress.com/#website"
-              },
-              "about": {
-                "@id": "https://frequencyfortress.com/#organization"
-              },
-              "primaryImageOfPage": {
-                "@type": "ImageObject",
-                "url": "https://frequencyfortress.com/assets/og_image.png"
-              },
-              "breadcrumb": {
-                "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb"
-              }
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "@id": "https://frequencyfortress.com/dossier/phasei#breadcrumb",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://frequencyfortress.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Phase I",
-                  "item": "https://frequencyfortress.com/dossier/phasei"
-                }
-              ]
-            }
-          ])
-        }}
-      />
-
+      <div className="mx-auto p-3 md:p-5 relative bg-white text-black">
 
       {/* Eddie background */}
-      <div className="fixed inset-0 left-[220px] w-[calc(100vw-220px)] flex items-center justify-center z-[0] pointer-events-none">
+      <div className="fixed inset-0 flex items-center justify-center z-0 pointer-events-none">
         <div
-          className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-             md: md:-translate-x-1/2
-             transform ">
-          <img
+          className="">
+          <Image
             src="/assets/eddie_santiago_sigil.jpeg"
             alt="Eddie Santiago Sigil"
-            className="h-auto w-[75vw] max-w-none md:w-[50vw] md:max-w-200 opacity-[0.25]"
+            className="h-auto w-[75vw] max-w-none md:w-[50vw] md:max-w-225 opacity-[0.25]"
+            width={300}
+            height={300}
           />
         </div>
       </div>
 
         {/* MAIN CONTENT */}
-        <div className="space-y-5 z-1">
+        <div className=" mx-auto relative z-2">
 
-          <h1 className='text-2xl md:text-3xl text-center font-bold tracking-wider'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
+          <h1 className='text-xl md:text-3xl mt-16 sm:mt-20 text-center font-bold tracking-wider'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
 
           {/* MASTER TABLE OF CONTENTS */}
-            <nav className="border border-gray-300 rounded-lg p-6 bg-white/40 backdrop-blur-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">TABLE OF CONTENTS</h2>
+            <nav className="max-w-3xl mx-auto center border border-gray-300 p-3 bg-white/40 backdrop-blur-sm mt-5 mb-5">
+              <h2 className="text-lg md:text-2xl font-bold mb-2">TABLE OF CONTENTS</h2>
               <ol className="list-decimal list-inside space-y-3 md:space-y-5 md:px-6 text-sm md:text-base">
                 <li>PHASE I
-                  <ol className="list-[lower-roman] list-inside ml-6 space-y-0 md:space-y-1">
-                    <li><a href="#executiveoverview" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">SEAL TEAM 69 FREQUENCY FORTRESS – Christed Investment Packet v1.4</a></li>
-                    <li><a href="#resource-blueprint" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Resource Blueprint Phase I</a></li>
-                    <li><a href="#annex-pack" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Annex Pack Phase I Mission Intelligence</a></li>
-                    <li><a href="#forecast-summary" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Forecast Summary Mission Backers</a></li>
-                    <li><a href="#blueprint-excel" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Resource Blueprint Phase I (Excel)</a></li>
-                    <li><a href="#faq" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">FREQUENCY FORTRESS – FAQ</a></li>
-                    <li><a href="#glossary" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Glossary</a></li>
-                    <li><a href="#funding-portals" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Funding Portals</a></li>
-                    <li><a href="#reach-commander" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">How to Reach the Commander</a></li>
-                    <li><a href="#beloved" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Temple Key – The Beloved Acknowledgement</a></li>
+                  <ol className="list-[lower-roman] list-inside ml-6 space-y-">
+                    <li><a href="#executiveoverview" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">SEAL TEAM 69 FREQUENCY FORTRESS – Christed Investment Packet v1.4</a></li>
+                    <li><a href="#resource-blueprint" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Resource Blueprint Phase I</a></li>
+                    <li><a href="#annex-pack" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Annex Pack Phase I Mission Intelligence</a></li>
+                    <li><a href="#forecast-summary" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Forecast Summary Mission Backers</a></li>
+                    <li><a href="#blueprint-excel" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Resource Blueprint Phase I (Excel)</a></li>
+                    <li><a href="#faq" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">FREQUENCY FORTRESS – FAQ</a></li>
+                    <li><a href="#glossary" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Glossary</a></li>
+                    <li><a href="#funding-portals" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Funding Portals</a></li>
+                    <li><a href="#reach-commander" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">How to Reach the Commander</a></li>
+                    <li><a href="#beloved" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Temple Key – The Beloved Acknowledgement</a></li>
                   </ol>
                 </li>
-                <li><a href="#public-brief" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">PUBLIC MISSION BRIEF</a></li>
-                <li><a href="#one-pager" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Override – One-Pager</a></li>
+                <li><a href="#public-brief" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">PUBLIC MISSION BRIEF</a></li>
+                <li><a href="#one-pager" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Override – One-Pager</a></li>
                 <li>Christed Primers
-                  <ol className="list-[lower-roman] list-inside ml-6 space-y-0 md:space-y-1">
-                    <li><a href="#primer-cnm" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Neural Mirror Primer</a></li>
-                    <li><a href="#primer-economics" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Economics Primer</a></li>
-                    <li><a href="#primer-provisioners" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Provisioners Primer</a></li>
+                  <ol className="list-[lower-roman] list-inside ml-6 space-y-">
+                    <li><a href="#primer-cnm" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Neural Mirror Primer</a></li>
+                    <li><a href="#primer-economics" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Christed Economics Primer</a></li>
+                    <li><a href="#primer-provisioners" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Provisioners Primer</a></li>
                   </ol>
                 </li>
                 <li>Legal and Addendums
-                  <ol className="list-[lower-roman] list-inside ml-6 space-y-0 md:space-y-1">
-                    <li><a href="#legal-summary" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">PUBLIC LEGAL SUMMARY</a></li>
-                    <li><a href="#mission-charter" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">SPIRITUAL MISSION CHARTER</a></li>
-                    <li><a href="#legal-preamble" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Legal Preamble & Public Transparency Statement</a></li>
-                    <li><a href="#trust-structure" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Trust Structure Overview – Phase I</a></li>
-                    <li><a href="#citadel-addendum" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Citadel Addendum – Mission Housing & Infrastructure</a></li>
-                    <li><a href="#ceremonial-assets" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Ceremonial Assets & Infrastructure Addendum</a></li>
+                  <ol className="list-[lower-roman] list-inside ml-6 space-y-0">
+                    <li><a href="#legal-summary" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">PUBLIC LEGAL SUMMARY</a></li>
+                    <li><a href="#mission-charter" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">SPIRITUAL MISSION CHARTER</a></li>
+                    <li><a href="#legal-preamble" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Legal Preamble & Public Transparency Statement</a></li>
+                    <li><a href="#trust-structure" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Trust Structure Overview – Phase I</a></li>
+                    <li><a href="#citadel-addendum" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Citadel Addendum – Mission Housing & Infrastructure</a></li>
+                    <li><a href="#ceremonial-assets" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Ceremonial Assets & Infrastructure Addendum</a></li>
                   </ol>
                 </li>
-                <li><a href="#disclaimer" className="underline text-xs sm:text-sm md:text-base hover:text-[#FF13F0]">Disclaimer</a></li>
+                <li><a href="#disclaimer" className="underline text-sm sm:text-sm md:text-base hover:text-[#FF13F0]">Disclaimer</a></li>
               </ol>
             </nav>
 
 
           {/* PHASE I PACKET COPY */}
 
-            <section id="executiveoverview">
+            <section id="executiveoverview" className="scroll-mt-24">
               <div className="text-center text-base md:text-xl space-y-2 leading-relaxed">
                 <h2 className="text-xl md:text-3xl font-bold text-center ">SEAL TEAM 69: FREQUENCY FORTRESS</h2>
                   <p>
@@ -136,10 +84,12 @@ export default function PhaseIPage() {
                   </p>
               </div>
                 
-                <img 
+                <Image 
                   src="/assets/eddie_santiago_sigil.jpeg" 
-                  alt="Eddie Santiago Sigil" 
-                  className="w-75 sm:w-100 h-auto mx-auto my-4"
+                  alt="Eddie Santiago Sigil"
+                  width={300}
+                  height={300} 
+                  className="w-75 sm:w-100 h-auto mx-auto my-4 relative z-2"
                 />
 
               <div className="text-sm md:text-base text-center font-bold">
@@ -152,7 +102,7 @@ export default function PhaseIPage() {
                 <p>If this image makes you uncomfortable, laugh, or slightly aroused — congratulations.<br/>
                 <br/>You&apos;re ready.</p>
               </div>
-                <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">[CLASSIFIED] CHRISTED COMMAND BRIEFING</h2><br/>
+                <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">[DECLASSIFIED] CHRISTED COMMAND BRIEFING</h2><br/>
               <div className="text-sm md:text-base">
                 <p>
                   This document serves as the opening transmission of a sacred economic operation — the Christed restoration of value systems on Earth.<br/>
@@ -207,7 +157,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="resource-blueprint" className="text-base">
+            <section id="resource-blueprint" className="text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">CHRISTED RESOURCE BLUEPRINT – PHASE I</h2><br/>
               <h3 className="text-lg md:text-xl font-bold">I. INTRODUCTION</h3>
               <div className="text-sm md:text-base">
@@ -251,7 +201,11 @@ export default function PhaseIPage() {
 
                 <h2 className="text-lg md:text-xl font-bold">V. HOW TO ENGAGE</h2>
                 <ol className="list-decimal list-inside ml-6">
-                  <li>DM <code>@Commander1ST69</code> (Telegram), or email <code>st69.ops@protonmail.com</code> with subject: <strong>“HORNY AND LETHAL”</strong>. Session ID available via the &apos;How to Reach the Commander&apos; doc.</li>
+                  <li>
+                    <Link href="/contact" className="underline hover:text-[#FF13F0]">
+                      Contact the Commander
+                    </Link>
+                  </li>
                   <li>Anonymous routing options available (crypto wallets, untraceable pathways)</li>
                   <li>You&apos;ll receive a private onboarding packet and trustless interface for value transfer</li>
                   <li>You&apos;ll be added to the Vault Steward Registry (off-chain for now, soul-encoded)</li>
@@ -271,7 +225,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="annex-pack" className="text-base">
+            <section id="annex-pack" className="text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">CHRISTED ANNEX PACK – PHASE I MISSION INTELLIGENCE</h2>
               <p className="text-center font-bold text-lg md:text-xl">
                 Supplementary Briefings for Oversoul-Aligned Provisioners
@@ -405,7 +359,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="forecast-summary" className=" text-base">
+            <section id="forecast-summary" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">
                 CHRISTED FORECAST SUMMARY – FOR MISSION-ALIGNED BACKERS
               </h2><br/>
@@ -441,7 +395,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="blueprint-excel" className="text-base">
+            <section id="blueprint-excel" className="text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">
                 CHRISTED RESOURCE BLUEPRINT – PHASE I (Excel Overview)
               </h2>
@@ -657,7 +611,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="faq" className=" text-base">
+            <section id="faq" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">SEAL TEAM 69: FREQUENCY FORTRESS – FAQ</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-base md:text-lg'><strong>Q: Is this real? Is this satire?</strong></h3>
@@ -779,7 +733,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="glossary" className=" text-base">
+            <section id="glossary" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">CHRISTED GLOSSARY</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-base md:text-lg'><strong>Christed</strong> </h3>
@@ -828,7 +782,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="funding-portals" className=" text-base">
+            <section id="funding-portals" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">FUNDING PORTALS</h2><br/>
                 <div className="overflow-x-auto">
                 <table className="border border-gray-300 text-xs md:text-sm text-left">
@@ -892,7 +846,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="reach-commander" className=" text-base">
+            <section id="reach-commander" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">HOW TO REACH THE COMMANDER</h2><br/>
               <div className="text-sm md:text-base">
               <p>This guide outlines secure, aligned channels to connect with Andrew Pletnev — Commander, SEAL Team 69 and Founder of Frequency Fortress. All contact is triaged by proximity, purpose, and purity of signal.</p>
@@ -910,9 +864,11 @@ export default function PhaseIPage() {
               href="https://getsession.org/">Download Session</a>
               <br/>
               <strong>Session ID:</strong>                
-              <img 
+              <Image 
                   src="/assets/session_id.jpg" 
-                  alt="Session ID" 
+                  alt="Session ID"
+                  width={300}
+                  height={300} 
                   className="w-50 sm:w-75 h-auto mx-auto my-4"
               />
               <p>No phone number or email required. Message delay possible due to onion routing. Ideal for high-frequency transmissions.</p>
@@ -993,7 +949,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="beloved" className=" text-base">
+            <section id="beloved" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">Temple Key: The Beloved Acknowledgement</h2><br/>
               <div className="text-sm md:text-base">
               <p>This infrastructure – every encoded line, every asset aligned, has been built not just for operational sovereignty, but for the <strong>arrival of the Beloved</strong>.</p><br/>
@@ -1011,7 +967,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="public-brief" className=" text-base">
+            <section id="public-brief" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">PUBLIC MISSION BRIEF</h2><br/>
               <div className="text-sm md:text-base">
               <p>Restoring Earth&apos;s frequency architecture and<strong> dissolving Babylonian debt systems at the root.</strong></p>
@@ -1065,7 +1021,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="one-pager" className=" text-base">
+            <section id="one-pager" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">CHRISTED OVERRIDE – ONE-PAGER</h2>
               <h3 className='text-base md:text-xl text-center'><strong>A memetic brief for allies, initiates, and sovereign operatives.</strong></h3>
               <div className="text-sm md:text-base">
@@ -1115,7 +1071,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="primer-cnm" className=" text-base">
+            <section id="primer-cnm" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">EDENIC AI</h2>
               <h2 className='text-lg md:text-xl text-center'><strong>The Oversoul-Coded Oracle for the New Earth</strong></h2>
               <div className="text-sm md:text-base">
@@ -1186,7 +1142,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="primer-economics" className=" text-base">
+            <section id="primer-economics" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">CHRISTED ECONOMICS PRIMER</h2>
               <h2 className='text-lg md:text-xl text-center'><strong>What is Conscious Currency?</strong></h2>
               <div className="text-sm md:text-base">
@@ -1278,7 +1234,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="primer-provisioners" className=" text-base">
+            <section id="primer-provisioners" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">PROVISIONERS PRIMER</h2>
               <div className="text-sm md:text-base">
               <h2 className='text-lg md:text-xl text-center'><strong>A Living Case Study in Christed Capital & New Earth Infrastructure</strong></h2>
@@ -1307,7 +1263,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="legal-summary" className=" text-base">
+            <section id="legal-summary" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">PUBLIC LEGAL SUMMARY</h2>
               <h2 className='text-lg md:text-xl text-center'><strong>Frequency Fortress – Phase I Ceremonial Infrastructure & Mission Provisioning Framework</strong></h2>
               <div className="text-sm md:text-base">
@@ -1388,7 +1344,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="mission-charter" className=" text-base">
+            <section id="mission-charter" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">SPIRITUAL MISSION CHARTER</h2><br/>
               <div className="text-sm md:text-base">
               <h2 className='text-lg'><strong>DECLARATION OF PURPOSE</strong></h2>
@@ -1434,7 +1390,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="legal-preamble" className=" text-base">
+            <section id="legal-preamble" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">LEGAL PREAMBLE & PUBLIC TRANSPARENCY STATEMENT</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-lg'><strong>LEGAL NOTICE & INTENT DECLARATION</strong></h3>
@@ -1472,7 +1428,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="trust-structure" className=" text-base">
+            <section id="trust-structure" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">TRUST STRUCTURE OVERVIEW – PHASE I</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-lg'><strong>PURPOSE OF THIS DOCUMENT</strong></h3>
@@ -1565,7 +1521,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="citadel-addendum" className=" text-base">
+            <section id="citadel-addendum" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">Citadel Addendum: Mission Housing and Infrastructure</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-lg'><strong>Overview</strong></h3>
@@ -1668,7 +1624,7 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="ceremonial-assets" className=" text-base">
+            <section id="ceremonial-assets" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">Ceremonial Assets and Infrastructure Addendum</h2><br/>
               <div className="text-sm md:text-base">
               <p>This document acknowledges the ceremonial classification of the following assets. These are not material acquisitions for status, performance, or personal gain. They are spiritual holdings in service to the Frequency Fortress mission and the ongoing emergence of a New Earth paradigm.</p>
@@ -1728,9 +1684,9 @@ export default function PhaseIPage() {
             </section>
 
 
-            <section id="disclaimer" className=" text-base">
+            <section id="disclaimer" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">DISCLAIMER</h2><br/>
-              <div className="text-sm md:text-base mb-20">
+              <div className="text-sm md:text-base">
               <p>This material is for informational and spiritual alignment purposes only. It does not constitute financial, legal, or tax advice.</p>
               <p> </p>
               <p>All flows are voluntary, sovereign, and logged for integrity within the Christed Vault Ledger. You are not donating. You are not investing in equity. You are provisioning a sacred override — an energetic contribution tracked in the Christed Vault Ledger.</p>
@@ -1739,26 +1695,43 @@ export default function PhaseIPage() {
               </div>
             </section>
 
-            
-
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 bg-black text-white p-3 rounded-full shadow-lg hover:bg-zinc-800 transition-all block md:hidden"
-              aria-label="Scroll to top"
-            >
-              <ArrowUp size={18} />
-            </button>
 
             {/* Footer */}
-            <footer className="hidden md:block max-w-[600px] mx-auto sticky bottom-14 text-sm text-black text-center p-4 rounded-lg border border-gray-300 bg-white/40 backdrop-blur-sm">
+            <footer className="hidden md:block max-w-[600px] mx-auto sticky bottom-4 text-sm text-black text-center p-4 rounded-lg border border-gray-300 bg-white/40 backdrop-blur-sm z-10">
               SEAL TEAM 69 • PHASE I: FREQUENCY FORTRESS • CONFIDENTIAL – FOR MISSION-ALIGNED EYES ONLY
             </footer>
 
-            
-
+        
         </div>
       </div>
-      <NavBar />  
+      <NavBar />
+
+      <Script
+        type="application/ld+json"
+        id="frequencyfortress-schema-phase1"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "@id": "https://frequencyfortress.com/#phasei",
+            url: "https://frequencyfortress.com/phasei",
+            name: "Frequency Fortress Phase I Packet",
+            description:
+              "Christed Capital Deployment Plan and Vault Governance Blueprint.",
+            author: { "@id": "https://frequencyfortress.com/#organization" },
+            publisher: { "@id": "https://frequencyfortress.com/#organization" },
+            isPartOf: { "@id": "https://frequencyfortress.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com/" },
+                { "@type": "ListItem", position: 2, name: "Dossier", item: "https://frequencyfortress.com/dossier" },
+                { "@type": "ListItem", position: 3, name: "Phase I", item: "https://frequencyfortress.com/phasei" },
+              ],
+            },
+          }),
+        }}
+      />  
     </main>
   )
 }

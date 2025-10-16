@@ -1,25 +1,41 @@
 'use client';
 import NavBar from '@/components/navbar';
+import Image from 'next/image';
+import Script from 'next/script';
 
 export default function ContactPage() {
   return (
+    <div className="flex flex-col min-h-screen">
     <main className='w-fill min-h-screen bg-white'>
-      <div className="max-w-3xl mx-auto p-6 text-xs sm:text-sm md:text-base text-black font-mono">
-        <h1 className="tracking-wider text-2xl md:text-3xl font-bold text-center">HOW TO REACH THE COMMANDER</h1><br/>
+      
+      <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0">
+          <Image
+            src="/assets/eddie_santiago_sigil.jpeg"
+            alt="Eddie Santiago Sigil"
+            width={300}
+            height={300}
+            className="h-auto w-[75vw] md:w-[50vw] md:max-w-225 opacity-[0.25]"
+          />
+      </div>
+
+      <div className="mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
+        <h1 className="tracking-widest text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1><br/>
+
+        <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered — but all are received.
+           Note: All channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.
+        </p><br/>
 
         {/* Tier 1 */}
         <h2 className="text-xl font-bold">Tier 1: Council-Grade Contact</h2>
-        <p>Preferred for:</p>
-        <ul className="list-disc list-inside">
-          <li>Sacred Union signals</li>
-          <li>High-trust allies</li>
-          <li>Operations, investments, & legacy matters</li>
-        </ul><br/>
+        <p>Preferred for: Sacred Union signals, high-trust allies, operations, investments and legacy matters.</p>
+        <br/>
         <p className="font-bold">SESSION (Anonymous Messenger – No Number, No Metadata)</p>
         <code className='break-all'>ID: 0566df93e193b719424a3c87dabeca44f1b6366faebec8f9d066caf973d038170e</code>
-          <img 
+          <Image 
               src="/assets/session_id.jpg" 
-              alt="Session ID" 
+              alt="Session ID"
+              width={300}
+              height={300} 
               className="w-50 sm:w-75 h-auto mx-auto my-4"
           />
           
@@ -31,11 +47,7 @@ export default function ContactPage() {
 
         {/* Tier 2 */}
         <h2 className="text-xl font-bold">Tier 2: Strategic Comms</h2>
-        <p>Preferred for:</p>
-        <ul className="list-disc list-inside">
-          <li>Public allies, sacred tech support</li>
-          <li>Informal mission dialogue, async updates, low-frequency pings</li>
-        </ul>
+        <p>Preferred for: public allies, sacred tech support, informal mission dialogue, low-frequency pings.</p>
         <br/>
         <p className="font-bold">ProtonMail</p>
         
@@ -66,12 +78,7 @@ export default function ContactPage() {
 
         {/* Tier 3 */}
         <h2 className="text-xl font-bold">Tier 3: General Signals</h2>
-        <p>For:</p>
-        <ul className="list-disc list-inside">
-          <li>Public broadcast</li>
-          <li>Tactical memetics</li>
-          <li>Media, community flows, movements</li>
-        </ul>
+        <p>For: public-facing channels, broadcast, tactical memetics, media, community flows, movements.</p>
         <br/>
         <p className="font-bold">SEAL Team 69</p>
           <p>Website</p><p className="">(Not yet finished, lol)</p>
@@ -87,15 +94,56 @@ export default function ContactPage() {
           <p>LinkedIn</p>
 
           <a href="https://linkedin.com/in/andrewpletnev" className="text-cyan-400 underline" target="_blank">Andrew Pletnev</a><br/>
-          <br/>
-          <div className=" pb-10">
-          <p>Public-facing channels.</p><br/>
-          <p>Signal boosted selectively. Note: All channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.</p>
-          </div>
+          
       </div>
-        
+
       <NavBar />
 
+      <Script
+        type="application/ld+json"
+        id="frequencyfortress-schema-contact"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "@id": "https://frequencyfortress.com/#contact",
+            url: "https://frequencyfortress.com/contact",
+            name: "Contact",
+            description:
+              "Contact Command and signal the Fortress. Secure contact channels for Council-grade communications for mission-aligned provisioners.",
+            isPartOf: { "@id": "https://frequencyfortress.com/#website" },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com/" },
+                { "@type": "ListItem", position: 2, name: "Contact", item: "https://frequencyfortress.com/contact" },
+              ],
+            },
+          }),
+        }}
+      />
+
     </main>
+      <div
+        className="relative group w-full max-w-[720px] mx-auto px-4 py-4 text-center text-[#4A4545] select-none mt-auto"
+        role="button"
+        tabIndex={0}
+        aria-label="ST69 Footer"
+      >
+        <p
+          className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+        >
+          © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
+        </p>
+
+        <Image
+          src="/assets/st69_patch.png"
+          alt="SEAL Team 69 Patch"
+          width={300}
+          height={300}
+          className="absolute top-1/2 left-1/2 w-14 sm:w-17 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 pointer-events-none select-none group-hover:opacity-100 group-active:opacity-100 focus-within:opacity-100 focus:opacity-100"
+        />
+      </div>
+    </div>
   )
 }

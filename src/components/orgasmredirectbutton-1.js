@@ -47,13 +47,13 @@ export default function OrgasmButton({
         font-['ocr-a-std'] 
         text-[#2cff05] 
         bg-[rgb(245,0,0)]
-        rounded-[20px] sm:rounded-[24px] md:rounded-[24px] 
-        shadow-[0_0_0_3px_#2cff05]
+        rounded-[28px] sm:rounded-[32px] lg:rounded-[36px]
+        shadow-[0_0_0_0px_#2cff05]
         transition-transform duration-200 ease-in-out 
         hover:scale-110 
         cursor-pointer 
         whitespace-nowrap 
-        border-none
+
         "
     >
         {label}

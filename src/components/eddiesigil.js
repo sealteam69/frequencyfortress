@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function EddieSigil({ audioRef }) {
     const [transmissionActive, setTransmissionActive] = useState(false);
@@ -18,9 +19,11 @@ export default function EddieSigil({ audioRef }) {
  return (
     <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-12">
         <div className="sigil-wrapper relative overflow-visible" onClick={playEddie}>
-        <img
+        <Image
         src="/assets/eddie_santiago_sigil.jpeg"
         alt="Eddie Santiago Sigil"
+        width={300}
+        height={300}
         className="
             sigil-animation cursor-pointer hover:scale-75 transition-transform
             w-[240px] sm:w-[320px] md:w-[400px] lg:w-[460px]

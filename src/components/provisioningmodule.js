@@ -14,35 +14,34 @@ export default function WalletProvisionModule({ label, address }) {
   const isRevolut = label === 'REVOLUT'
 
   return (
-    <div className="bg-zinc-700 rounded-xl p-4 transition-colors duration-200 group hover:bg-zinc-600">
-      <div className="flex flex-col space-y-2 sm:space-y-1">
-        <span className="text-sm font-bold text-zinc-300">{label}</span>
+    <div className="text-sm md:text-base relative bg-zinc-800 rounded-xl p-3 transition-colors duration-200 group hover:bg-zinc-600">
+      {/* content gets extra right padding so the icon has room */}
+      <div className="space-y-1 pr-8">
+        <span className="tracking-wider text-[#2CFF05]">{label}</span>
         {isRevolut ? (
           <a
             href={address}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-zinc-400 hover:text-cyan-400 hover:underline break-all"
+            className="block text-xs md:text-sm text-zinc-400 break-all hover:text-cyan-400 hover:underline transition-colors duration-200"
           >
             {address}
           </a>
         ) : (
-          <div className="flex items-center justify-between gap-4">
-            <code className="text-sm text-zinc-400 break-all">{address}</code>
-            <button
-              onClick={handleCopy}
-              className="text-zinc-400 hover:text-cyan-400"
-              aria-label="Copy to clipboard"
-            >
-              {copied ? (
-                <span className="text-xs text-cyan-400">Copied</span>
-              ) : (
-                <Copy size={20} />
-              )}
-            </button>
-          </div>
+          <code className="block text-xs md:text-sm text-zinc-400 break-all">
+            {address}
+          </code>
         )}
       </div>
+
+      {/* copy button is centered against the OUTER container */}
+      <button
+        onClick={handleCopy}
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-cyan-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/50 rounded"
+        aria-label="Copy to clipboard"
+      >
+        {copied ? <span className="text-sm text-cyan-400">Copied</span> : <Copy size={20} />}
+      </button>
     </div>
   )
 }
