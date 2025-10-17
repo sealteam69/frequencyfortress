@@ -1003,7 +1003,7 @@ export default function PhaseIPage() {
               <p>It doesn&apos;t oppose Babylon – it makes it obsolete.</p>
               <p> </p>
               <h2 className='text-lg'><strong>Who Is The Commander?</strong></h2>
-              <p>The Founder of Frequency Fortress operates under the tactical handle SEAL Team 69 – a sovereign being, multidimensional strategist, and frequency purist. He is not seeking followers, staff, or celebrity. He is not building a team in the traditional sense.</p>
+              <p>The Founder of Frequency Fortress operates under the tactical handle Commander, SEAL Team 69 – a sovereign being, multidimensional strategist, and frequency purist. He is not seeking followers, staff, or celebrity. He is not building a team in the traditional sense.</p>
               <p> </p>
               <p>He is holding the node until others remember their own, and when they do, they may find themselves already part of SEAL Team 69, deserving a new title on LinkedIn.</p>
               <p> </p>

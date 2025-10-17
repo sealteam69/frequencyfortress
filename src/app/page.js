@@ -95,7 +95,7 @@ export default function Home() {
           </div>
 
           {/* Subtitle Paragraph */}
-          <p className="text-white opacity-50 text-center leading-relaxed max-w-[90vw] mt-2.5 md:mt-6"
+          <p className="text-white opacity-50 text-center leading-relaxed max-w-[90vw] mt-2.5 md:mt-4"
             style={{
               fontSize: 'clamp(0.65rem, 1.6vw, 1.2rem)',
               fontFamily: 'IBM Plex Mono, monospace'

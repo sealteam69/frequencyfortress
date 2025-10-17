@@ -21,8 +21,8 @@ export default function ContactPage() {
       <div className="mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
         <h1 className="tracking-widest text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1><br/>
 
-        <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered — but all are received.
-           Note: All channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.
+        <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered, but all are received.
+           Please note: all channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.
         </p><br/>
 
         {/* Tier 1 */}
@@ -86,14 +86,13 @@ export default function ContactPage() {
           <p>X</p>
           <a href="https://x.com/st69lol" className="text-cyan-400 underline" target="_blank">@st69lol</a>
           <p>LinkedIn</p>
-          <a href="https://linkedin.com/company/sealteam69" className="text-cyan-400 underline" target="_blank">SEAL Team 69</a>
+          <a href="https://www.linkedin.com/company/seal-team-69" className="text-cyan-400 underline" target="_blank">SEAL Team 69</a>
           <br/><br/>
           <p className="font-bold">Personal</p>
           <p>X</p>
           <a href="https://x.com/andrewpletnev" className="text-cyan-400 underline" target="_blank">@andrewpletnev</a><br/>
           <p>LinkedIn</p>
-
-          <a href="https://linkedin.com/in/andrewpletnev" className="text-cyan-400 underline" target="_blank">Andrew Pletnev</a><br/>
+          <a href="www.linkedin.com/in/andrew-pletnev-82769940" className="text-cyan-400 underline" target="_blank">Andrew Pletnev</a><br/>
           
       </div>
 

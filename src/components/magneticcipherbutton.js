@@ -80,7 +80,7 @@ export function MagneticCipherButton() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="text-[28px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] text-[#bcbce1]"
+              className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] text-[#bcbce1]"
               style={{ fontFamily: 'Barlow Condensed' }}
             >
               CLASSIFIED ACCESS GRANTED
@@ -120,10 +120,9 @@ export function MagneticCipherButton() {
         onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
         onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
         className="
-          bg-transparent border-2 border-[#0014A8] text-[#0014A8]
-          uppercase font-bold tracking-widest font-mono cursor-pointer 
+          bg-transparent border-1 border-[#0014A8] text-[#0014A8]
+          uppercase font tracking-widest cursor-pointer 
           transition-transform duration-200 ease-out hover:scale-105
-
           text-[14px] px-4 py-3 mt-10      
           sm:text-[14px] sm:px-4 sm:py-3 sm:mt-8
           md:text-[14px] md:px-4 md:py-3 

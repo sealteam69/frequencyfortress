@@ -71,6 +71,10 @@ export default function ProvisionPage() {
             label="REVOLUT"
             address="https://revolut.me/andrewpletnev"
           />
+          <WalletProvisionModule
+            label="STRIPE"
+            address="https://donate.stripe.com/4gM14ogcv2bW6nT0b2bfO00"
+          />
         </div>
 
       </div>
