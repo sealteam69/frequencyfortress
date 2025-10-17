@@ -23,10 +23,10 @@ export default function ProvisionPage() {
       </div>
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h1 className="tracking-widest text-2xl md:text-3xl font-bold mt-13 sm:mt-20 text-center">PROVISIONER ACCESS PATHWAYS</h1><br/>
-        <p className="sm:tracking-wide text-sm md:text-lg">
+        <h1 className="tracking-wide text-2xl md:text-3xl font-bold mt-13 sm:mt-20 text-center">PROVISIONER ACCESS PATHWAYS</h1><br/>
+        <h2 className="sm:tracking-wide text-sm md:text-lg">
           CHOOSE YOUR FREQUENCY VECTOR. PROVISION CHRISTED CAPITAL INTO THE VAULT. 
-        </p><br/>
+        </h2><br/>
 
         <div className="text-black text-center">
           <VaultCountdownTimer />
@@ -34,6 +34,7 @@ export default function ProvisionPage() {
 
         <div className='text-sm md:text-base'>
         <p>TIME SINCE VAULT ACTIVATION (EARTH-GRID LINEAR)</p><br/>
+        <p><strong>PHASE I TARGET: 6,900,000 GBP</strong></p>
         </div>
 
         <section>
@@ -111,11 +112,11 @@ export default function ProvisionPage() {
         tabIndex={0}
         aria-label="ST69 Footer"
       >
-        <p
+        <footer
           className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
-        </p>
+        </footer>
 
         <Image
           src="/assets/st69_patch.png"

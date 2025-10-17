@@ -19,7 +19,7 @@ export default function ContactPage() {
       </div>
 
       <div className="mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
-        <h1 className="tracking-widest text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1><br/>
+        <h1 className="tracking-wide text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1><br/>
 
         <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered, but all are received.
            Please note: all channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.
@@ -92,7 +92,7 @@ export default function ContactPage() {
           <p>X</p>
           <a href="https://x.com/andrewpletnev" className="text-cyan-400 underline" target="_blank">@andrewpletnev</a><br/>
           <p>LinkedIn</p>
-          <a href="www.linkedin.com/in/andrew-pletnev-82769940" className="text-cyan-400 underline" target="_blank">Andrew Pletnev</a><br/>
+          <a href="https://www.linkedin.com/in/andrew-pletnev-82769940" className="text-cyan-400 underline" target="_blank">Andrew Pletnev</a><br/>
           
       </div>
 
@@ -129,11 +129,11 @@ export default function ContactPage() {
         tabIndex={0}
         aria-label="ST69 Footer"
       >
-        <p
+        <footer
           className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
-        </p>
+        </footer>
 
         <Image
           src="/assets/st69_patch.png"

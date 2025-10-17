@@ -28,7 +28,7 @@ export default function MegavoltBlock() {
         text-center
       "
     >
-      <h2 className="
+      <p className="
         text-[18px] 
         sm:text-[32px] 
         uppercase 
@@ -38,7 +38,7 @@ export default function MegavoltBlock() {
         tracking-wider
       ">
         ⚡ Unleash the Frequency ⚡
-      </h2>
+      </p>
 
       <p className="
         text-[10px] 

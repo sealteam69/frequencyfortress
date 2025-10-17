@@ -106,32 +106,36 @@ export function MagneticCipherButton() {
       )}
 
       {/* Cipher Button */}
-      <motion.button
-        type="button"
-        aria-label="Open the Frequency Fortress Dossier"
-        onClick={handleClick}
-        onMouseEnter={scramble}
-        onTouchStart={scramble}
-        onMouseMove={(e) => applyMagnetism(e.currentTarget, e.clientX, e.clientY)}
-        onTouchMove={(e) => {
-          const touch = e.touches[0]
-          if (touch) applyMagnetism(e.currentTarget, touch.clientX, touch.clientY)
-        }}
-        onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
-        onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
-        className="
-          bg-transparent border-1 border-[#0014A8] text-[#0014A8]
-          uppercase font tracking-widest cursor-pointer 
-          transition-transform duration-200 ease-out hover:scale-105
-          text-[14px] px-4 py-3 mt-10      
-          sm:text-[14px] sm:px-4 sm:py-3 sm:mt-8
-          md:text-[14px] md:px-4 md:py-3 
-          lg:text-[18px] lg:px-5 lg:py-3 
-          xl:text-[18px] xl:px-5 xl:py-3 
-        "
+      <a
+        href="/dossier"
+        onClick={(e) => { e.preventDefault(); handleClick(); }}
+        aria-label="Enter the Dossier"
       >
-        {text}
-      </motion.button>
+        <motion.button
+          type="button"
+          onMouseEnter={scramble}
+          onTouchStart={scramble}
+          onMouseMove={(e) => applyMagnetism(e.currentTarget, e.clientX, e.clientY)}
+          onTouchMove={(e) => {
+            const touch = e.touches[0]
+            if (touch) applyMagnetism(e.currentTarget, touch.clientX, touch.clientY)
+          }}
+          onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
+          onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
+          className="
+            bg-transparent border-1 md:border-2 border-[#0014A8] text-[#0014A8]
+            uppercase font tracking-widest cursor-pointer 
+            transition-transform duration-200 ease-out hover:scale-105
+            text-[14px] px-4 py-3 mt-10      
+            sm:text-[14px] sm:px-4 sm:py-3 sm:mt-8
+            md:text-[14px] md:px-4 md:py-3 
+            lg:text-[18px] lg:px-5 lg:py-3 
+            xl:text-[18px] xl:px-5 xl:py-3 
+          "
+        >
+          {text}
+        </motion.button>
+      </a>
 
       {/* Dot Cycle */}
       <style>

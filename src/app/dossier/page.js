@@ -73,7 +73,8 @@ export default function DossierPage() {
         <h1
           className="
             text-[20px] sm:text-[30px] md:text-[36px] 
-            tracking-wider
+            tracking-widest
+            font-semibold
             text-[#4A4545]
           "
         >
@@ -264,11 +265,11 @@ export default function DossierPage() {
         tabIndex={0}
         aria-label="ST69 Footer"
       >
-        <p
+        <footer
           className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
-        </p>
+        </footer>
 
         <Image
           src="/assets/st69_patch.png"
