@@ -17,7 +17,7 @@ export default function WalletProvisionModule({ label, address }) {
   const isLiveLink = isRevolut || isStripe
 
   return (
-    <div className="text-sm md:text-base relative bg-zinc-700 rounded-xl p-3 transition-colors duration-200 group">
+    <div className="text-sm md:text-base relative bg-black rounded-xl p-3 transition-colors duration-200 group">
       <div className="space-y-1 pr-6">
         <span className="tracking-wider text-[#2CFF05]">{label}</span>
 

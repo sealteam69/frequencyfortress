@@ -30,7 +30,7 @@ export default function TipOfTheMemeFooter() {
         animate-pulse-border-bg
       "
     >
-      <h2 className="
+      <p className="
         text-[22px] 
         sm:text-[36px] 
         leading-snug 
@@ -39,7 +39,7 @@ export default function TipOfTheMemeFooter() {
         text-[#00ffff]
       ">
         🫵💀☝️ Tip of the Meme
-      </h2>
+      </p>
       <p className="
         text-[16px] 
         sm:text-[24px] 

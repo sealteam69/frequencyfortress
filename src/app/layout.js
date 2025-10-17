@@ -48,7 +48,23 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable} ${sofiaSansSemiCondensed.variable} ${redacted.variable} ${barlowcondensed.variable}`}>
       <head>
 
-        <meta property="og:image" content="https://frequencyfortress.com/public/apple-touch-icon.png" />
+        <title>FREQUENCY FORTRESS</title>
+        <meta name="description" content="New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth’s First Christed Infrastructure Mission." />
+
+        <meta property="og:url" content="https://frequencyfortress.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FREQUENCY FORTRESS" />
+        <meta property="og:description" content="New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth’s First Christed Infrastructure Mission." />
+        <meta property="og:image" content="https://frequencyfortress.com/assets/og_image.png" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta property="twitter:domain" content="frequencyfortress.com" />
+        <meta property="twitter:url" content="https://frequencyfortress.com/" />
+        <meta name="twitter:title" content="FREQUENCY FORTRESS" />
+        <meta name="twitter:description" content="Council-approved Override Terminal for New Earth Command." />
+        <meta name="twitter:image" content="https://frequencyfortress.com/assets/og_image.png" />
+        
+        <meta property="og:image" content="https://frequencyfortress.com/assets/og_image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="ST69 Patch" />

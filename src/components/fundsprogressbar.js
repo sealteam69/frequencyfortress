@@ -20,8 +20,8 @@ export default function FundsProgressBar() {
           style={{ width: `${0.001}%` }}
         />
       </div>
-      <h2 className="text-black text-sm sm:text-base">
-        {0.001}% OF TARGET RECEIVED [Updated automatically from the Christed Vault Ledger]</h2>
+      <p className="text-black text-sm sm:text-base">
+        {0.001}% OF TARGET RECEIVED [Updated automatically from the Christed Vault Ledger]</p>
     </div>
   )
 }
