@@ -74,26 +74,26 @@ export function MagneticCipherButton() {
       {loading && (
         <>
           <div className="white-flash" />
-          <div className="transition-overlay crt font-bold text-center uppercase text-[#FF13F0] flex flex-col gap-4">
+          <div className="transition-overlay crt font-bold text-center uppercase flex flex-col gap-2 md:gap-3">
 
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="font-bold text-[25px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-[#CCCCFF]"
-              style={{ fontFamily: 'Sofia Sans Semi Condensed' }}
+              className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] text-[#bcbce1]"
+              style={{ fontFamily: 'Barlow Condensed' }}
             >
               CLASSIFIED ACCESS GRANTED
             </motion.div>
 
             <div
-              className="text-[13.5px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#FF13F0] tracking-wider font-bold"
+              className="text-[13px] sm:text-[13px] md:text-[15px] lg:text-[17px] xl:text-[19px] text-[#FF13F0] tracking-wider"
               style={{ fontFamily: 'ocr-a-std, monospace' }}
             >
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            <div className="w-[160px] sm:w-[220px] md:w-[260px] lg:w-[320px] xl:w-[360px] h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            <div className="w-[180px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[320px] h-1 md:h-1.5 lg:h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -120,12 +120,11 @@ export function MagneticCipherButton() {
         onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
         onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
         className="
-          bg-transparent border-2 border-[#0014A8] text-[#0014A8]
-          uppercase font-bold tracking-widest font-mono cursor-pointer 
+          bg-transparent border-1 border-[#0014A8] text-[#0014A8]
+          uppercase font tracking-widest cursor-pointer 
           transition-transform duration-200 ease-out hover:scale-105
-
-          text-[14px] px-4 py-3 mt-5      
-          sm:text-[14px] sm:px-4 sm:py-3 sm:mt-0
+          text-[14px] px-4 py-3 mt-10      
+          sm:text-[14px] sm:px-4 sm:py-3 sm:mt-8
           md:text-[14px] md:px-4 md:py-3 
           lg:text-[18px] lg:px-5 lg:py-3 
           xl:text-[18px] xl:px-5 xl:py-3 

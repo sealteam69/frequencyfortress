@@ -48,6 +48,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} ${pirata.variable} ${pressstart2p.variable} ${sofiaSansSemiCondensed.variable} ${redacted.variable} ${barlowcondensed.variable}`}>
       <head>
 
+        <meta property="og:image" content="https://frequencyfortress.com/public/apple-touch-icon.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="ST69 Patch" />
+
         <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
