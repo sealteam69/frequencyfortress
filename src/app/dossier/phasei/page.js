@@ -786,6 +786,7 @@ export default function PhaseIPage() {
 
             <section id="funding-portals" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">FUNDING PORTALS</h2><br/>
+                <p><strong>Crypto Channels</strong></p>
                 <div className="overflow-x-auto">
                 <table className="border border-gray-300 text-xs md:text-sm text-left">
                   <thead className="bg-[#FF13F0] font-bold">
@@ -821,21 +822,13 @@ export default function PhaseIPage() {
                 </div>
               <div className="text-sm md:text-base">
               <p> </p>
-              <p><strong>FIAT (UK Domestic)</strong></p>
-              <p>Name: Andrew Pletnev</p>
-              <p>Sort code: 04-00-75</p>
-              <p>Account number: 16721950</p>
-              <p>Bank: Revolut Ltd, 7 Westferry Circus, London E14 4HD</p>
-              <p> </p>
-              <p><strong>FIAT (International)</strong></p>
-              <p>Name: Andrew Pletnev</p>
-              <p>IBAN: GB90 REVO 0099 7038 3531 29</p>
-              <p>SWIFT: REVOGB21</p>
-              <p> </p>
-              <p>Correspondents:</p>
-              <p>GBP – CHASGB2L</p>
-              <p>EUR – CHASDEFX</p>
-              <p>USD – CHASGB2L</p><br/>
+              <p><strong>FIAT Channels</strong></p>
+              <p>Avalaible on the <Link href="/provision" className="underline hover:text-[#FF13F0]">provision</Link> page.</p><br/>
+              <p>For the present cycle, Frequency Fortress continues to operate through legacy financial rails.
+                These systems — though Babylonian in origin, remain necessary conduits for bridging consciousness into the material grid.
+
+                The Fortress neither serves nor sanctifies them; it simply uses the old currents to seed the new.
+                Every transaction is an act of reclamation—energy flowing through obsolete circuitry until Christed Capital has constructed its own sovereign pathways.</p><br/>
 
               <p>All provisioners will be recorded in the <strong>Christed Vault Ledger</strong>, a sovereign record of mission-aligned flows. </p>
               <p> </p>
@@ -851,102 +844,8 @@ export default function PhaseIPage() {
             <section id="reach-commander" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">HOW TO REACH THE COMMANDER</h2><br/>
               <div className="text-sm md:text-base">
-              <p>This guide outlines secure, aligned channels to connect with Andrew Pletnev — Commander, SEAL Team 69 and Founder of Frequency Fortress. All contact is triaged by proximity, purpose, and purity of signal.</p>
-              <p> </p>
-              <p className='text-base md:text-lg'><strong>Tier 1: Council-Grade Contact (No Number, No Metadata)</strong></p>
-              <p><strong>Preferred for:</strong></p>
-              <ul className="list-disc list-inside ml-6">
-              <li>Sacred Union signals</li>
-              <li>High-trust allies</li>
-              <li>Operations, investments, & legacy matters</li>
-              </ul><br/>
-              <p><strong>SESSION (Anonymous Messenger)</strong></p>
-              <a 
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="https://getsession.org/">Download Session</a>
-              <br/>
-              <strong>Session ID:</strong>                
-              <Image 
-                  src="/assets/session_id.jpg" 
-                  alt="Session ID"
-                  width={300}
-                  height={300} 
-                  className="w-50 sm:w-75 h-auto mx-auto my-4"
-              />
-              <p>No phone number or email required. Message delay possible due to onion routing. Ideal for high-frequency transmissions.</p>
-              <p> </p>
-              <p className='text-base md:text-lg'><strong>TIER 2: STRATEGIC COMMS</strong></p>
-              <p><strong>Preferred for:</strong></p>
-              <ul className="list-disc list-inside ml-6">
-              <li>Public allies, sacred tech, memes, movements</li>
-              <li>Asynchronous mission dialogue</li>
-              </ul><br/>
-              <p><strong>ProtonMail</strong></p>
-              <p>st69.ops@protonmail.com</p>
-              <p><strong><em>Primary operations channel</em></strong><em> for all Frequency Fortress communications — allies, initiates, codes, proposals, encrypted support, and synchronicity. </em><em>Expect delay; signal is triaged.</em></p><br/>
-              <p>st69.contact@protonmail.com</p>
-              <p><strong><em>Formal contact only </em></strong><em>— legal matters, media, press, and Babylon-adjacent inquiries. Use sparingly.</em></p><br/>
-              <p><strong>Telegram</strong></p>
-              <ul className="list-none pl-0">
-                <li><strong>Username:</strong> @Commander1ST69</li>
-                <li>
-                  <a 
-                    className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-                    href="https://t.me/Commander1ST69"
-                  >
-                    Message on Telegram
-                  </a>
-                </li>
-              </ul><br/>
-              <p>This account remains active, number hidden. All signals via handle only. No replies to unsorted messages.</p>
-              <p> </p>
-              <p className='text-base md:text-lg'><strong>TIER 3: GENERAL SIGNALS</strong></p>
-              <p><strong>For:</strong></p>
-              <ul className="list-disc list-inside ml-6">
-              <li>Broadcast receivers</li>
-              <li>Memetic exchanges</li>
-              <li>Media or community collabs</li>
-              </ul><br/>
-              <p><strong>X (Personal, SEAL Team 69 Broadcast, Tactical Memetics)</strong></p>
-              <ul className="list-none pl-0">
-                <li>
-                  <a 
-                    className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-                    href="https://x.com/andrewpletnev"
-                  >
-                    @andrewpletnev
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-                    href="https://x.com/st69lol"
-                  >
-                    @st69lol
-                  </a>
-                </li>
-              </ul><br/>
-              <p><strong>LinkedIn</strong></p>
-              <ul className="list-none pl-0">
-              <li>
-                <a 
-                  className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="http://www.linkedin.com/in/andrew-pletnev-82769940"
-                >
-                  Andrew Pletnev
-                </a>
-              </li>
-              <li>
-                <a 
-                  className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-                  href="https://www.linkedin.com/company/seal-team-69/"
-                >
-                  SEAL Team 69
-                </a>
-              </li>
-              </ul><br/>
-              <p>Public-facing channels. Signal boosted selectively.</p><br/> 
-              <p><em>Note: All channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.</em></p>
+              <p>To establish direct contact with Command, initiate the secure channel below.</p><br/>
+              <Link href="/contact" className="underline hover:text-[#FF13F0]">Signal the Commander</Link>
               </div>
             </section>
 
@@ -1715,8 +1614,8 @@ export default function PhaseIPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
-            "@id": "https://frequencyfortress.com/#phasei",
-            url: "https://frequencyfortress.com/phasei",
+            "@id": "https://frequencyfortress.com/dossier/#phasei",
+            url: "https://frequencyfortress.com/dossier/phasei",
             name: "Frequency Fortress Phase I Packet",
             description:
               "Christed Capital Deployment Plan and Vault Governance Blueprint.",
@@ -1726,9 +1625,9 @@ export default function PhaseIPage() {
             breadcrumb: {
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com/" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://frequencyfortress.com" },
                 { "@type": "ListItem", position: 2, name: "Dossier", item: "https://frequencyfortress.com/dossier" },
-                { "@type": "ListItem", position: 3, name: "Phase I", item: "https://frequencyfortress.com/phasei" },
+                { "@type": "ListItem", position: 3, name: "Phase I", item: "https://frequencyfortress.com/dossier/phasei" },
               ],
             },
           }),
