@@ -14,7 +14,7 @@ export const metadata = {
     description: "Council-approved Override Terminal for New Earth Command.",
     url: 'https://frequencyfortress.com/',
     siteName: 'Frequency Fortress',
-    images: [
+    image: [
       {
         url: 'https://frequencyfortress.com/assets/og_image.png',
         width: 1200,
