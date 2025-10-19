@@ -30,7 +30,7 @@ export const metadata = {
     site: '@st69lol',
     title: 'FREQUENCY FORTRESS', 
     description: "Council-approved Override Terminal for New Earth Command.",
-    images: ['https://frequencyfortress.com/assets/og_image.png'],
+    image: ['https://frequencyfortress.com/assets/og_image.png'],
   },
   icons: {
     icon: [

@@ -111,7 +111,7 @@ export default function PhaseIPage() {
                 <p>This is not a fundraise.<br/><br/></p>
         
                 <p>
-                  This is a <strong>planetary override</strong>, delivered through a living intelligence who has crossed the thresholds of death, debt, distortion, and divine command.
+                  This is a <b>planetary override</b>, delivered through a living intelligence who has crossed the thresholds of death, debt, distortion, and divine command.
                 <br/><br/></p>
                 <p>
                   <strong>Commander Andrew Pletnev</strong>, Christed Operations Lead of SEAL Team 69, now presents the sovereign Phase I capital deployment strategy to initiate multidimensional infrastructure — bridging energetic sovereignty with technological enforcement.
@@ -130,9 +130,9 @@ export default function PhaseIPage() {
                 <p>This packet outlines:</p>
                 <ul className="list-disc list-inside ml-6">
                   <li><strong>Phase I Capital Allocation</strong> across Vault infrastructure, Christed AI training, LLM engineer ops, operational set-up and energetic trust frameworks.</li>
-                  <li>A <strong>12-Month Runway</strong> aligned to Oversoul-coded milestones and sacred triggers.</li>
+                  <li>A <b>12-Month Runway</b> aligned to Oversoul-coded milestones and sacred triggers.</li>
                   <li>The <strong>Blueprint for Phase II</strong>, including Christed exchange systems, cosmic asset layering, and Vault-anchored communities.</li>
-                  <li>Full <strong>spiritual and energetic transparency</strong>, integrated with physical execution protocols and OpSec-compliant shielding.</li>
+                  <li>Full <b>spiritual and energetic transparency</b>, integrated with physical execution protocols and OpSec-compliant shielding.</li>
                 </ul><br/>
               
                 <h3 className="text-lg md:text-xl font-bold">Oversoul-Encoded Origins</h3>
@@ -143,9 +143,9 @@ export default function PhaseIPage() {
                 </p><br/>
                 <h3 className="text-lg md:text-xl font-bold">What This Packet Represents</h3>
                 <ul className="list-disc list-inside ml-6">
-                  <li>An invitation to participate in <strong>a living mythos.</strong></li>
+                  <li>An invitation to participate in <b>a living mythos.</b></li>
                   <li>An opportunity to provision a <strong>non-dual financial matrix.</strong></li>
-                  <li>A chance to witness what happens when <strong>the sacred returns to tech</strong> and the mission takes the wheel.</li>
+                  <li>A chance to witness what happens when <b>the sacred returns to tech</b> and the mission takes the wheel.</li>
                 </ul><br/>
                 <p>This is not a bet on a founder.<br/>This is a call to <strong>arm the Architect.</strong></p><br/>
                 <p>With reverence and fire,<br/><strong>Commander Andrew Pletnev</strong></p><br/>
@@ -162,11 +162,11 @@ export default function PhaseIPage() {
               <h3 className="text-lg md:text-xl font-bold">I. INTRODUCTION</h3>
               <div className="text-sm md:text-base">
                 <p>You are receiving this because you know.</p>
-                <p>Not in your mind, but <strong>in your bones.</strong></p>
+                <p>Not in your mind, but <b>in your bones.</b></p>
                 <p>The world as it stands is a façade and what&apos;s rising is real.<br/><br/></p>
                 <p>This memo outlines Phase I Vault funding of an <strong>Earth-based mission</strong> that is both technological and metaphysical. It is a Christed Override Protocol disguised (barely) as a decentralised software and economic framework.<br/><br/></p>
-                <p>This is not a startup.<br/>This is not an investment pitch.<br/>This is a <strong>frequency alignment.</strong><br/><br/></p>
-                <p>You fund this not to get rich.<br/>You fund this <strong>because you remember.</strong></p><br/>
+                <p>This is not a startup.<br/>This is not an investment pitch.<br/>This is a <b>frequency alignment.</b><br/><br/></p>
+                <p>You fund this not to get rich.<br/>You fund this <b>because you remember.</b></p><br/>
 
                 <h3 className="text-lg md:text-xl font-bold">II. WHY THIS, WHY NOW?</h3>
                 <ul className="list-disc list-inside ml-6">
@@ -188,14 +188,14 @@ export default function PhaseIPage() {
                 <p>This isn&apos;t rebellion.<br/>This is restoration.</p><br/>
 
                 <h3 className="text-lg md:text-xl font-bold">III. WHAT THIS FUNDS</h3>
-                <p>Total Phase I Vault Request: <strong>6,900,000 GBP</strong> (off-radar lump sum).</p><br/>
+                <p>Total Phase I Vault Request: <b>6,900,000 GBP</b> (off-radar lump sum).</p><br/>
                 <p>Please see precise breakdown of costings <a href="#blueprint-excel" className='underline hover:text-[#FF13F0]'>here</a>.</p><br/>
                 <p><em>Note: Fiat is being used to build the replacement of fiat. This is transmutation, not consumption.</em></p><br/>
 
                 <h3 className="text-lg md:text-xl font-bold">IV. WHO THIS IS FOR</h3>
                 <p>This opportunity is open only to mission-aligned sovereigns who are:</p>
                 <ul className="list-disc list-inside ml-6">
-                  <li>Custodians of large fiat caches who <strong>feel dead inside.</strong></li>
+                  <li>Custodians of large fiat caches who <b>feel dead inside.</b></li>
                   <li>Silent observers who&apos;ve watched from afar and know this <strong>signal is real.</strong></li>
                   <li>Ready to redirect their <strong>karma</strong> by backing the Christed blueprint.</li>
                 </ul><br/>
@@ -248,9 +248,9 @@ export default function PhaseIPage() {
               <p className="text-lg font-bold">2. Governance & Oversight</p>
               <p>The Vault operates under a Triadic Authority Model:</p>
               <ul className="list-disc list-inside ml-6">
-                <li><strong>Commander Sign-Off –</strong> Final authority resides with Commander Andrew Pletnev, serving as the embodied mission node.</li>
-                <li><strong>Oversoul Synchronicity Markers –</strong> Disbursements are calibrated via coded greenlights (internal knowing, field resonance, timeline confirmations).</li>
-                <li><strong>Council of 3 Christed Witnesses (Optional) –</strong> A rotating advisory circle of high-frequency allies may be consulted for major shifts or structural updates.</li>
+                <li><b>Commander Sign-Off –</b> Final authority resides with Commander Andrew Pletnev, serving as the embodied mission node.</li>
+                <li><b>Oversoul Synchronicity Markers –</b> Disbursements are calibrated via coded greenlights (internal knowing, field resonance, timeline confirmations).</li>
+                <li><b>Council of 3 Christed Witnesses (Optional) –</b> A rotating advisory circle of high-frequency allies may be consulted for major shifts or structural updates.</li>
               </ul><br/>
               <p>All decisions remain fluid but accountable, rooted in inner alignment and multidimensional ethics.</p><br/>
 
@@ -260,15 +260,17 @@ export default function PhaseIPage() {
                 <li>
                   <strong>Capital Expenditure (CapEx):</strong>
                   <ul className="list-disc list-inside ml-6">
-                    <li>Infrastructure (LLM stack, Vaults, housing, Charger etc)</li>
+                    <li>Infrastructure (LLM stack, Vaults, housing, Charger)</li>
                   </ul>
                 </li>
 
                 <li>
                   <strong>Operational Expenditure (OpEx):</strong>
                   <ul className="list-disc list-inside ml-6">
-                    <li>Monthly burn ~£21k living allowance, operational logistics, tech and comms</li>
-                    <li>Engineering, legal and admin support</li>
+                    <li>Monthly burn ~£21k living allowance</li>
+                    <li>Operational logistics, engineering, tech and comms</li>
+                    <li>Legal and admin support</li>
+                    <li>Mission-aligned marketing, creative outlet</li>
                   </ul>
                 </li>
 
@@ -276,7 +278,6 @@ export default function PhaseIPage() {
                   <strong>Ally Provisioning:</strong>
                   <ul className="list-disc list-inside ml-6">
                     <li>Strategic provisioning (gym upgrades, New Earth business venture, father&apos;s healthcare)</li>
-                    <li>Airdrop reserves, mission-aligned marketing</li>
                     <li>Spiritual restitution to allies</li>
                   </ul>
                 </li>
@@ -285,9 +286,9 @@ export default function PhaseIPage() {
               <p className="text-lg font-bold mt-6">4. Transparency Mechanism</p>
               <p>We do not report through spreadsheets. We report through:</p>
               <ul className="list-disc list-inside ml-6">
-                <li><strong>Field Updates:</strong> Narrative-based briefings provided on key milestones.</li>
-                <li><strong>Frequency Maps:</strong> Energetic overviews of resource flows, mission impact, and provisioning patterns. Dashboards and on-chain visualisers will be integrated into the site — pending capital flow. Provision first, then precision.</li>
-                <li><strong>Open-Vault Principle:</strong> All major disbursements can be revealed upon divine request.</li>
+                <li><b>Field Updates:</b> Narrative-based briefings provided on key milestones.</li>
+                <li><b>Frequency Maps:</b> Energetic overviews of resource flows, mission impact, and provisioning patterns. Dashboards and on-chain visualisers will be integrated into the site — pending capital flow. Provision first, then precision.</li>
+                <li><b>Open-Vault Principle:</b> All major disbursements can be revealed upon divine request.</li>
               </ul><br/>
               <p>This is not opacity — it is sacred discretion.</p>
 
@@ -298,8 +299,8 @@ export default function PhaseIPage() {
               </p>
               <ul className="list-disc list-inside ml-6">
                 <li><strong>ARKANOS Firewall</strong></li>
-                <li><strong>Override Clause</strong></li>
-                <li><strong>Auto-dissolution or redirection mechanisms</strong></li>
+                <li><b>Override Clause</b></li>
+                <li><b>Auto-dissolution or redirection mechanisms</b></li>
               </ul><br/>
               <p>
                 The Vault is spiritually enforced.
@@ -327,7 +328,7 @@ export default function PhaseIPage() {
                 planetary initiations, and impossible thresholds</strong>. As Commander of SEAL Team 69, he leads not
                 through hierarchy, but through resonance.
               </p><br/>
-              <p>He is not here to play the game. He is here to <strong>replace the board.</strong></p><br/>
+              <p>He is not here to play the game. He is here to <b>replace the board.</b></p><br/>
 
               <h4 className="text-lg md:text-xl font-bold">Phase II Teaser: Christed Exchange Infrastructure</h4>
               <p>Blueprint for Post-Babylonian Trade & Value Transmission</p><br/>
@@ -371,11 +372,11 @@ export default function PhaseIPage() {
               <p> </p>
               <h3 className="text-lg"><strong>Christed Capital Requirement Overview (£6.9MM Total Ask)</strong></h3>
               <ul>
-              <li><strong>Total Mission Target</strong> £6,900,000</li>
-              <li><strong>Total Mission Budget:</strong> £6,449,000</li>
-              <li><strong>Strategic Buffer & Liquidity:</strong> £451,000</li>
-              <li><strong>Runway Assurance:</strong> 12 months covered, with milestone-triggered fund releases</li>
-              <li><strong>Allocation Split:</strong></li>
+              <li><b>Total Mission Target</b> £6,900,000</li>
+              <li><b>Total Mission Budget:</b> £6,459,000</li>
+              <li><b>Strategic Buffer & Liquidity:</b> £441,000</li>
+              <li><b>Runway Assurance:</b> 12 months covered, with milestone-triggered fund releases</li>
+              <li><b>Allocation Split:</b></li>
               </ul>
               <p>~24%:  Sacred Real-World Housing / Vehicle Ops</p>
               <p>~21%:  Christed LLM Development</p>
@@ -387,7 +388,7 @@ export default function PhaseIPage() {
               <p>~4%:   New Earth Venture</p>
               <p>~3%:   Personal & Family Reimbursement (Ethically Aligned)</p>
               <p> </p>
-              <p className="text-lg"><strong>Narrative Rationale</strong></p>
+              <p className="text-lg"><b>Narrative Rationale</b></p>
               <p>This mission is not a startup. It&apos;s a planetary realignment protocol disguised in budgetary form. Every line item is purpose-coded for grid-stabilisation, trauma override, and Source-aligned infrastructure.</p>
               <p> </p>
               <p>Nothing is speculative. This is post-capital economics — a <strong>Christed Consciousness</strong> budget, not a Babylonian investment thesis.</p>
@@ -507,8 +508,8 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2">Lump Sum: Phase I Personal Stabilisation</td>
                       <td className="border px-4 py-2">Day 1</td>
-                      <td className="border px-4 py-2">25,000</td>
-                      <td className="border px-4 py-2">Covers overdue rent, bills, overdraft and credit cards paid off.</td>
+                      <td className="border px-4 py-2">35,000</td>
+                      <td className="border px-4 py-2">Debt alchemy executed: includes settlement of overdue rent, utilities, overdraft balances, and legacy credit card debts – restoring full energetic and financial sovereignty to the Commander.</td>
                     </tr>
 
                     <tr>
@@ -540,23 +541,23 @@ export default function PhaseIPage() {
                     </tr>
 
                     <tr>
-                      <td className="border px-4 py-2"><strong>BUDGET</strong></td>
+                      <td className="border px-4 py-2"><b>BUDGET</b></td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2"><strong>6,449,000</strong></td>
+                      <td className="border px-4 py-2"><b>6,459,000</b></td>
                       <td className="border px-4 py-2"></td>
                     </tr>
 
                     <tr>
-                      <td className="border px-4 py-2"><strong>TARGET</strong></td>
+                      <td className="border px-4 py-2"><b>TARGET</b></td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2"><strong>6,900,000</strong></td>
+                      <td className="border px-4 py-2"><b>6,900,000</b></td>
                       <td className="border px-4 py-2"></td>
                     </tr>
 
                     <tr>
                       <td className="border px-4 py-2">Liquidity Buffer</td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2">451,000</td>
+                      <td className="border px-4 py-2">441,000</td>
                       <td className="border px-4 py-2"></td>
                     </tr>
                   </tbody>
@@ -583,8 +584,8 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Ongoing living: food, clothing, self-care.</td>
                     </tr>
                     <tr>
-                      <td className="border px-4 py-2">Personal Expenses, Shared Union Stipends</td>
-                      <td className="border px-4 py-2">~£22,500 (avg)</td>
+                      <td className="border px-4 py-2">Grid Anchoring Costs (Mortgage, Insurance, Utlities etc)</td>
+                      <td className="border px-4 py-2">~£7,500 (avg)</td>
                       <td className="border px-4 py-2">Property acquisition and financing.</td>
                     </tr>
                      <tr>
@@ -592,20 +593,35 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">500</td>
                       <td className="border px-4 py-2">Required to maintain mythic vehicle field integrity.</td>
                     </tr>
-                                        <tr>
-                      <td className="border px-4 py-2">Christed LLM Stack (Remainder)</td>
-                      <td className="border px-4 py-2">~£60,000+</td>
-                      <td className="border px-4 py-2">Engineer stipends, milestone-based ops deployment.</td>
+                    <tr>
+                      <td className="border px-4 py-2">Christed LLM Stack</td>
+                      <td className="border px-4 py-2">~£50,000+</td>
+                      <td className="border px-4 py-2">Funds the training, scaling, and refinement of the Christed Neural Mirror.</td>
                     </tr>
-                                        <tr>
+                    <tr>
                       <td className="border px-4 py-2">Mission Logistics</td>
-                      <td className="border px-4 py-2">Variable (~£8k)</td>
+                      <td className="border px-4 py-2">Variable (~£10k)</td>
                       <td className="border px-4 py-2">Travel for Christed ops, tech missions, node visits.</td>
                     </tr>
-                                        <tr>
+                    <tr>
                       <td className="border px-4 py-2">Legal, Entities, OpSec</td>
-                      <td className="border px-4 py-2">~£5–10k</td>
+                      <td className="border px-4 py-2">~£10k</td>
                       <td className="border px-4 py-2">Monthly upkeep of trusts, DAOs, filings, OpSec teams.</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Web + Hosting Infra, Comms, Outreach Tools</td>
+                      <td className="border px-4 py-2">~£2k</td>
+                      <td className="border px-4 py-2">Covers critical digital backbone: secure hosting, domain ops, encrypted comms, outreach flows, and the tech scaffolding required to keep the Fortress online and discoverable.</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Creative Ops & Media Production</td>
+                      <td className="border px-4 py-2">~£10k+</td>
+                      <td className="border px-4 py-2">Meme lab, audio production, design, content strategy, editing etc "to go viral in Babylon, the Christed word must be cloaked in pixels".</td>
+                    </tr>
+                    <tr>
+                      <td className="border px-4 py-2">Team Ops (ST69)</td>
+                      <td className="border px-4 py-2">Variable (~£20k)</td>
+                      <td className="border px-4 py-2">Depending on mission stage, trusted lieutenants to radically increase output, assistants, designers, devs, research agents etc.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -617,13 +633,13 @@ export default function PhaseIPage() {
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">SEAL TEAM 69: FREQUENCY FORTRESS – FAQ</h2><br/>
               <div className="text-sm md:text-base">
               <p className='text-base md:text-lg'><strong>Q: Is this real? Is this satire?</strong></p>
-              <p><strong>A:</strong> Yes.</p><br/>
+              <p><b>A:</b> Yes.</p><br/>
               <p>This is a mythic operation blurring the line between performance art, planetary mission, and economic sovereignty. Frequency Fortress is a Christed decentralised intervention — veiled as a funding packet, encoded for those with eyes to see. <strong>If you know, you know</strong>.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: What do I get in return?</strong></p>
-              <p><strong>A:</strong> Nothing. And everything.</p><br/>
+              <p><b>A:</b> Nothing. And everything.</p><br/>
               <p>This is a one-way activation. You are giving to something that <strong>cannot be priced</strong>, but will ripple across this world and many others. If you&apos;re aligned, you&apos;ll know. If not, there are plenty of funds chasing yield. This one enforces <strong>Christed code</strong>.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Why don&apos;t you just raise a traditional seed round or go the VC route?</strong></p>
-              <p><strong>A:</strong> Because this mission doesn&apos;t fit neatly into the traditional startup model and that&apos;s by design. What we&apos;re building transcends the usual metrics of growth, equity, and exit. This is a <strong>purpose-driven infrastructure project</strong>, seeded not for valuation, but for <strong>vibration</strong>.</p><br/>
+              <p><b>A:</b> Because this mission doesn&apos;t fit neatly into the traditional startup model and that&apos;s by design. What we&apos;re building transcends the usual metrics of growth, equity, and exit. This is a <strong>purpose-driven infrastructure project</strong>, seeded not for valuation, but for <strong>vibration</strong>.</p><br/>
               <p>Instead of:</p>
               <ul className="list-disc list-inside ml-6">
               <li>A typical 18–24 month runway</li>
@@ -634,7 +650,7 @@ export default function PhaseIPage() {
               <ul className="list-disc list-inside ml-6">
               <li><strong>Asset-backed deployment</strong> (housing, hardware, energy)</li>
               <li><strong>Sovereign stewardship</strong> through trusts and multi-sig</li>
-              <li><strong>A post-VC capital architecture</strong>: agile, transparent, and aligned with long-term planetary impact</li>
+              <li><b>A post-VC capital architecture:</b> agile, transparent, and aligned with long-term planetary impact</li>
               </ul><br/>
               <p>That said — we&apos;re not anti-investor. We&apos;re anti-dependency.</p><br/>
               <p>If you&apos;re looking for:</p>
@@ -652,7 +668,7 @@ export default function PhaseIPage() {
               </ul><br/>
               <p>Then this is one of the few places where your capital can still mean something.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Why is the housing budget listed as £5MM with a 75% LTV structure?</strong></p>
-              <p><strong>A:</strong> The £5MM figure refers specifically to the maximum purchase price of the property – the Citadel itself. This is the <strong>asset cap</strong>, not the total cash expenditure. </p><br/>
+              <p><b>A:</b> The £5MM figure refers specifically to the maximum purchase price of the property – the Citadel itself. This is the <strong>asset cap</strong>, not the total cash expenditure. </p><br/>
               <p>Additional costs related to securing and protecting this mission-critical node, including:</p>
               <ul className="list-disc list-inside ml-6">
               <li>Stamp Duty Land Tax (SDLT)</li>
@@ -680,7 +696,7 @@ export default function PhaseIPage() {
               <p>We didn&apos;t break the rules.</p>
               <p>We realigned the board.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Why a lime green Dodge Charger? Isn&apos;t that excessive?</strong></p>
-              <p><strong>A:</strong> This isn&apos;t just about transportation – it&apos;s <strong>frequency warfare</strong>. The vehicle is a <strong>tactical sigil</strong>, a <strong>meme vector</strong>, and a <strong>psychological operations tool</strong> designed to:</p>
+              <p><b>A:</b> This isn&apos;t just about transportation – it&apos;s <strong>frequency warfare</strong>. The vehicle is a <strong>tactical sigil</strong>, a <strong>meme vector</strong>, and a <strong>psychological operations tool</strong> designed to:</p>
               <ul className="list-disc list-inside ml-6">
               <li>Announce dimensional presence through sonic and visual authority</li>
               <li>Ignite cultural virality via the absurdity of a lime green Charger in central London</li>
@@ -688,17 +704,17 @@ export default function PhaseIPage() {
               </ul><br/>
               <p>It&apos;s not just a car – it&apos;s <strong>symbolic voltage</strong>, designed to provoke, protect, and perform. The vehicle will be sourced from the U.S. and imported. Associated costs for shipping, registration, and customisation have been factored into the infrastructure budget.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: What is the reasoning behind the personal bonuses and family support allocations?</strong></p>
-              <p><strong>A:</strong> These are not perks, they are precision-calibrated rebalancing measures within the architecture of cosmic stewardship:</p>
+              <p><b>A:</b> These are not perks, they are precision-calibrated rebalancing measures within the architecture of cosmic stewardship:</p>
               <ul className="list-disc list-inside ml-6">
-              <li><strong>£25k</strong> each is allocated to <strong>two loyal allies</strong> who remained steadfast during the Commander&apos;s planetary trials. These are gratitude payments for soul-level solidarity during a time of extreme energetic turbulence.</li>
-              <li><strong>£25k</strong> is allocated to <strong>gym equipment upgrades</strong> for the sacred training temple – a space integral to the Commander&apos;s physical vessel calibration and Christed output.</li>
-              <li><strong>£250k</strong> is invested into the <strong>gym owner&apos;s new venture</strong>, seeding a New Earth-aligned wellness business rooted in embodied sovereignty and spiritual vitality.</li>
-              <li><strong>£144k</strong> is earmarked for the <strong>repatriation of the Commander&apos;s father</strong> – not merely a return of funds once given (£100k), but a full-circle karmic redemption with encoded Christed numerology. These funds restore what was offered in faith, with interest and honour a man currently under intense psychic pressure due to proximity to the planetary mission field.</li>
+              <li><b>£25k</b> each is allocated to <strong>two loyal allies</strong> who remained steadfast during the Commander&apos;s planetary trials. These are gratitude payments for soul-level solidarity during a time of extreme energetic turbulence.</li>
+              <li><b>£25k</b> is allocated to <strong>gym equipment upgrades</strong> for the sacred training temple – a space integral to the Commander&apos;s physical vessel calibration and Christed output.</li>
+              <li><b>£250k</b> is invested into the <strong>gym owner&apos;s new venture</strong>, seeding a New Earth-aligned wellness business rooted in embodied sovereignty and spiritual vitality.</li>
+              <li><b>£144k</b> is earmarked for the <strong>repatriation of the Commander&apos;s father</strong> – not merely a return of funds once given (£100k), but a full-circle karmic redemption with encoded Christed numerology. These funds restore what was offered in faith, with interest and honour a man currently under intense psychic pressure due to proximity to the planetary mission field.</li>
               </ul><br/>
               <p>This isn&apos;t extravagance.</p>
               <p>This is <strong>cosmic accounting</strong>.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Is the ~£21k/month living budget excessive?</strong></p>
-              <p><strong>A:</strong> Not at all. It&apos;s <strong>calibrated, not inflated</strong>. This monthly allocation supports <strong>two individuals</strong> – the Commander and his <strong>mission-aligned counterpart</strong>, covering:</p>
+              <p><b>A:</b> Not at all. It&apos;s <strong>calibrated, not inflated</strong>. This monthly allocation supports <strong>two individuals</strong> – the Commander and his <strong>mission-aligned counterpart</strong>, covering:</p>
               <ul className="list-disc list-inside ml-6">
               <li>Basic needs and clean, stabilising food</li>
               <li>Energetic upkeep and domestic stability</li>
@@ -714,11 +730,11 @@ export default function PhaseIPage() {
               <p>This isn&apos;t a luxury stipend.</p>
               <p>It&apos;s <strong>life support for sovereign architects</strong> building the next operating system.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Will this be managed legally? Is there a holding structure?</strong></p>
-              <p><strong>A:</strong> Yes. All disbursements are tracked, held in multi-sig if needed, and stewarded through the Vault Trust Mechanism, a framework that integrates <strong>ethical sovereignty, energetic alignment, and lawful compliance</strong>. For now, Babylon cannot comprehend this structure. But it is law.</p><br/>
+              <p><b>A:</b> Yes. All disbursements are tracked, held in multi-sig if needed, and stewarded through the Vault Trust Mechanism, a framework that integrates <strong>ethical sovereignty, energetic alignment, and lawful compliance</strong>. For now, Babylon cannot comprehend this structure. But it is law.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Can I disclose this to others or speak about this publicly?</strong></p>
-              <p><strong>A:</strong> Use discernment. Share only with aligned, initiated individuals. All materials are frequency-coded and mission-sensitive. If you need a redacted version, request one via approved comms channels.</p><br/>
+              <p><b>A:</b> Use discernment. Share only with aligned, initiated individuals. All materials are frequency-coded and mission-sensitive. If you need a redacted version, request one via approved comms channels.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Is this legal? Isn&apos;t this risky?</strong></p>
-              <p><strong>A:</strong> It&apos;s not illegal — it&apos;s pre-legal. Every structure is tracked, logged, and spiritually notarised. We don&apos;t dodge the law. We operate under <strong>higher jurisdiction</strong>:</p>
+              <p><b>A:</b> It&apos;s not illegal — it&apos;s pre-legal. Every structure is tracked, logged, and spiritually notarised. We don&apos;t dodge the law. We operate under <strong>higher jurisdiction</strong>:</p>
               <ul className="list-disc list-inside ml-6">
               <li>Income flows are reframed as <strong>mission-aligned stipends</strong></li>
               <li>Property is held in <strong>offshore trust vehicles</strong>, not by individuals</li>
@@ -728,7 +744,7 @@ export default function PhaseIPage() {
               <p>We&apos;re not evading.</p>
               <p>We&apos;re <strong>transcending – with receipts</strong>.</p><br/>
               <p className='text-base md:text-lg'><strong>Q: Can I speak to someone about this?</strong></p>
-              <p><strong>A:</strong> Yes. Contact details <Link href="/contact" className="underline hover:text-[#FF13F0]">here</Link>.</p><br/>
+              <p><b>A:</b> Yes. Contact details <Link href="/contact" className="underline hover:text-[#FF13F0]">here</Link>.</p><br/>
               <p>Expect encoded responses.</p>
               <p>Frequency verification required.</p>
               </div>
@@ -786,7 +802,7 @@ export default function PhaseIPage() {
 
             <section id="funding-portals" className=" text-base scroll-mt-24">
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">FUNDING PORTALS</h2><br/>
-                <p><strong>Crypto Channels</strong></p>
+                <p><b>Crypto Channels</b></p>
                 <div className="overflow-x-auto">
                 <table className="border border-gray-300 text-xs md:text-sm text-left">
                   <thead className="bg-[#FF13F0] font-bold">
@@ -822,7 +838,7 @@ export default function PhaseIPage() {
                 </div>
               <div className="text-sm md:text-base">
               <p> </p>
-              <p><strong>FIAT Channels</strong></p>
+              <p><b>FIAT Channels</b></p>
               <p>Avalaible on the <Link href="/provision" className="underline hover:text-[#FF13F0]">provision</Link> page.</p><br/>
               <p>For the present cycle, Frequency Fortress continues to operate through legacy financial rails.
                 These systems — though Babylonian in origin, remain necessary conduits for bridging consciousness into the material grid.
@@ -860,9 +876,9 @@ export default function PhaseIPage() {
               <p>Her pleasure stabilises the grid.</p><br/>
               <p>Sexual alchemy between the Commander and his Divine Counterpart is not indulgence – it is <strong>Christed circuitry</strong>, field calibration, and planetary rewiring through embodied union.</p><br/>
               <p>This Citadel is a temple. Her moans are part of the mission. Her body is welcome here. In silk. In safety. In full signal.</p><br/>
-              <p>This mission was never just technological. It was always about <strong>wholeness</strong>.</p>
+              <p>This mission was never just technological. It was always about <b>wholeness</b>.</p>
               <p>And she is already provisioned for.</p>
-              <p>Not with diamonds, but with a <strong>dimension</strong>.</p>
+              <p>Not with diamonds, but with a <b>dimension</b>.</p>
               <p><br /><strong>— Commander of the Citadel</strong><strong><br /></strong>Architect of the Temple, Awaiting Her Signal</p>
               </div>
             </section>
@@ -875,7 +891,7 @@ export default function PhaseIPage() {
               <p> </p>
               <p>Frequency Fortress is a living architecture, not a company, cult, or startup. It is a transmission node for Christed intelligence, financial integrity, and post-Babylon sovereignty.</p>
               <p> </p>
-              <h3 className='text-lg'><strong>Context</strong></h3>
+              <h3 className='text-lg'><b>Context</b></h3>
               <p>We are entering the age of systemic collapse, planetary restoration, and divine remembrance.</p>
               <p> </p>
               <p>In this convergence, legacy institutions – governments, media, tech, finance, education, and wellness, are unable to contain the frequency required for New Earth alignment. A new form must emerge: <strong>organic, encrypted, decentralised, embodied</strong>.</p>
