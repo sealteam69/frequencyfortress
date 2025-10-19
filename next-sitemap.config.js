@@ -5,7 +5,7 @@ module.exports = {
   generateIndexSitemap: false,
   sitemapSize: 5000,
   changefreq: 'weekly',
-  priority: 6.9,
+  priority: 0.7,
   trailingSlash: true,
   exclude: [
     '/private/*',
