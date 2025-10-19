@@ -74,7 +74,6 @@ export default function DossierPage() {
           className="
             text-[20px] sm:text-[30px] md:text-[36px] 
             tracking-widest
-            font-semibold
             text-[#4A4545]
           "
         >
