@@ -616,7 +616,7 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2">Creative Ops & Media Production</td>
                       <td className="border px-4 py-2">~£10k+</td>
-                      <td className="border px-4 py-2">Meme lab, audio production, design, content strategy, editing etc "to go viral in Babylon, the Christed word must be cloaked in pixels".</td>
+                      <td className="border px-4 py-2">Meme lab, audio production, design, content strategy, editing etc &quot;to go viral in Babylon, the Christed word must be cloaked in pixels&quot;.</td>
                     </tr>
                     <tr>
                       <td className="border px-4 py-2">Team Ops (ST69)</td>
