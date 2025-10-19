@@ -5,5 +5,5 @@ Allow: /
 # Host
 Host: https://frequencyfortress.com
 
-# Sitemap
+# Sitemaps
 Sitemap: https://frequencyfortress.com/sitemap.xml
