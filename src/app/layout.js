@@ -53,6 +53,10 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="ST69 Patch" />
 
+        <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       </head>
