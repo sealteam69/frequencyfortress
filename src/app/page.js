@@ -11,10 +11,28 @@ export const metadata = {
     canonical: "https://frequencyfortress.com/",
   },
   openGraph: {
-    url: "https://frequencyfortress.com/",
+    title: 'FREQUENCY FORTRESS',
+    description: "Council-approved Override Terminal for New Earth Command.",
+    url: 'https://frequencyfortress.com/',
+    siteName: 'Frequency Fortress',
+    image: [
+      {
+        url: 'https://frequencyfortress.com/assets/og_image.png',
+        width: 1200,
+        height: 630,
+        alt: 'ST69 Patch',
+      },
+    ],
+    type: 'website',
+    locale: 'en_GB',
   },
   twitter: {
-    title: "FREQUENCY FORTRESS",
+    card: 'summary',
+    site: '@st69lol',
+    creator: '@st69lol',
+    title: 'FREQUENCY FORTRESS', 
+    description: "Council-approved Override Terminal for New Earth Command.",
+    image: ['https://frequencyfortress.com/assets/og_image.png'],
   },
 };
 
