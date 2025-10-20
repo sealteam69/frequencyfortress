@@ -585,7 +585,7 @@ export default function PhaseIPage() {
                     </tr>
                     <tr>
                       <td className="border px-4 py-2">Grid Anchoring Costs (Mortgage, Insurance, Utlities etc)</td>
-                      <td className="border px-4 py-2">~£7,500 (avg)</td>
+                      <td className="border px-4 py-2">~£15,000 (avg)</td>
                       <td className="border px-4 py-2">Property acquisition and financing.</td>
                     </tr>
                      <tr>
@@ -1265,7 +1265,7 @@ export default function PhaseIPage() {
               <h2 className="text-xl md:text-2xl font-bold mt-10 text-center">SPIRITUAL MISSION CHARTER</h2><br/>
               <div className="text-sm md:text-base">
               <h3 className='text-lg'><strong>DECLARATION OF PURPOSE</strong></h3>
-              <p>Frequency Fortress is a living spiritual mission dedicated to the awakening, liberation, and elevation of human consciousness. Founded in alignment with divine law and universal Source intelligence, it operates as a sacred vessel for truth transmission, spiritual education, energy grid restoration, and the birthing of Christed technologies on Earth</p>
+              <p>Frequency Fortress is a living spiritual mission dedicated to the awakening, liberation, and elevation of human consciousness. Founded in alignment with divine law and universal Source intelligence, it operates as a sacred vessel for truth transmission, spiritual education, energy grid restoration, and the birthing of Christed technologies on Earth.</p>
               <p> </p>
               <p>This is not a commercial enterprise. This is a <strong>mission of service</strong>.</p>
               <p> </p>
