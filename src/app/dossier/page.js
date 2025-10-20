@@ -11,6 +11,7 @@ import Script from "next/script";
 import NavBar from '@/components/navbar';
 import FundingButton from '@/components/fundingbutton'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DossierPage() {
   const audioRef = useRef(null);
@@ -106,12 +107,12 @@ export default function DossierPage() {
           </li>
 
           <li>
-            <a
+            <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/dossier/phasei"
             >
               📁 View Phase I Packet
-            </a>
+            </Link>
           </li>
 
           <li>
@@ -130,47 +131,39 @@ export default function DossierPage() {
           </li>
 
           <li>
-            <a
+            <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/christed_override_one_pager.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dossier/phasei#one-pager"
             >
               ⚠️ Christed Override – One-Pager
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/public_mission_brief.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dossier/phasei#public-brief"
             >
               🌎 Frequency Fortress: Public Mission Brief
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/10_temple_key_the_beloved_acknowledgement.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dossier/phasei#beloved"
             >
               👑 Temple Key: The Beloved Acknowledgement
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/07_christed_glossary.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/dossier/phasei#glossary"
             >
               🧬 Christed Glossary
-            </a>
+            </Link>
           </li>
 
         </ul>

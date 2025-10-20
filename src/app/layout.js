@@ -7,7 +7,6 @@ export const metadata = {
   title: 'FREQUENCY FORTRESS',
   description: "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   metadataBase: new URL('https://frequencyfortress.com'),
-
   robots: { index: true, follow: true },
   openGraph: {
     title: 'FREQUENCY FORTRESS',
@@ -28,6 +27,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     site: '@st69lol',
+    creator: '@st69lol',
     title: 'FREQUENCY FORTRESS', 
     description: "Council-approved Override Terminal for New Earth Command.",
     image: ['https://frequencyfortress.com/assets/og_image.png'],
@@ -53,12 +53,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="ST69 Patch" />
 
-        <link rel="stylesheet" href="https://use.typekit.net/hio6xnf.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 
       </head>
       
