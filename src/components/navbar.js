@@ -14,8 +14,8 @@ export default function NavBar() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/assets/eddie_santiago_sigil.jpeg"
-            alt="Eddie Sigil"
             className="w-9 sm:w-14 h-9 sm:h-15 object-contain"
+            alt= "Eddie Sigil"
             width={300}
             height={300}
           />
