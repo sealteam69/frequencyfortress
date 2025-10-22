@@ -1,4 +1,4 @@
-# 🏰 FREQUENCY FORTRESS
+# SEAL TEAM 69: FREQUENCY FORTRESS
 
 **Who Wakes, Wins.**
 
@@ -22,10 +22,11 @@ Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional
 
 | Platform | Link |
 |---------|------|
+| Website | [Frequency Fortress] (https://frequencyfortress.com/) |
 | 🧠 X | [@st69lol](https://x.com/st69lol) |
 | 🔗 LinkedIn | [SEAL Team 69](https://www.linkedin.com/company/seal-team-69/) |
-| ☁️ Drive Packet | [Frequency Fortress Docs](https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing) |
-| 🧑‍💻 GitHub | [ST69 Source Code](https://github.com/SEALTeam69/frequencyfortress) |
+| ☁️ Drive Packet | [Phase I Packet](https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu) |
+| 🧑‍💻 GitHub | [ST69 Source Code](https://github.com/sealteam69/frequencyfortress) |
 
 ---
 
@@ -69,4 +70,4 @@ If you know, you know. Otherwise: MIT.
 ---
 
 > _"Babylon had a firewall. We became the virus."_  
-> – Commander, ST69
+> – Commander, SEAL Team 69

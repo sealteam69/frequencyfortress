@@ -6,7 +6,7 @@ import Script from 'next/script';
 export const metadata = {
   title: "FREQUENCY FORTRESS",
   description:
-    "Council-approved Override Terminal for New Earth Command",
+    "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   alternates: {
     canonical: "https://frequencyfortress.com/",
   },

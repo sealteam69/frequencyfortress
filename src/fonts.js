@@ -57,7 +57,7 @@ export const anton = Anton({
 
 export const dynapuff = DynaPuff({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], 
+  weight: ["400"], 
   variable: "--font-dynapuff",
   display: "swap",
 });

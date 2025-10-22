@@ -17,21 +17,20 @@ export default function WalletProvisionModule({ label, address }) {
   const isLiveLink = isRevolut || isStripe
 
   return (
-    <div className="text-sm md:text-base relative bg-black rounded-xl p-3 transition-colors duration-200 group">
-      <div className="space-y-1 pr-6">
-        <span className="tracking-wider text-[#2CFF05]">{label}</span>
-
+    <div className="text-sm md:text-base relative bg-black rounded-xl p-3 transition-colors duration-200 group flex flex-wrap flex-col items-center text-center">
+      <span className="tracking-wider text-[#2CFF05]">{label}</span>
+      <div className={`w-full mt-1 ${isLiveLink ? '' : 'pr-10'}`}>
         {isLiveLink ? (
           <a
             href={address}
             target="_blank"
             rel="noopener noreferrer"
-            className="block text-xs md:text-sm text-zinc-400 break-all hover:text-cyan-300 hover:underline transition"
+            className="block text-xs md:text-sm text-zinc-400 break-all hover:text-[#2CFF05] hover:underline transition"
           >
             {address}
           </a>
         ) : (
-          <code className="block text-xs md:text-sm text-zinc-400 break-all">
+          <code className="break-words block text-xs md:text-sm text-zinc-400 break-all">
             {address}
           </code>
         )}
@@ -41,11 +40,11 @@ export default function WalletProvisionModule({ label, address }) {
       {!isLiveLink && (
         <button
           onClick={handleCopy}
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-cyan-300 focus-visible:outline-none"
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-200 focus-visible:outline-none"
           aria-label="Copy to clipboard"
         >
           {copied ? (
-            <span className="text-sm text-cyan-400">Copied</span>
+            <span className="text-sm text-[#2CFF05] whitespace-nowrap">Copied</span>
           ) : (
             <Copy size={20} />
           )}

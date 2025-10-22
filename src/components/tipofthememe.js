@@ -28,8 +28,7 @@ export default function TipOfTheMemeFooter() {
         text-[#00ffff] 
         rounded-[24px] 
         animate-pulse-border-bg
-      "
-    >
+      ">
       <p className="
         text-[22px] 
         sm:text-[36px] 

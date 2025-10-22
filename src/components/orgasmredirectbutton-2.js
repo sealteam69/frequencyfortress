@@ -41,9 +41,8 @@ export default function OrgasmButton({
         ref={buttonRef}
         onClick={handleClick}
         className="
-        px-5 py-3 sm:px-6 sm:py-3 md:px-6 sm:py-3 md:px-6 sm:py-3 lg:px-7 sm:py-4
-        text-[18px] sm:text-[22px] md:text-[24px] lg:text-[26px] 
-        font-bold 
+        px-6 py-4 sm:px-8 sm:py-5
+        text-[18px] sm:text-[22px] md:text-[26px] 
         font-['ocr-a-std'] 
         text-[#2cff05] 
         bg-[rgb(245,0,0)]
