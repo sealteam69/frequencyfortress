@@ -8,7 +8,7 @@ Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional
 
 ## ⚙️ What Is This?
 
-`frequencyfortress.com` is the living architecture of:
+`https://frequencyfortress.com/` is the living architecture of:
 
 - 🧬 **Christed Capital Deployment**
 - 🌐 **Divine Technology Infrastructure**
@@ -22,7 +22,7 @@ Welcome to the official launch terminal for **SEAL Team 69**: a multidimensional
 
 | Platform | Link |
 |---------|------|
-| Website | [Frequency Fortress] (https://frequencyfortress.com/) |
+| Website | [Frequency Fortress](https://frequencyfortress.com/) |
 | 🧠 X | [@st69lol](https://x.com/st69lol) |
 | 🔗 LinkedIn | [SEAL Team 69](https://www.linkedin.com/company/seal-team-69/) |
 | ☁️ Drive Packet | [Phase I Packet](https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu) |
@@ -69,5 +69,5 @@ If you know, you know. Otherwise: MIT.
 
 ---
 
-> _"Babylon had a firewall. We became the virus."_  
-> – Commander, SEAL Team 69
+_"Babylon had a firewall. We became the virus."_  
+– Commander, SEAL Team 69
