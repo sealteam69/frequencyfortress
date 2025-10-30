@@ -133,7 +133,7 @@ export default function DossierPage() {
           <li>
             <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/dossier/phasei#one-pager"
+              href="/pdfs/christed_override_one_pager.pdf"
             >
               ⚠️ Christed Override – One-Pager
             </Link>
@@ -142,7 +142,7 @@ export default function DossierPage() {
           <li>
             <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/dossier/phasei#public-brief"
+              href="/pdfs/public_mission_brief.pdf"
             >
               🌎 Frequency Fortress: Public Mission Brief
             </Link>
@@ -151,7 +151,7 @@ export default function DossierPage() {
           <li>
             <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/dossier/phasei#beloved"
+              href="/pdfs/10_temple_key_the_beloved_acknowledgement.pdf"
             >
               👑 Temple Key: The Beloved Acknowledgement
             </Link>
@@ -160,7 +160,7 @@ export default function DossierPage() {
           <li>
             <Link
               className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/dossier/phasei#glossary"
+              href="/pdfs/07_christed_glossary.pdf"
             >
               🧬 Christed Glossary
             </Link>
