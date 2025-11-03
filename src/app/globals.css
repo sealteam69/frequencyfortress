@@ -311,7 +311,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 0 0 12px #ffffff, 0 0 24px #ffffff;
+  text-shadow:
+  0 0 6px #ffffff,
+  0 0 12px #ffffff,
+  0 0 24px #ffffff,
+  0 0 48px #ffffff;
   pointer-events: none;
   transition: opacity 0.4s ease, transform 0.4s ease;
   user-select: none;

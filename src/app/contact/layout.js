@@ -1,8 +1,8 @@
 export async function generateMetadata() {
-  const url = 'https://frequencyfortress.com/dossier/phasei';
-  const title = 'FREQUENCY FORTRESS / PHASE I';
+  const url = 'https://frequencyfortress.com/contact';
+  const title = 'FREQUENCY FORTRESS / CONTACT';
   const description =
-    'Explore the Christed Capital Deployment Plan for Frequency Fortress Phase I.';
+    'Contact Command and signal the Fortress. Secure contact channels for Council-grade communications for mission-aligned provisioners.';
 
   return {
     title,
@@ -32,7 +32,7 @@ export async function generateMetadata() {
           url: 'https://frequencyfortress.com/assets/og_image.png',
           width: 1200,
           height: 630,
-          alt: 'Frequency Fortress Phase I',
+          alt: 'Frequency Fortress Contact',
         },
       ],
       type: 'website',
@@ -56,4 +56,8 @@ export async function generateMetadata() {
       'application-name': 'SEAL Team 69',
     },
   };
+}
+
+export default function Layout({ children }) {
+  return <>{children}</>;
 }

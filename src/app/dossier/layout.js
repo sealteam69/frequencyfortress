@@ -1,8 +1,8 @@
 export async function generateMetadata() {
-  const url = 'https://frequencyfortress.com/contact';
-  const title = 'FREQUENCY FORTRESS / CONTACT';
+  const url = 'https://frequencyfortress.com/dossier';
+  const title = 'FREQUENCY FORTRESS / DOSSIER';
   const description =
-    'Contact Command and signal the Fortress. Secure contact channels for Council-grade communications for mission-aligned provisioners.';
+    'Unlock classified documents for the Frequency Fortress Mission. Browse Council-approved briefs, Christed infrastructure blueprints and encrypted scrolls.';
 
   return {
     title,
@@ -32,7 +32,7 @@ export async function generateMetadata() {
           url: 'https://frequencyfortress.com/assets/og_image.png',
           width: 1200,
           height: 630,
-          alt: 'Frequency Fortress Contact',
+          alt: 'Frequency Fortress Dossier',
         },
       ],
       type: 'website',
@@ -56,4 +56,8 @@ export async function generateMetadata() {
       'application-name': 'SEAL Team 69',
     },
   };
+}
+
+export default function Layout({ children }) {
+  return <>{children}</>;
 }
