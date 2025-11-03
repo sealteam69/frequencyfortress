@@ -10,7 +10,9 @@ module.exports = {
   exclude: [
     '/private/*',
     '/hidden',
-    '/orgasm404*' 
+    '/orgasm404',
+    '/orgasm404-2',
+    '/orgasm404-3', 
   ],
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],

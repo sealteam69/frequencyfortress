@@ -1,8 +1,8 @@
 export async function generateMetadata() {
-  const url = 'https://frequencyfortress.com/dossier';
-  const title = 'FREQUENCY FORTRESS / DOSSIER';
+  const url = 'https://frequencyfortress.com/dossier/phasei';
+  const title = 'FREQUENCY FORTRESS / PHASE I';
   const description =
-    'Unlock classified documents for the Frequency Fortress Mission. Browse Council-approved briefs, Christed infrastructure blueprints and encrypted scrolls.';
+    'Explore the Christed Capital Deployment Plan for Frequency Fortress Phase I.';
 
   return {
     title,
@@ -32,7 +32,7 @@ export async function generateMetadata() {
           url: 'https://frequencyfortress.com/assets/og_image.png',
           width: 1200,
           height: 630,
-          alt: 'Frequency Fortress Dossier',
+          alt: 'Frequency Fortress Phase I',
         },
       ],
       type: 'website',
@@ -56,4 +56,8 @@ export async function generateMetadata() {
       'application-name': 'SEAL Team 69',
     },
   };
+}
+
+export default function Layout({ children }) {
+  return <>{children}</>;
 }
