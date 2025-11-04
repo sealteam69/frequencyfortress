@@ -36,7 +36,7 @@ export default function NavBar() {
  
             <Link href="/dossier" className="hover:text-[#FF13F0] transition">/DOSSIER</Link>
             {open && (
-                <div className="absolute left-3 mt-1 bg-white/90 text-left min-w-[200px] border border-black/10 shadow-sm">
+                <div className="absolute mt-1 bg-white/90 text-left min-w-[200px] border border-black/10 shadow-sm">
                 <Link
                     href="/dossier/phasei"
                     className="flex justify-between px-4 py-2 hover:text-[#FF13F0] text-nowrap"

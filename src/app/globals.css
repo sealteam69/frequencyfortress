@@ -158,6 +158,13 @@ body {
     2px 0 cyan;
 }
 
+.aberration-2 {
+  color: white;
+  text-shadow:
+    -1.5px 0 red,
+    1.5px 0 cyan;
+}
+
 /* ===================== GLOW EFFECT ===================== */
 
 .glow {
@@ -464,7 +471,15 @@ body {
   text-align: center;
 }
 
-.provision-glow-btn:hover {
-  transform: scale(1.08);
-  background: #0501fb;
+.icon-wrapper {
+  background-image: url('/assets/eddie_santiago_sigil.jpeg');
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  mask-image: url('/icons/twitter.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('/icons/twitter.svg'); /* Safari */
+  -webkit-mask-size: cover;
 }

@@ -12,6 +12,7 @@ import NavBar from '@/components/navbar';
 import FundingButton from '@/components/fundingbutton'
 import Image from 'next/image';
 import Link from 'next/link';
+import SocialIcons from '@/components/socials';
 
 export default function DossierPage() {
   const audioRef = useRef(null);
@@ -209,7 +210,7 @@ export default function DossierPage() {
         <div className=" flex flex-col items-center justify-center relative z-10">
 
           {/* Social Links */}
-          <SocialLinksNeon />
+          <SocialIcons/>
           
           {/* Override Box */}
           <SexualSovereignOverride />
