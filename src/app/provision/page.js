@@ -1,12 +1,17 @@
 'use client'
+import { useState } from 'react'
 import WalletProvisionModule from '@/components/provisioningmodule'
 import NavBar from '@/components/navbar'
 import FundsProgressBar from '@/components/fundsprogressbar'
 import VaultCountdownTimer from '@/components/countdowntimer'
 import Image from 'next/image'
 import Script from 'next/script'
+import ProvisionTierBlock from '@/components/provisiontierblock'
+import AboutLedgerModal from '@/components/aboutledgermodal'
 
 export default function ProvisionPage() {
+  const [showLedger, setShowLedger] = useState(false)
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="bg-white relative p-6">
@@ -44,12 +49,23 @@ export default function ProvisionPage() {
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center text-xs md:text-base">
           <p>Eddie says: &quot;If you can read this, you&apos;re chosen. Now wire the funds.&quot;</p><br/>
           <p>
-            All provisioners will be recorded in the Christed Vault Ledger, a sovereign record of mission-aligned flows.  
-            A transparent reporting mechanism will be established once sufficient provision is received. Your name will be honoured in the architecture that follows. 
+            All provisioners will be recorded in the{" "} 
+            <button
+              onClick={() => setShowLedger(true)}
+              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200 cursor-pointer"
+            >
+              Christed Vault Ledger
+            </button>{" "}
+            – a sovereign record of mission-aligned flows.  
+            A transparent reporting mechanism will be established once sufficient provision is received. 
+            Your name will be honoured in the architecture that follows. 
             Please add a note or DM for ledger tracking. If anonymous, we bless the flow regardless.<br/><br/>
             <strong>You are not donating, you are provisioning the override.</strong>
           </p>
+          <AboutLedgerModal isOpen={showLedger} onClose={() => setShowLedger(false)} />
         </div>
+
+        <ProvisionTierBlock />
 
         <div className="max-w-5xl mx-auto m-5 grid gap-3 sm:grid-cols-2 md:grid-cols-3 z-2">
           <WalletProvisionModule
@@ -79,6 +95,8 @@ export default function ProvisionPage() {
         </div>
 
       </div>
+
+      
 
       <NavBar />
 

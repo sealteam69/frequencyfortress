@@ -66,7 +66,7 @@ export default function NavBar() {
                 </p>
 
                 <p className="flex justify-between px-4 py-2 hover:text-[#FF13F0] text-nowrap">
-                    <span>/Phase VI</span>
+                    <span>/Phase VI.IX</span>
                     <span className="text-right">[CLASSIFIED]</span>
                 </p>
                 </div>
