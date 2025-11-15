@@ -373,8 +373,8 @@ export default function PhaseIPage() {
               <h3 className="text-lg"><strong>Christed Capital Requirement Overview (£6.9MM Total Ask)</strong></h3>
               <ul>
               <li><b>Total Mission Target</b> £6,900,000</li>
-              <li><b>Total Mission Budget:</b> £6,459,000</li>
-              <li><b>Strategic Buffer & Liquidity:</b> £441,000</li>
+              <li><b>Total Mission Budget:</b> £6,484,000</li>
+              <li><b>Strategic Buffer & Liquidity:</b> £416,000</li>
               <li><b>Runway Assurance:</b> 12 months covered, with milestone-triggered fund releases</li>
               <li><b>Allocation Split:</b></li>
               </ul>
@@ -464,9 +464,9 @@ export default function PhaseIPage() {
                     </tr>
 
                     <tr>
-                      <td className="border px-4 py-2">Friend Bonuses (2x ~£25k)</td>
+                      <td className="border px-4 py-2">Friend Bonuses (1x £25k, 1x £50k)</td>
                       <td className="border px-4 py-2">Day 1</td>
-                      <td className="border px-4 py-2">50,000</td>
+                      <td className="border px-4 py-2">75,000</td>
                       <td className="border px-4 py-2">Honouring those who held the field in darkness. A sacred gesture of loyalty reward and field compensation. Frequency-encoded, not transactional.</td>
                     </tr>
 
@@ -543,7 +543,7 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2"><b>BUDGET</b></td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2"><b>6,459,000</b></td>
+                      <td className="border px-4 py-2"><b>6,484,000</b></td>
                       <td className="border px-4 py-2"></td>
                     </tr>
 
@@ -557,7 +557,7 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2">Liquidity Buffer</td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2">441,000</td>
+                      <td className="border px-4 py-2">416,000</td>
                       <td className="border px-4 py-2"></td>
                     </tr>
                   </tbody>
@@ -614,7 +614,7 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Covers critical digital backbone: secure hosting, domain ops, encrypted comms, outreach flows, and the tech scaffolding required to keep the Fortress online and discoverable.</td>
                     </tr>
                     <tr>
-                      <td className="border px-4 py-2">Creative Ops & Media Production</td>
+                      <td className="border px-4 py-2">Creative Ops & Media Production (ST69 Media Corp)</td>
                       <td className="border px-4 py-2">~£10k+</td>
                       <td className="border px-4 py-2">Meme lab, audio production, design, content strategy, editing etc &quot;to go viral in Babylon, the Christed word must be cloaked in pixels&quot;.</td>
                     </tr>
@@ -706,7 +706,7 @@ export default function PhaseIPage() {
               <p className='text-base md:text-lg'><strong>Q: What is the reasoning behind the personal bonuses and family support allocations?</strong></p>
               <p><b>A:</b> These are not perks, they are precision-calibrated rebalancing measures within the architecture of cosmic stewardship:</p>
               <ul className="list-disc list-inside ml-6">
-              <li><b>£25k</b> each is allocated to <strong>two loyal allies</strong> who remained steadfast during the Commander&apos;s planetary trials. These are gratitude payments for soul-level solidarity during a time of extreme energetic turbulence.</li>
+              <li><b>£25k and £50k</b> is allocated to <strong>two loyal allies</strong> who remained steadfast during the Commander&apos;s planetary trials. These are gratitude payments for soul-level solidarity during a time of extreme energetic turbulence.</li>
               <li><b>£25k</b> is allocated to <strong>gym equipment upgrades</strong> for the sacred training temple – a space integral to the Commander&apos;s physical vessel calibration and Christed output.</li>
               <li><b>£250k</b> is invested into the <strong>gym owner&apos;s new venture</strong>, seeding a New Earth-aligned wellness business rooted in embodied sovereignty and spiritual vitality.</li>
               <li><b>£144k</b> is earmarked for the <strong>repatriation of the Commander&apos;s father</strong> – not merely a return of funds once given (£100k), but a full-circle karmic redemption with encoded Christed numerology. These funds restore what was offered in faith, with interest and honour a man currently under intense psychic pressure due to proximity to the planetary mission field.</li>

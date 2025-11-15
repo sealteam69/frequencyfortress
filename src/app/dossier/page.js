@@ -67,20 +67,19 @@ export default function DossierPage() {
           flex flex-col items-center justify-center text-center
           pt-12 sm:pt-16 md:pt-20
           pb-6 sm:pb-8 md:pb-10
-          space-y-2
           px-4 sm:px-6 md:px-8
           relative z-10
         "
       >
         <h1
           className="
-            text-[20px] sm:text-[30px] md:text-[36px] 
+            text-[24px] sm:text-[30px] md:text-[36px] 
             tracking-widest
             text-[#4A4545]
           "
         >
           TRANSMISSION CONFIRMED.
-        </h1>
+        </h1><br/>
 
         <h2
           className="
@@ -89,7 +88,10 @@ export default function DossierPage() {
             text-[#4A4545]
           "
         >
-          The Frequency Fortress Mission Dossier is now unlocked below.
+          <b>This is the override.</b><br/><br/> The Frequency Fortress mission dossier is now unlocked below.
+          What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
+          If it activates something in you — <b>act.</b> If not, move along.<br/><br/>
+          p.s. don't forget to tap the sigil.
         </h2>
       </div>
 

@@ -22,11 +22,11 @@ export default function SocialIcons() {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 1 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.1, duration: 0.4, ease: [0.17, 0.67, 0.83, 0.67] }}
-          className="group rounded-full p-2.5 sm:p-3 bg-black/20 shadow-neon hover:scale-110 transition-all duration-300 ease-in-out w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center"
+          className="group rounded-full p-2.5 sm:p-3 bg-black/20 shadow-neon hover:scale-110 transition-all duration-300 ease-in-out w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center"
           title={social.name}
         >
           {/* Normal icon (default visible) */}
