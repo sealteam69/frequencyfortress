@@ -18,7 +18,7 @@ export default function ProvisionTierBlock() {
       range: '£690 – £6,899',
       description: 'You are seeding Eden. The grid stabilises with your current.',
       benefits: [
-        '⚡️ Vault Ledger + encrypted commemorative seal',
+        '🦭 Vault Ledger + encrypted commemorative seal',
         '📡 Updates on early stage Edenic tech',
         '🛡️ Council-grade auric blessings (non-linear)'
       ]
@@ -45,12 +45,22 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'OVERSOUL BENEFACTOR',
-      range: '£690,000+',
-      description: 'You are writing history.',
+      range: '£690,000 - £6,899,999',
+      description: 'You are anchoring New Earth itself. This is planetary guardianship.',
       benefits: [
         '🌍 Stewardship rights in Christed vault governance',
         '👁️ Immortalised in Source-coded infrastructure',
-        '💎 Highest tier astral + earthly alignment possible in this cycle'
+        '🧬 Integration into Genesis Seed Codex'
+      ]
+    },
+    {
+      name: 'EDENIC SOVEREIGN',
+      range: '£6,900,000+',
+      description: 'You are writing history.',
+      benefits: [
+        '🕊️ Authority over sovereign Edenic jurisdictions, cities, domains, neural hubs',
+        '🛸 Direct access to galactic & planetary restoration networks',
+        '💎 Highest tier astral & earthly alignment possible in this cycle'
       ]
     }
   ]
