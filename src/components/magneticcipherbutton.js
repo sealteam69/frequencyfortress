@@ -126,7 +126,7 @@ export function MagneticCipherButton() {
             bg-transparent border-2 border-[#0014A8] text-[#0014A8]
             uppercase font tracking-widest cursor-pointer 
             transition-transform duration-200 ease-out hover:scale-105
-            text-[12px] px-4 py-3 mt-10      
+            font-medium text-[12px] px-4 py-3 mt-10      
             sm:text-[14px] sm:px-4 sm:py-3 sm:mt-8
             md:text-[14px] md:px-4 md:py-3 
             lg:text-[18px] lg:px-5 lg:py-3 
