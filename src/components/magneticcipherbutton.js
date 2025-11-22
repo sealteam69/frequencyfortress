@@ -123,7 +123,7 @@ export function MagneticCipherButton() {
           onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
           onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
           className="
-            bg-transparent border-1 md:border-2 border-[#0014A8] text-[#0014A8]
+            bg-transparent border-2 border-[#0014A8] text-[#0014A8]
             uppercase font tracking-widest cursor-pointer 
             transition-transform duration-200 ease-out hover:scale-105
             text-[12px] px-4 py-3 mt-10      
