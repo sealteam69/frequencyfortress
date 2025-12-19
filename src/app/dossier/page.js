@@ -88,10 +88,11 @@ export default function DossierPage() {
             text-[#4A4545]
           "
         >
-          <b>This is the override.</b><br/><br/> The Frequency Fortress mission dossier is now unlocked below.
+          <b>This is the override.</b><br/><br/> The Frequency Fortress Mission Dossier is now unlocked below.
           What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
           If it activates something in you — <b>act.</b><br/><br/>
-          P.S. don't forget to tap the sigil.
+          Eddie thanks you for your attention to this matter.<br/><br/>
+          P.S. Don't forget to tap the sigil.
         </h2>
       </div>
 
