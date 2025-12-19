@@ -36,7 +36,7 @@ export default function ProvisionTierBlock() {
     {
       name: 'ARK CONSTRUCTOR',
       range: '£69,000 – £689,999',
-      description: 'You are building the Ark. New Eden emerges from this tier.',
+      description: 'You are building the Ark. The Edenic Grid emerges from this tier.',
       benefits: [
         '🏛️ Name encrypted into physical grid architecture',
         '🎙️ Voice in future Edenic council forums',
@@ -59,7 +59,7 @@ export default function ProvisionTierBlock() {
       description: 'You are writing history.',
       benefits: [
         '🕊️ Authority over sovereign Edenic jurisdictions, cities, domains, neural hubs',
-        '🛸 Direct access to galactic & planetary restoration networks',
+        '🛸 Direct access to Galactic & planetary restoration networks',
         '💎 Highest tier astral & earthly alignment possible in this cycle'
       ]
     }
