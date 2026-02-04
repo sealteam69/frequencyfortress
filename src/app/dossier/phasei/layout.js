@@ -2,7 +2,7 @@ export async function generateMetadata() {
   const url = 'https://frequencyfortress.com/dossier/phasei';
   const title = 'FREQUENCY FORTRESS / PHASE I';
   const description =
-    'Explore the Christed Capital Deployment Plan for Frequency Fortress Phase I.';
+    'Christed Capital Deployment Plan for Frequency Fortress Phase I.';
 
   return {
     title,

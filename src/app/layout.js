@@ -5,7 +5,7 @@ import Script from 'next/script';
 
 export const metadata = {
   title: 'Frequency Fortress',
-  description: "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
+  description: "The Edenic Grid Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   metadataBase: new URL('https://frequencyfortress.com/'),
   robots: { index: true, follow: true },
   openGraph: {

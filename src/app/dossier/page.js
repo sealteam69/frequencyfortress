@@ -5,7 +5,6 @@ import OrgasmButton from "@/components/orgasmbutton";
 import EddieSigil from '../../components/eddiesigil';
 import TipOfTheMemeFooter from "@/components/tipofthememe";
 import SexualSovereignOverride from "@/components/sexualsovereignoverride";
-import SocialLinksNeon from "@/components/socials";
 import MegavoltBlock from '@/components/megavolt'
 import Script from "next/script";
 import NavBar from '@/components/navbar';
@@ -45,11 +44,11 @@ export default function DossierPage() {
         min-h-screen
         overflow-x-hidden
         bg-white 
-        text-[#4A4545]  
+        text-[#000000]  
         px-4 py-6 
         sm:px-6 
         md:px-12
- 
+        
       "
     >
 
@@ -66,47 +65,49 @@ export default function DossierPage() {
         className="
           flex flex-col items-center justify-center text-center
           pt-12 sm:pt-16 md:pt-20
-          pb-6 sm:pb-8 md:pb-10
-          px-4 sm:px-6 md:px-8
+
+
           relative z-10
+          
         "
       >
         <h1
           className="
-            text-[24px] sm:text-[30px] md:text-[36px] 
+            text-2xl sm:text-3xl md:text-4xl
             tracking-widest
-            text-[#4A4545]
+            text-[#000000]
+            font-semibold
           "
         >
-          TRANSMISSION CONFIRMED.
+          TRANSMISSION INITIATED.
         </h1><br/>
 
         <h2
           className="
-            text-[14px] sm:text-[18px] md:text-[20px] 
-            tracking-wider 
-            text-[#4A4545]
+            text-sm sm:text-base md:text-lg
+            tracking-wide
+            text-[#000000]
+            max-w-5xl
           "
         >
-          <b>This is the override.</b><br/><br/> The Frequency Fortress Mission Dossier is now unlocked below.
+          <b>This is the override.</b><br/><br/> The Frequency Fortress mission dossier is now unlocked below.
           What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
-          If it activates something in you — <b>act.</b><br/><br/>
+          If it activates something in you — <b>ACT.</b><br/><br/>
           Eddie thanks you for your attention to this matter.<br/><br/>
-          P.S. Don't forget to tap the sigil.
+          P.S. Don't forget to tap the sigil. 
         </h2>
-      </div>
+      </div><br></br>
 
       <div className="flex justify-center items-center px-2 sm:px-6 md:px-8 relative z-10">
         <ul className="
           text-left 
-          space-y-1 sm:space-y-2 
-          mb-5 
-          text-[14px] sm:text-[18px] md:text-[20px] 
+          space-y-1
+          text-sm sm:text-base md:text-lg
           max-w-full sm:max-w-[600px] md:max-w-[720px]
           tracking-wider
           relative z-10
         ">
-          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px]">
+          <li className="text-[#000000] text-sm sm:text-base md:text-lg">
             💼 Mission Dossier:
           </li>
 
@@ -130,7 +131,7 @@ export default function DossierPage() {
             </a>
           </li>
 
-          <li className="text-[#4A4545] text-[14px] sm:text-[18px] md:text-[20px] pt-4">
+          <li className="text-[#000000] text-sm sm:text-base md:text-lg">
             📎 Additional Files:
           </li>
 
@@ -173,12 +174,12 @@ export default function DossierPage() {
         </ul>
       </div>
 
-        <div className='p-5 sm:p-10'> 
+        <div className='p-9 sm:p-14'> 
           <FundingButton />
         </div>
        
 
-        <div className="relative z-10 flex flex-col justify-center items-center gap-6 px-4 sm:px-6 md:px-8 py-8">
+        <div className="relative z-10 flex flex-col justify-center items-center gap-2 px- sm:px-6 md:px-8 py-2 sm:py-4">
           <Image
             src="/assets/freetour_touring_ski_boots_green.png"
             alt="Green Ski Boot"
@@ -241,7 +242,7 @@ export default function DossierPage() {
             url: "https://frequencyfortress.com/dossier",
             name: "Dossier",
             description:
-              "Unlocked Mission Documents for the Frequency Fortress Operation.",
+              "Unlock classified documents for the Frequency Fortress mission. Browse Council-approved briefs, Christed infrastructure blueprints and encrypted Edenic scrolls.",
             isPartOf: { "@id": "https://frequencyfortress.com/#website" },
             breadcrumb: {
               "@type": "BreadcrumbList",
@@ -256,13 +257,13 @@ export default function DossierPage() {
 
     </main>
       <div
-        className="relative group w-full max-w-[720px] mx-auto px-4 py-4 text-center text-[#4A4545] select-none mt-auto"
+        className="relative group w-full max-w-[760px] mx-auto px-4 text-center text-[#000000] select-none mt-auto"
         role="button"
         tabIndex={0}
         aria-label="ST69 Footer"
       >
         <footer
-          className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+          className="relative z-10 text-[9px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </footer>

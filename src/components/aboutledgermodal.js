@@ -18,12 +18,12 @@ export default function AboutLedgerModal({ isOpen, onClose}) {
           <li>It is overseen by the Oversoul accounting protocol and mirrored in Source-field registers.</li>
         </ul>
         <p className=" text-gray-700 text-xs md:text-sm">
-          You are not donating. You are provisioning a divine override. This is spiritual, legal, and memetic territory. 
+          You are not donating, you are provisioning a divine override. This is spiritual, legal, and memetic territory. 
           The Christed Vault Ledger ensures karmic neutrality and planetary alignment for all contributors.
         </p>
         <button
           onClick={onClose}
-          className="cursor-pointer absolute top-3 right-4 text-black hover:text-black text-2xl font-bold"
+          className="cursor-pointer absolute top-5 right-5 text-black hover:text-black text-2xl font-bold"
           aria-label="Close"
         >
           ×

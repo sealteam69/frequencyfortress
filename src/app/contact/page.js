@@ -18,16 +18,16 @@ export default function ContactPage() {
           />
       </div>
 
-      <div className="mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
-        <h1 className="tracking-wide text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1><br/>
+      <div className="max-w-5xl mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
+        <h1 className="tracking-wide text-2xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1>
 
         <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered, but all are received.
-           Please note: all channels are monitored by the Commander directly. Choose wisely. This is not a help desk, it is a living fortress.
+           Please note: all channels are monitored by the Commander directly. Choose wisely, this is not a help desk, it is a living fortress.
         </p><br/>
 
         {/* Tier 1 */}
-        <h2 className="text-xl font-bold">Tier 1: Council-Grade Contact</h2>
-        <p>Preferred for: Sacred Union signals, high-trust allies, operations, investments and legacy matters.</p>
+        <h2 className="text-lg font-bold">Tier 1: Council-Grade Contact</h2>
+        <p>Preferred for: Sacred Union signals, high-trust allies, operations, provisioning and legacy matters.</p>
         <br/>
         <p className="font-bold">SESSION (Anonymous Messenger – No Number, No Metadata)</p>
         <code className='break-all'>ID: 0566df93e193b719424a3c87dabeca44f1b6366faebec8f9d066caf973d038170e</code>
@@ -46,7 +46,7 @@ export default function ContactPage() {
         </p><br/>
 
         {/* Tier 2 */}
-        <h2 className="text-xl font-bold">Tier 2: Strategic Comms</h2>
+        <h2 className="text-lg font-bold">Tier 2: Strategic Comms</h2>
         <p>Preferred for: public allies, sacred tech support, informal mission dialogue, low-frequency pings.</p>
         <br/>
         <p className="font-bold">ProtonMail</p>
@@ -56,7 +56,7 @@ export default function ContactPage() {
           </a>
 
           <p className="">
-          Primary operations channel for all Frequency Fortress communications – allies, initiates, codes, proposals, encrypted support, and synchronicity. Expect delay; signal is triaged. <br />
+          Primary operations channel for all Frequency Fortress communications – allies, initiates, codes, proposals, encrypted support, and synchronicity. Expect delay, signal is triaged. <br />
           </p><br/>
           <a href="mailto:st69.contact@protonmail.com" className="text-cyan-400 underline">
             st69.contact@protonmail.com
@@ -77,7 +77,7 @@ export default function ContactPage() {
         </p><br/>
 
         {/* Tier 3 */}
-        <h2 className="text-xl font-bold">Tier 3: General Signals</h2>
+        <h2 className="text-lg font-bold">Tier 3: General Signals</h2>
         <p>For: public-facing channels, broadcast, tactical memetics, media, community flows, movements.</p>
         <br/>
         <p className="font-bold">SEAL Team 69</p>
@@ -124,13 +124,13 @@ export default function ContactPage() {
 
     </main>
       <div
-        className="relative group w-full max-w-[720px] mx-auto px-4 py-4 text-center text-[#4A4545] select-none mt-auto"
+        className="relative group w-full max-w-[760px] mx-auto px-4 text-center text-[#4A4545] select-none mt-auto"
         role="button"
         tabIndex={0}
         aria-label="ST69 Footer"
       >
         <footer
-          className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+          className="relative z-10 text-[9px] sm:text-[11px] md:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </footer>

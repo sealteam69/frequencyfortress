@@ -2,7 +2,7 @@ export async function generateMetadata() {
   const url = 'https://frequencyfortress.com/provision';
   const title = 'FREQUENCY FORTRESS / PROVISION';
   const description =
-    'Choose your frequency vector. Provision Christed capital into the Vault and join the mission to anchor the New Economy.';
+    'Provision Christed capital into the Christed Vault Ledger and fund the Frequency Fortress planetary restoration mission.';
 
   return {
     title,
