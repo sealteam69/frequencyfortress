@@ -28,9 +28,9 @@ export default function ProvisionPage() {
       </div>
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h1 className="tracking-wide text-2xl md:text-3xl font-bold mt-13 sm:mt-20 text-center">PROVISIONER ACCESS PATHWAYS</h1><br/>
-        <h2 className="sm:tracking-wide text-sm md:text-lg">
-          CHOOSE YOUR FREQUENCY VECTOR. PROVISION CHRISTED CAPITAL INTO THE VAULT. 
+        <h1 className="tracking-wide text-2xl md:text-3xl font-bold mt-13 sm:mt-20 text-center">FUND THE FORTRESS</h1>
+        <h2 className="sm:tracking-wide text-xs sm:text-sm md:text-base">
+          ACCESS PATHWAYS FOR MISSION-ALIGNED PROVISIONERS. CHOOSE YOUR FREQUENCY VECTOR AND PROVISION CHRISTED CAPITAL INTO THE VAULT. 
         </h2><br/>
 
         <div className="text-black text-center">
@@ -46,7 +46,7 @@ export default function ProvisionPage() {
           <FundsProgressBar />
         </section><br/>
 
-        <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center text-xs md:text-base">
+        <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center text-xs sm:text-sm md:text-base">
           <p>Eddie says: &quot;If you can read this, you&apos;re chosen. Now wire the funds.&quot;</p><br/>
           <p>
             All provisioners will be recorded in the{" "} 
@@ -96,7 +96,6 @@ export default function ProvisionPage() {
 
       </div>
 
-      
 
       <NavBar />
 
@@ -111,7 +110,7 @@ export default function ProvisionPage() {
             url: "https://frequencyfortress.com/provision",
             name: "Provisioner Access Pathways",
             description:
-              "Choose your frequency vector. Provision Christed capital into the Christed Vault Ledger.",
+              "Provision Christed capital into the Christed Vault Ledger and fund the Frequency Fortress planetary restoration mission.",
             isPartOf: { "@id": "https://frequencyfortress.com/#website" },
             breadcrumb: {
               "@type": "BreadcrumbList",
@@ -125,13 +124,13 @@ export default function ProvisionPage() {
       />
       </main>
       <div
-        className="relative group w-full max-w-[720px] mx-auto px-4 py-4 text-center text-[#4A4545] select-none mt-auto"
+        className="relative group w-full max-w-[760px] mx-auto px-4 text-center text-[#4A4545] select-none mt-auto"
         role="button"
         tabIndex={0}
         aria-label="ST69 Footer"
       >
         <footer
-          className="relative z-10 text-[8px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+          className="relative z-10 text-[9px] sm:text-[11px] md:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </footer>

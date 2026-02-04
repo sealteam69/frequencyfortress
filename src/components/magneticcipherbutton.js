@@ -80,7 +80,7 @@ export function MagneticCipherButton() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[44px] text-[#bcbce1]"
+              className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-[#bcbce1]"
               style={{ fontFamily: 'Barlow Condensed' }}
             >
               CLASSIFIED ACCESS GRANTED

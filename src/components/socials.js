@@ -15,7 +15,7 @@ const socials = [
 
 export default function SocialIcons() {
   return (
-    <div className="grid grid-cols-7 gap-12 sm:gap-5 justify-items-center p-5 sm:p-6">
+    <div className="grid grid-cols-7 gap-4 justify-items-center p-5 sm:p-6">
       {socials.map((social, i) => (
         <motion.a
           key={i}
@@ -26,19 +26,19 @@ export default function SocialIcons() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.1, duration: 0.4, ease: [0.17, 0.67, 0.83, 0.67] }}
-          className="group rounded-full p-2.5 sm:p-3 bg-black/20 shadow-neon hover:scale-110 transition-all duration-300 ease-in-out w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center"
+          className="group rounded-full bg-black/20 shadow-neon hover:scale-120 transition-all duration-300 ease-in-out w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center"
           title={social.name}
         >
           {/* Normal icon (default visible) */}
           <img
             src={`/icons/${social.mask}`}
             alt={social.name}
-            className="w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 transition-opacity duration-300 group-hover:opacity-0"
+            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-opacity duration-300 group-hover:opacity-0"
           />
 
           {/* Sigil mask on hover */}
           <div
-            className="absolute w-8 h-8 sm:w-8 sm:h-8 md:w-9 md:h-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="absolute w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{
               backgroundImage: "url('/assets/eddie_santiago_sigil.jpeg')",
               backgroundSize: "cover",

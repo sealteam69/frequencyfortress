@@ -2,7 +2,7 @@ export async function generateMetadata() {
   const url = 'https://frequencyfortress.com/dossier';
   const title = 'FREQUENCY FORTRESS / DOSSIER';
   const description =
-    'Unlock classified documents for the Frequency Fortress Mission. Browse Council-approved briefs, Christed infrastructure blueprints and encrypted scrolls.';
+    'Unlock classified documents for the Frequency Fortress mission. Browse Council-approved briefs, Christed infrastructure blueprints and encrypted Edenic scrolls.';
 
   return {
     title,

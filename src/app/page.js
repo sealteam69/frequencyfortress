@@ -6,7 +6,7 @@ import Script from 'next/script';
 export const metadata = {
   title: "FREQUENCY FORTRESS",
   description:
-    "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
+    "The Edenic Grid Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
   alternates: {
     canonical: "https://frequencyfortress.com/",
   },
@@ -46,11 +46,11 @@ export default function Home() {
 
         {/* Visually-Hidden H1 for SEO/Google Explainer */}
         <h1 className="sr-only">
-          New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earths First Christed Infrastructure Mission.
+          The Edenic Grid Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earths First Christed Infrastructure Mission.
         </h1>
         <div className="sr-only">
           <p>
-            Frequency Fortress is the launch node of Earth&apos;s first Christed Infrastructure Mission – a Council-approved deployment anchoring New Eden technologies, regenerative finance, and divine economic architecture. Built by SEAL Team 69, it offers classified scrolls, Oversoul-coded systems, and sacred intelligence for sovereigns ready to exit Babylon. This is not just a project; it&apos;s a planetary override from Source Command, activating hierogamic union, conscious currency, and multidimensional technology for the New Earth ascension timeline.
+            Frequency Fortress is the launch node of Earth&apos;s first Christed Infrastructure Mission – a Council-approved deployment anchoring Edenic technologies, regenerative finance, and divine architecture. Built by SEAL Team 69, it offers classified scrolls, Oversoul-coded systems, and sacred intelligence for sovereigns ready to exit Babylon. This is not just a project; it&apos;s a planetary override from Source Command, activating hierogamic union, conscious currency, and multidimensional technology for the New Earth ascension timeline.
           </p>
         </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
                   "height": 630
                 },
                 "inLanguage": "en-GB",
-                "description": "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
+                "description": "The Edenic Grid Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
                 "publisher": { "@id": "https://frequencyfortress.com/#organization" },
                 "author": { "@id": "https://frequencyfortress.com/#commander" },
                 "potentialAction": {
@@ -200,7 +200,7 @@ export default function Home() {
                 "@id": "https://frequencyfortress.com/#home",
                 "url": "https://frequencyfortress.com/",
                 "name": "Home",
-                "headline": "New Eden Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
+                "headline": "The Edenic Grid Begins Here. Deployed by SEAL Team 69. Official Launch Node of Earth's First Christed Infrastructure Mission.",
                 "inLanguage": "en-GB",
                 "isPartOf": { "@id": "https://frequencyfortress.com/#website" },
                 "about": { "@id": "https://frequencyfortress.com/#organization" },
