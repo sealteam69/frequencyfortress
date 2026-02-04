@@ -28,7 +28,7 @@ export default function PhaseIPage() {
         {/* MAIN CONTENT */}
         <div className=" mx-auto relative z-2">
 
-          <h1 className='text-2xl md:text-3xl mt-16 sm:mt-20 text-center font-bold tracking-wide'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
+          <h1 className='text-xl md:text-3xl mt-16 sm:mt-20 text-center font-bold tracking-wide'>FREQUENCY FORTRESS: CAPITAL DEPLOYMENT PACKET</h1>
 
           {/* MASTER TABLE OF CONTENTS */}
             <nav className="max-w-3xl mx-auto center border border-gray-300 p-3 bg-white/40 backdrop-blur-sm mt-5 mb-5">
