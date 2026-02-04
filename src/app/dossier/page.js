@@ -73,7 +73,7 @@ export default function DossierPage() {
       >
         <h1
           className="
-            text-2xl sm:text-3xl md:text-4xl
+            text-[20px] sm:text-3xl md:text-4xl
             tracking-widest
             text-[#000000]
             font-semibold
