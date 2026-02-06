@@ -463,8 +463,8 @@ body {
 
 .provision-glow-btn {
   font-family: 'Press Start 2P', monospace;
-  color: #fff;
-  background: #0501fb;
+  color: #ffffffde;
+  background: #0b0b88;
   animation: glowPulse 2.5s infinite ease-in-out;
   transition: transform 0.2s ease;
   cursor: pointer;
