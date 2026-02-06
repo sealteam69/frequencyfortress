@@ -104,16 +104,15 @@ export default function DossierPage() {
           space-y-1
           text-sm sm:text-base md:text-lg
           max-w-full sm:max-w-[600px] md:max-w-[720px]
-          tracking-wider
           relative z-10
         ">
-          <li className="text-[#000000] text-sm sm:text-base md:text-lg">
+          <li className="text-[#000000] text-sm sm:text-base md:text-lg tracking-wide">
             💼 Mission Dossier:
           </li>
 
           <li>
             <Link
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/dossier/phasei"
             >
               📁 View Phase I Packet
@@ -122,7 +121,7 @@ export default function DossierPage() {
 
           <li>
             <a
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -131,13 +130,13 @@ export default function DossierPage() {
             </a>
           </li>
 
-          <li className="text-[#000000] text-sm sm:text-base md:text-lg">
+          <li className="text-[#000000] text-sm sm:text-base md:text-lg tracking-wide">
             📎 Additional Files:
           </li>
 
           <li>
             <Link
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/pdfs/christed_override_one_pager.pdf"
             >
               ⚠️ Christed Override – One-Pager
@@ -146,7 +145,7 @@ export default function DossierPage() {
 
           <li>
             <Link
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/pdfs/public_mission_brief.pdf"
             >
               🌎 Frequency Fortress: Public Mission Brief
@@ -155,7 +154,7 @@ export default function DossierPage() {
 
           <li>
             <Link
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/pdfs/10_temple_key_the_beloved_acknowledgement.pdf"
             >
               👑 Temple Key: The Beloved Acknowledgement
@@ -164,7 +163,7 @@ export default function DossierPage() {
 
           <li>
             <Link
-              className="underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="tracking-wider underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
               href="/pdfs/07_christed_glossary.pdf"
             >
               🧬 Christed Glossary

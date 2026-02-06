@@ -67,14 +67,15 @@ export default function ProvisionTierBlock() {
 
   return (
     <section className="max-w-5xl mx-auto mt-3 md:mt-5">
-      <h2 className="text-lg md:text-2xl font-bold text-center mb-4 md:mb-6">CHRISTED TIERING MODULE</h2>
+      <h2 className="text-base md:text-xl font-bold text-center">CHRISTED TIERING MODULE</h2>
+      <p className="text-sm md:text-base font-bold text-center mb-4 md:mb-6">PHASES I-III</p>
       <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 text-left">
         {tiers.map((tier, index) => (
           <div
             key={index}
             className="border rounded-lg p-4 border border-gray-300 bg-white/40 backdrop-blur-sm transition-all duration-300"
           >
-            <h3 className="text-base md:text-xl font-bold tracking-wide">{tier.name}</h3>
+            <h3 className="text-sm md:text-lg font-bold tracking-wide">{tier.name}</h3>
             <p className="text-xs md:text-sm mb-2">{tier.range}</p>
             <p className="text-xs md:text-sm mb-2">{tier.description}</p>
             <ul className="list-disc ml-5 text-xs md:text-sm text-gray-800">

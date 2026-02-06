@@ -28,7 +28,7 @@ export default function ProvisionPage() {
       </div>
       
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <h1 className="tracking-wide text-xl md:text-3xl font-bold mt-13 sm:mt-20 text-center">FUND THE FORTRESS</h1>
+        <h1 className="tracking-wide text-2xl md:text-4xl font-bold mt-13 sm:mt-20 text-center">FUND THE FORTRESS</h1>
         <h2 className="sm:tracking-wide text-xs sm:text-sm md:text-base">
           ACCESS PATHWAYS FOR MISSION-ALIGNED PROVISIONERS. CHOOSE YOUR FREQUENCY VECTOR AND PROVISION CHRISTED CAPITAL INTO THE VAULT. 
         </h2><br/>
@@ -39,6 +39,9 @@ export default function ProvisionPage() {
 
         <div className='text-sm md:text-base'>
         <p>TIME SINCE VAULT ACTIVATION (EARTH-GRID LINEAR)</p><br/>
+        </div>
+
+        <div className='text-base md:text-xl'>
         <p><strong>PHASE I TARGET: 6,900,000 GBP</strong></p>
         </div>
 

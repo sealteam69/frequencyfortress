@@ -19,7 +19,7 @@ export default function ContactPage() {
       </div>
 
       <div className="max-w-5xl mx-auto p-6 text-xs sm:text-sm md:text-base text-black relative text-center">
-        <h1 className="tracking-wide text-xl md:text-3xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1>
+        <h1 className="tracking-wide text-2xl md:text-4xl font-bold text-center mt-13 sm:mt-20">HOW TO REACH THE COMMANDER</h1>
 
         <p>Choose your channel. Signal boosted selectively. Not all transmissions are answered, but all are received.
            Please note: all channels are monitored by the Commander directly. Choose wisely, this is not a help desk, it is a living fortress.
