@@ -5,7 +5,7 @@ export default function ProvisionTierBlock() {
   const tiers = [
     {
       name: 'INITIATE FLAME',
-      range: '£69 – £689',
+      range: '$69 – $689',
       description: 'You felt the signal, you are early, you are honouring the override.',
       benefits: [
         'Entry into the Christed Vault Ledger',
@@ -15,7 +15,7 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'GRID SUPPORTER',
-      range: '£690 – £6,899',
+      range: '$690 – $6,899',
       description: 'You are seeding Eden. The grid stabilises with your current.',
       benefits: [
         'Eligibility for future ST69 drops (Eddie glyph unlocks, encrypted relics, merch, memes, scrolls etc)',
@@ -25,7 +25,7 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'COUNCIL ALLY',
-      range: '£6,900 – £68,999',
+      range: '$6,900 – $68,999',
       description: 'You are provisioning the override directly. The Councils see you.',
       benefits: [
         'Name etched into Phase I scrolls (symbolically or publicly)',
@@ -35,7 +35,7 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'ARK CONSTRUCTOR',
-      range: '£69,000 – £689,999',
+      range: '$69,000 – $689,999',
       description: 'You are building the Ark. The Edenic Grid emerges from this tier.',
       benefits: [
         'Voice in future Edenic council forums, physical grid architecture and provisioning protocols',
@@ -45,7 +45,7 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'OVERSOUL BENEFACTOR',
-      range: '£690,000 - £6,899,999',
+      range: '$690,000 – $6,899,999',
       description: 'You are anchoring New Earth itself. This is planetary guardianship.',
       benefits: [
         'Stewardship rights in Christed Vault governance (DAO)',
@@ -55,7 +55,7 @@ export default function ProvisionTierBlock() {
     },
     {
       name: 'EDENIC SOVEREIGN',
-      range: '£6,900,000+',
+      range: '$6,900,000+',
       description: 'You are writing history.',
       benefits: [
         'Authority over sovereign Edenic jurisdictions, cities, domains, neural hubs',
@@ -68,7 +68,7 @@ export default function ProvisionTierBlock() {
   return (
     <section className="max-w-5xl mx-auto mt-3 md:mt-5">
       <h2 className="text-base md:text-xl font-bold text-center">CHRISTED TIERING MODULE</h2>
-      <p className="text-sm md:text-base font-bold text-center mb-4 md:mb-6">PHASES I-III</p>
+      <p className="text-base md:text-xl font-bold text-center mb-4 md:mb-6">PHASES I-III</p>
       <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 text-left">
         {tiers.map((tier, index) => (
           <div
