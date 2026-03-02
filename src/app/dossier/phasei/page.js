@@ -481,7 +481,7 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Gym Owner Seed Investment</td>
                       <td className="border px-4 py-2">Day 1</td>
                       <td className="border px-4 py-2">250,000</td>
-                      <td className="border px-4 py-2">A Christed investment. Seed funding for New Earth fitness and conscious strength enterprise. Return not just in capital but in frequency and anchoring.</td>
+                      <td className="border px-4 py-2">A Christed investment. Seed funding for a New Earth fitness and conscious strength enterprise. Return not just in capital but in frequency and anchoring.</td>
                     </tr>
 
                     <tr>
