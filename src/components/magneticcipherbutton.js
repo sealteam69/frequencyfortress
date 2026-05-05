@@ -93,7 +93,7 @@ export function MagneticCipherButton() {
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            <div className="w-[180px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[320px] h-1 md:h-1.5 lg:h-2 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            <div className="w-[180px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[320px] h-1 md:h-1.25 lg:h-1.5 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}

@@ -81,7 +81,7 @@ export default function ContactPage() {
         <p>For: public-facing channels, broadcast, tactical memetics, media, community flows, movements.</p>
         <br/>
         <p className="font-bold">SEAL Team 69</p>
-          <p>Website</p><p className="">(Not yet finished, lol)</p>
+          <p>Website</p><p className=""><i>(Not yet finished, lol)</i></p>
           <a href="https://st69.lol" className="text-cyan-400 underline" target="_blank">st69.lol</a>
           <p>X</p>
           <a href="https://x.com/st69lol" className="text-cyan-400 underline" target="_blank">@st69lol</a>
