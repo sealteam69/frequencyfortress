@@ -447,11 +447,11 @@ body {
 
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 0px #2323ff, 0 0 0px #2323ff, 0 0 20px #2323ff;
+    box-shadow: 0 0 0px #0085fa, 0 0 0px #0085fa, 0 0 30px #0085fa;
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 0px #2323ff, 0 0 0px #2323ff, 0 0 40px #2323ff;
+    box-shadow: 0 0 0px #0085fa, 0 0 0px #0085fa, 0 0 60px #0085fa;
     transform: scale(1.05);
   }
 }
@@ -463,8 +463,8 @@ body {
 
 .provision-glow-btn {
   font-family: 'Press Start 2P', monospace;
-  color: #ffffffde;
-  background: #1717f9;
+  color: #ffffff;
+  background: #0051ffc2;
   animation: glowPulse 2.5s infinite ease-in-out;
   transition: transform 0.2s ease;
   cursor: pointer;

@@ -20,7 +20,7 @@ export default function ProvisionButton() {
       <div className="provision-glow-container">
         <Link
           href="/provision"
-          className="provision-glow-btn text-[11px] sm:text-[13px] md:text-[15px] px-6 sm:px-7 md:px-8 py-5 sm:py-6 md:py-7 rounded-[40px] sm:rounded-[40px] md:rounded-[48px]"
+          className="provision-glow-btn text-[11px] sm:text-[13px] md:text-[15px] px-7 sm:px-8 md:px-9 py-5 sm:py-6 md:py-7 rounded-[40px] sm:rounded-[40px] md:rounded-[48px]"
         >
           FUND THE FORTRESS
         </Link>
