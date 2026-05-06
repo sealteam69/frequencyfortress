@@ -178,7 +178,7 @@ export default function DossierPage() {
         </div>
        
 
-        <div className="relative z-10 flex flex-col justify-center items-center gap-2 px- sm:px-6 md:px-8 py-2 sm:py-4">
+        <div className="relative z-10 flex flex-col justify-center items-center gap-2 px- sm:px-6 md:px-8 py-2">
           <Image
             src="/assets/freetour_touring_ski_boots_green.png"
             alt="Green Ski Boot"

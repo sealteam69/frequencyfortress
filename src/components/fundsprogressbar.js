@@ -14,9 +14,9 @@ export default function FundsProgressBar() {
 
   return (
     <div className="w-full max-w-lg mx-auto text-center flex flex-col justify-center">
-      <div className="w-full h-1.5 md:h-2 bg-black rounded-full overflow-hidden m-1">
+      <div className="w-full h-1.25 md:h-1.75 bg-black rounded-full overflow-hidden m-1">
         <div
-          className="h-full bg-gradient-to-r from-[#00C9A7] to-[#007CF0] transition-all duration-700"
+          className="h-full bg-gradient-to-r from-[#17b097] to-[#2CFF05] transition-all duration-700"
           style={{ width: `${0.001}%` }}
         />
       </div>
