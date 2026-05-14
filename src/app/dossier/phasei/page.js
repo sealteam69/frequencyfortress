@@ -378,8 +378,8 @@ export default function PhaseIPage() {
               <h3 className="text-lg"><strong>Christed Capital Requirement Overview (£6.9MM Total Ask)</strong></h3>
               <ul>
               <li><b>Total Mission Target:</b> £6,900,000</li>
-              <li><b>Total Mission Budget:</b> £6,274,000</li>
-              <li><b>Strategic Buffer & Liquidity:</b> £626,000</li>
+              <li><b>Total Mission Budget:</b> £6,299,000</li>
+              <li><b>Strategic Buffer & Liquidity:</b> £601,000</li>
               <li><b>Runway Assurance:</b> 12 months covered, with milestone-triggered fund releases</li>
               <li><b>Allocation Split:</b></li>
               </ul>
@@ -525,6 +525,13 @@ export default function PhaseIPage() {
                     </tr>
 
                     <tr>
+                      <td className="border px-4 py-2">Session Messenger Appeal</td>
+                      <td className="border px-4 py-2">Day 1</td>
+                      <td className="border px-4 py-2">25,000</td>
+                      <td className="border px-4 py-2">Conscious infrastructure resurrection. A critical node in the Christed grid – their messaging protocols and sacred tech will be key infrastructure for New Earth communication.</td>
+                    </tr>
+
+                    <tr>
                       <td className="border px-4 py-2">Command Base Infrastructure (Secure Mission Housing + Ops HQ)</td>
                       <td className="border px-4 py-2">Day 1</td>
                       <td className="border px-4 py-2">1,440,000</td>
@@ -555,7 +562,7 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2"><b>BUDGET</b></td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2"><b>6,274,000</b></td>
+                      <td className="border px-4 py-2"><b>6,299,000</b></td>
                       <td className="border px-4 py-2"></td>
                     </tr>
 
@@ -569,7 +576,7 @@ export default function PhaseIPage() {
                     <tr>
                       <td className="border px-4 py-2">Liquidity Buffer</td>
                       <td className="border px-4 py-2"></td>
-                      <td className="border px-4 py-2">626,000</td>
+                      <td className="border px-4 py-2">601,000</td>
                       <td className="border px-4 py-2"></td>
                     </tr>
                   </tbody>
