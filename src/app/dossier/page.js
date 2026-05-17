@@ -94,7 +94,7 @@ export default function DossierPage() {
           What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
           If it activates something in you — <b>ACT.</b><br/><br/>
           Eddie thanks you for your attention to this matter.<br/><br/>
-          P.S. Don't forget to tap the sigil. 
+          P.S. Don’t forget to tap the sigil. 
         </h2>
       </div><br></br>
 

@@ -514,7 +514,7 @@ export default function PhaseIPage() {
                       <td className="border px-4 py-2">Lump Sum: Phase I Personal Stabilisation</td>
                       <td className="border px-4 py-2">Day 1</td>
                       <td className="border px-4 py-2">25,000</td>
-                      <td className="border px-4 py-2">Recovery and performance container for the Commander. The physical vessel must be rebuilt, and nervous system calibrated after several years in the spiritual crucible. The global mission begins here.</td>
+                      <td className="border px-4 py-2">Recovery and performance container for the Commander. The vessel must be stabilised – mind, body and field – after prolonged crucifixion within the sacred fires of initiation. The global mission begins in the restored form.</td>
                     </tr>
 
                     <tr>
