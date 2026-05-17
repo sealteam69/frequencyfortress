@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const socials = [
   { name: "Twitter", url: "https://x.com/st69lol", mask: "x-twitter-brands-solid.svg" },
@@ -30,7 +31,7 @@ export default function SocialIcons() {
           title={social.name}
         >
           {/* Normal icon (default visible) */}
-          <img
+          <Image
             src={`/icons/${social.mask}`}
             alt={social.name}
             className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-opacity duration-300 group-hover:opacity-0"
