@@ -70,7 +70,7 @@ export default function ContactPage() {
         <p className="font-bold">Telegram</p>
     
               <p>Username: </p>
-              <a href="https://t.me/Commander1ST69" className="text-cyan-400 underline" target="_blank">@Commander1ST69</a>
+              <a href="https://t.me/CommanderST69" className="text-cyan-400 underline" target="_blank">@CommanderST69</a>
 
         <p className="">
           This account remains active, number hidden. All signals via handle only. No replies to unsorted messages.
