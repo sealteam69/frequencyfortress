@@ -1,4 +1,4 @@
-import { Redacted, Sofia_Sans_Semi_Condensed, IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk, Press_Start_2P } from 'next/font/google'
+import { Redacted, Sofia_Sans_Semi_Condensed, IBM_Plex_Mono, Inter , Pirata_One, Pixelify_Sans, Orbitron, Finger_Paint, Bowlby_One_SC, Anton, DynaPuff, Overpass_Mono, Honk, Press_Start_2P, Barlow_Condensed } from 'next/font/google'
 
 export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
@@ -93,6 +93,13 @@ export const sofiaSansSemiCondensed = Sofia_Sans_Semi_Condensed({
 export const redacted = Redacted({
   subsets: ["latin"],
   variable: "--font-redacted",
+  weight: ["400"],
+  display: 'swap',
+})
+
+export const barlowcondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  variable: "--font-barlowcondensed",
   weight: ["400"],
   display: 'swap',
 })
