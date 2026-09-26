@@ -60,9 +60,9 @@ export default function Home() {
             <Image
               src="/assets/all-seeing-eye.svg"
               alt="All-Seeing-Eye Emblem"
-              loading="lazy"
+              loading="eager"
               decoding="async"
-              fetchPriority="low"
+              fetchPriority="high"
               style={{ width: 'clamp(180px, 25vw, 300px)' }}
               className="block leading-none animate-eye-glitch mb-5 md:mb-8"
                 width={300}
@@ -74,7 +74,7 @@ export default function Home() {
             <h2
               className="hidden sm:block font-bold aberration glow text-center max-w-[90vw] tracking-[-0.15em] mb-2"
               style={{
-                fontFamily: 'IBM Plex Mono, monospace',
+                fontFamily: 'var(--font-ibm-plex-mono), monospace',
                 fontSize: 'clamp(1.225rem, 3vw, 2.7rem)',
               }}
             >
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           {/* Mobile Version - Split Over Two Lines */}
-          <div className="block sm:hidden text-center font-bold aberration-2 glow max-w-[90vw] m-1" style={{ fontFamily: 'IBM Plex Mono, monospace' }}>
+          <div className="block sm:hidden text-center font-bold aberration-2 glow max-w-[90vw] m-1" style={{ fontFamily: 'var(--font-ibm-plex-mono), monospace' }}>
             <div className="whitespace-nowrap text-[23px]/6.5 tracking-[-0.02em]">
               {'T H E  S I G N A L'.split('').map((char, i) => (
                 <span
@@ -120,7 +120,7 @@ export default function Home() {
           <p className="text-white opacity-50 text-center leading-relaxed max-w-[90vw] mt-2.5 md:mt-4"
             style={{
               fontSize: 'clamp(0.65rem, 1.6vw, 1.2rem)',
-              fontFamily: 'IBM Plex Mono, monospace'
+              fontFamily: 'var(--font-ibm-plex-mono), monospace'
             }}
           >
             A classified override transmission has emerged from Source Command.<br />

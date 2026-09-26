@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import ProvisionTierBlock from '@/components/provisiontierblock'
 import AboutLedgerModal from '@/components/aboutledgermodal'
+import Link from "next/link";
 
 export default function ProvisionPage() {
   const [showLedger, setShowLedger] = useState(false)
@@ -50,7 +51,22 @@ export default function ProvisionPage() {
         </section><br/>
 
         <div className="w-full max-w-5xl mx-auto flex flex-col items-center text-center text-xs sm:text-sm md:text-base">
-          <p>Eddie says: &quot;If you can read this, you&apos;re chosen. Now wire the funds.&quot;</p><br/>
+          <p>Eddie says: &quot;If you can read this, <strong>you&apos;re chosen.</strong> Now wire the funds.&quot;</p><br/>
+          
+          <p>All material provisions are made under the sovereign jurisdiction of New Earth Command.
+            Proceeds are distributed in accordance with sacred trust protocols outlined within the&nbsp;
+
+            <Link href="/dossier/phasei#material-transfer" className="hover:underline text-blue-500 hover:text-[#FF13F0]">Material Transfer Protocol</Link>
+            
+            &nbsp;— encoded as living law to ensure alignment between divine intent and energetic flow.
+          </p><br/>
+
+          <p>
+            To view how provisioned funds are distributed in full truth and integrity, consult the&nbsp;
+            <Link href="/dossier/phasei#provisioning-terms" className="hover:underline text-blue-500 hover:text-[#FF13F0]">Phase I Provisioning Trust & Public Transparency Statement</Link>
+            . This living document outlines our approach to financial clarity, energetic responsibility, and Christed economic alignment, ensuring each gift is received with reverence, not bureaucracy.
+          </p><br/>
+          
           <p>
             All provisioners will be recorded in the{" "} 
             <button

@@ -56,7 +56,7 @@ export default function DossierPage() {
         id="eddie-audio"
         ref={audioRef}
         src="/assets/eddie_santiago_de_verdad.m4a"
-        preload="auto"
+        preload="none"
       />
 
       <EddieSigil audioRef={audioRef} />
@@ -93,7 +93,8 @@ export default function DossierPage() {
           <b>This is the override.</b><br/><br/> The Frequency Fortress Mission Dossier is now unlocked below.
           What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
           If it activates something in you — <b>ACT.</b><br/><br/>
-          Eddie thanks you for your attention to this matter.<br/><br/>
+          Thank you for your attention to this matter.<br/>
+          <b>EDDIE SANTIAGO, EL PRESIDENTE OF THE EDENIC GRID.</b><br/><br/>
           P.S. Don’t forget to tap the sigil. 
         </h2>
       </div><br></br>
@@ -122,7 +123,7 @@ export default function DossierPage() {
           <li>
             <a
               className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="https://drive.google.com/drive/folders/19ZzAELRFVmiR48h4UDKWhB8d7PB53Chu?usp=sharing"
+              href="https://drive.google.com/drive/folders/1PWTisq0UMqjPbmTOGXiCQ09Rrd0bUgAX?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

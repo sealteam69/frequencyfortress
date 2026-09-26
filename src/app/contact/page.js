@@ -1,4 +1,3 @@
-'use client';
 import NavBar from '@/components/navbar';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -51,7 +50,7 @@ export default function ContactPage() {
         <br/>
         <p className="font-bold">ProtonMail</p>
         
-          <a href="mailto:st69.contact@protonmail.com" className="text-cyan-400 underline">
+          <a href="mailto:st69.ops@protonmail.com" className="text-cyan-400 underline">
             st69.ops@protonmail.com
           </a>
 

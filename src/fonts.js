@@ -8,6 +8,7 @@ export const ibmPlexMono = IBM_Plex_Mono({
 })
 
 export const inter = Inter({
+  preload: false,
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
@@ -15,6 +16,7 @@ export const inter = Inter({
 })
 
 export const pirata = Pirata_One({
+  preload: false,
   weight: ['400'],
   subsets: ['latin'],
   variable: '--font-pirata',
@@ -22,12 +24,14 @@ export const pirata = Pirata_One({
 });
 
 export const pixelify = Pixelify_Sans({
+  preload: false,
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-pixelify',
 })
 
 export const orbitron = Orbitron({
+  preload: false,
   subsets: ["latin"],
   weight: ["400", "700"], 
   variable: "--font-orbitron",
@@ -35,6 +39,7 @@ export const orbitron = Orbitron({
 });
 
 export const fingerpaint = Finger_Paint({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-fingerpaint",
@@ -42,6 +47,7 @@ export const fingerpaint = Finger_Paint({
 });
 
 export const bowlbyonesc = Bowlby_One_SC({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-bowlbyonesc",
@@ -49,6 +55,7 @@ export const bowlbyonesc = Bowlby_One_SC({
 });
 
 export const anton = Anton({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-anton",
@@ -56,6 +63,7 @@ export const anton = Anton({
 });
 
 export const dynapuff = DynaPuff({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-dynapuff",
@@ -63,6 +71,7 @@ export const dynapuff = DynaPuff({
 });
 
 export const overpassmono = Overpass_Mono({
+  preload: false,
   subsets: ["latin"],
   weight: ["700"], 
   variable: "--font-overpassmono",
@@ -70,6 +79,7 @@ export const overpassmono = Overpass_Mono({
 });
 
 export const honk = Honk({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-honk",
@@ -77,6 +87,7 @@ export const honk = Honk({
 });
 
 export const pressstart2p = Press_Start_2P({
+  preload: false,
   subsets: ["latin"],
   weight: ["400"], 
   variable: "--font-pressstart2p", 
@@ -84,6 +95,7 @@ export const pressstart2p = Press_Start_2P({
 });
 
 export const sofiaSansSemiCondensed = Sofia_Sans_Semi_Condensed({
+  preload: false,
   subsets: ["latin"],
   variable: "--font-sofia-sans-semi-condensed",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900", "1000"], // full axis
@@ -91,6 +103,7 @@ export const sofiaSansSemiCondensed = Sofia_Sans_Semi_Condensed({
 })
 
 export const redacted = Redacted({
+  preload: false,
   subsets: ["latin"],
   variable: "--font-redacted",
   weight: ["400"],
@@ -98,6 +111,7 @@ export const redacted = Redacted({
 })
 
 export const barlowcondensed = Barlow_Condensed({
+  preload: false,
   subsets: ["latin"],
   variable: "--font-barlowcondensed",
   weight: ["400"],

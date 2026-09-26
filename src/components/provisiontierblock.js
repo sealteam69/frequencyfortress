@@ -40,7 +40,7 @@ export default function ProvisionTierBlock() {
       benefits: [
         'Voice in future Edenic council forums, physical grid architecture and provisioning protocols',
         'Access to unreleased Phase II transmissions',
-        'Conscious Currency airdops (pre-mint), Christed Neural Mirror modules'
+        'Conscious Currency participation, Christed Neural Mirror modules'
       ]
     },
     {
@@ -48,7 +48,7 @@ export default function ProvisionTierBlock() {
       range: '$690,000 – $6,899,999',
       description: 'You are anchoring New Earth itself. This is planetary guardianship.',
       benefits: [
-        'Stewardship rights in Christed Vault governance (DAO)',
+        'Stewardship rights in Christed Vault governance',
         'Immortalised in Source-coded infrastructure',
         'Integration into the Genesis Seed Codex'
       ]
@@ -73,7 +73,7 @@ export default function ProvisionTierBlock() {
         {tiers.map((tier, index) => (
           <div
             key={index}
-            className="border rounded-lg p-4 border border-gray-300 bg-white/40 backdrop-blur-sm transition-all duration-300"
+            className="border rounded-lg p-4 border-gray-300 bg-white/40 backdrop-blur-sm transition-all duration-300"
           >
             <h3 className="text-sm md:text-lg font-bold tracking-wide">{tier.name}</h3>
             <p className="text-xs md:text-sm mb-2">{tier.range}</p>

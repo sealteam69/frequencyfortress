@@ -62,6 +62,8 @@ export function MagneticCipherButton() {
   }
 
   const handleClick = () => {
+    if (loading) return
+    router.prefetch('/dossier')
     setLoading(true)
     setTimeout(() => {
       router.push('/dossier')
@@ -80,20 +82,20 @@ export function MagneticCipherButton() {
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 1, 0.4, 1] }}
               transition={{ duration: 3, ease: "easeInOut" }}
-              className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-[#bcbce1]"
-              style={{ fontFamily: 'Barlow Condensed' }}
+              className="text-[24px] md:text-[28px] lg:text-[32px] xl:text-[38px] text-[#bcbce1]"
+              style={{ fontFamily: 'var(--font-barlowcondensed)' }}
             >
               CLASSIFIED ACCESS GRANTED
             </motion.div>
 
             <div
-              className="text-[13px] sm:text-[13px] md:text-[15px] lg:text-[17px] xl:text-[19px] text-[#FF13F0] tracking-wider"
+              className="text-[13px] md:text-[15px] lg:text-[17px] xl:text-[19px] text-[#FF13F0] tracking-wider"
               style={{ fontFamily: 'ocr-a-std, monospace' }}
             >
               DECRYPTING<span className="dotCycle"></span>
             </div>
 
-            <div className="w-[180px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[320px] h-1 md:h-1.25 lg:h-1.5 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
+            <div className="w-[180px] sm:w-[180px] md:w-[220px] lg:w-[260px] xl:w-[300px] h-1 md:h-1.25 xl:h-1.5 bg-[#1a1a2a] rounded-md overflow-hidden mx-auto">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
@@ -123,7 +125,7 @@ export function MagneticCipherButton() {
           onMouseLeave={(e) => resetMagnetism(e.currentTarget)}
           onTouchEnd={(e) => resetMagnetism(e.currentTarget)}
           className="
-            bg-transparent border-1 sm:border-2 border-[#0014A8] text-[#0014A8]
+            bg-transparent border sm:border-2 border-[#0014A8] text-[#0014A8]
             uppercase font tracking-widest cursor-pointer 
             transition-transform duration-200 ease-out hover:scale-105
             font-medium text-[12px] px-4 py-3 mt-10      
