@@ -13,15 +13,16 @@ export default function FundsProgressBar() {
   }, [])
 
   return (
-    <div className="w-full max-w-lg mx-auto text-center flex flex-col justify-center">
-      <div className="w-full h-1.25 md:h-1.75 bg-black rounded-full overflow-hidden m-1">
+    <div className="w-full max-w-2xl mx-auto text-center flex flex-col items-center">
+      <div className="w-6/8 h-1.25 md:h-1.5 bg-black rounded-full overflow-hidden m-1">
         <div
-          className="h-full bg-gradient-to-r from-[#17b097] to-[#2CFF05] transition-all duration-700"
+          className="h-full bg-linear-to-r from-[#17b097] to-[#2CFF05] transition-all duration-700"
           style={{ width: `${0.001}%` }}
         />
       </div>
       <p className="text-black text-sm sm:text-base">
-        {0.001}% OF TARGET RECEIVED [Updated automatically from the Christed Vault Ledger]</p>
+        {0.001}% OF TARGET RECEIVED</p>
+        <p className="text-sm md:text-base">[Updated automatically from the Christed Vault Ledger]</p>
     </div>
   )
 }

@@ -17,7 +17,7 @@ export default function EddieSigil({ audioRef }) {
     };
 
  return (
-    <div className="flex flex-col items-center justify-center mt-6 sm:mt-8 md:mt-12">
+    <div className="flex flex-col items-center justify-center mt-17 sm:mt-22 md:mt-28 lg:mt-30">
         <div className="sigil-wrapper relative overflow-visible" onClick={playEddie}>
         <Image
         src="/assets/eddie_santiago_sigil.jpeg"
@@ -26,7 +26,7 @@ export default function EddieSigil({ audioRef }) {
         height={300}
         className="
             sigil-animation cursor-pointer hover:scale-75 transition-transform
-            w-[240px] sm:w-[320px] md:w-[400px] lg:w-[460px]
+            w-60 sm:w-[320px] md:w-[400px] lg:w-[460px]
         "
         />
 
@@ -35,10 +35,11 @@ export default function EddieSigil({ audioRef }) {
             text-center 
             drop-shadow-md 
             text-[#ff00ff]
-            text-[22px] sm:text-[24px] md:text-[30px] lg:text-[34px]
+            text-[22px]/6 sm:text-[24px]/7 md:text-[30px]/9 lg:text-[34px]/10
             tracking-normal 
             ">
-            Tap the Sigil. Feel the Pulse.
+            Tap the Sigil.<br></br> 
+            Feel the Pulse.
             </div>
 
         <div className="glitter-overlay absolute inset-0 pointer-events-none" />

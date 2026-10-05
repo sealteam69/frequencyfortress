@@ -20,8 +20,8 @@ export default function MegavoltBlock() {
         w-full 
         max-w-[540px] 
         mx-auto 
-        my-4 sm:my-6 
-        px-4 py-4 
+        my-3.5 sm:my-5
+        px-3 py-3 
         sm:px-6 sm:py-6 
         bg-black 
         shadow-[0_0_25px_#FF0] 
@@ -29,20 +29,26 @@ export default function MegavoltBlock() {
       "
     >
       <p className="
-        text-[18px] 
-        sm:text-[32px] 
+        text-[19px] 
+        sm:text-[28px] 
+        md:text-[32px]
         uppercase 
         font-megavolt 
         text-yellow-400 
         leading-tight 
         tracking-wider
+        max-w-[300px] 
+        sm:max-w-[440px]
+        md:max-w-[500px]
+        mx-auto 
       ">
         ⚡ Unleash the Frequency ⚡
       </p>
 
       <p className="
-        text-[10px] 
-        sm:text-[16px] 
+        text-[9.5px] 
+        sm:text-[12.5px] 
+        md:text-[14px]
         mt-3 
         text-yellow-300 
         font-mono 

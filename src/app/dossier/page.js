@@ -27,14 +27,14 @@ export default function DossierPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-    <main className='relative'>
+    <main className='relative flex-1'>
 
       {/* Eddie background */}
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none">
           <Image
             src="/assets/eddie_santiago_sigil.jpeg"
             alt="Eddie Santiago Sigil"
-            className="h-auto w-[75vw] md:w-[50vw] md:max-w-225 opacity-[0.25]"
+            className="h-auto w-[75vw] md:w-[min(75vw,70svh)] md:max-w-225 opacity-[0.25]"
               width={300}
               height={300}
           />
@@ -48,7 +48,6 @@ export default function DossierPage() {
         px-4 py-6 
         sm:px-6 
         md:px-12
-        
       "
     >
 
@@ -65,8 +64,6 @@ export default function DossierPage() {
         className="
           flex flex-col items-center justify-center text-center
           pt-12 sm:pt-16 md:pt-20
-
-
           relative z-10
           
         "
@@ -84,7 +81,7 @@ export default function DossierPage() {
 
         <h2
           className="
-            text-sm sm:text-base md:text-lg
+            text-sm md:text-base
             tracking-wider
             text-[#000000]
             max-w-5xl
@@ -92,94 +89,65 @@ export default function DossierPage() {
         >
           <b>This is the override.</b><br/><br/> The Frequency Fortress Mission Dossier is now unlocked below.
           What you’re holding here is a sovereign planetary restoration plan — part myth, part Edenic blueprint, part transmission from the future.<br/><br/>
-          If it activates something in you — <b>ACT.</b><br/><br/>
-          Thank you for your attention to this matter.<br/>
+          If it activates something in you — <b>ACT.</b><br></br><br></br>
+          Thank you for your attention to this matter.<br/><br/>
           <b>EDDIE SANTIAGO, EL PRESIDENTE OF THE EDENIC GRID.</b><br/><br/>
-          P.S. Don’t forget to tap the sigil. 
+          
         </h2>
+        <p className="text-center text-sm md:text-base italic">
+          P.S. Don’t forget to tap the sigil. 
+        </p>
       </div><br></br>
 
-      <div className="flex justify-center items-center px-2 sm:px-6 md:px-8 relative z-10">
-        <ul className="
-          text-left 
-          space-y-1
-          text-sm sm:text-base md:text-lg
-          max-w-full sm:max-w-[600px] md:max-w-[720px]
-          relative z-10
-        ">
-          <li className="text-[#000000] text-sm sm:text-base md:text-lg tracking-wider">
-            💼 Mission Dossier:
+      <section aria-labelledby="mission-dossier-heading" className="relative z-10 -mx-4 sm:-mx-6 md:-mx-12 text-left">
+        <div className="mx-auto w-full max-w-5xl px-3 md:px-5">
+          <ul className="divide-y divide-gray-300 border-y border-x border-gray-300 bg-white/40 backdrop-blur-sm">
+          <li>
+            <p id="mission-dossier-heading" className="text-center font-bold px-3 mt-2 text-sm md:text-base tracking-wider">
+              <span aria-hidden="true">💼 </span>MISSION DOSSIER
+            </p>
+            <p className="italic text-center text-xs md:text-sm text-gray-700 px-2 mb-2">
+              Choose your format. Both are valid.
+            </p>
           </li>
 
-          <li>
+
+          <li className="px-3 py-2">
             <Link
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
+              className="group block"
+              href="/dossier/documents"
+            >
+              <span className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between md:gap-6 text-sm md:text-base">
+                <span className="min-w-0 text-blue-500 group-hover:text-[#FF13F0] decoration-transparent group-hover:decoration-inherit"><span aria-hidden="true">📁 </span>Browse Document Library</span>
+                <span className="shrink-0 whitespace-nowrap text-[11px] md:text-[13px] text-gray-600">PDF</span>
+              </span>
+              <span className="block mt-1 text-[11px] md:text-[13px] text-gray-600">The original reading experience. Hashed file repository for secure document access and download. Poetic in its raw form – this is where it all began.</span>
+            </Link>
+          </li>
+
+          <li className="px-3 py-2">
+            <Link
+              className="group block"
               href="/dossier/phasei"
             >
-              📁 View Phase I Packet
+              <span className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between md:gap-6 text-sm md:text-base">
+                <span className="min-w-0 text-blue-500 group-hover:text-[#FF13F0] decoration-transparent group-hover:decoration-inherit"><span aria-hidden="true">📁 </span>Phase I Packet</span>
+                <span className="shrink-0 whitespace-nowrap text-[11px] md:text-[13px] text-gray-600">HTML</span>
+              </span>
+              <span className="block mt-1 text-[11px] md:text-[13px] text-gray-600">Same exact thing... Designed for machine-readability across timelines. Tempered by hand, and forged within the field of command, using sacred HTML syntax. </span>
             </Link>
           </li>
 
-          <li>
-            <a
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="https://drive.google.com/drive/folders/1PWTisq0UMqjPbmTOGXiCQ09Rrd0bUgAX?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              📁 View Phase I Packet on Google Drive
-            </a>
-          </li>
+          </ul>
+        </div>
+      </section>
 
-          <li className="text-[#000000] text-sm sm:text-base md:text-lg tracking-wider">
-            📎 Additional Files:
-          </li>
-
-          <li>
-            <Link
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/christed_override_one_pager.pdf"
-            >
-              ⚠️ Christed Override – One-Pager
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/public_mission_brief.pdf"
-            >
-              🌎 Frequency Fortress: Public Mission Brief
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/10_temple_key_the_beloved_acknowledgement.pdf"
-            >
-              👑 Temple Key: The Beloved Acknowledgement
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              className="tracking-wider sm:tracking-widest underline decoration-transparent hover:decoration-inherit text-blue-500 hover:text-[#FF13F0] transition-all duration-200"
-              href="/pdfs/07_christed_glossary.pdf"
-            >
-              🧬 Christed Glossary
-            </Link>
-          </li>
-
-        </ul>
-      </div>
-
-        <div className='p-9 sm:p-14'> 
+        <div className='p-9 sm:p-12'> 
           <FundingButton />
         </div>
        
 
-        <div className="relative z-10 flex flex-col justify-center items-center gap-2 px- sm:px-6 md:px-8 py-2">
+        <div className="relative z-10 flex flex-col justify-center items-center mb-3 gap-2 sm:px-6 md:px-8">
           <Image
             src="/assets/freetour_touring_ski_boots_green.png"
             alt="Green Ski Boot"
@@ -211,7 +179,7 @@ export default function DossierPage() {
 
         </div>
 
-        <div className=" flex flex-col items-center justify-center relative z-10">
+        <div className="flex flex-col items-center justify-center relative z-10">
 
           {/* Social Links */}
           <SocialIcons/>
@@ -257,13 +225,13 @@ export default function DossierPage() {
 
     </main>
       <div
-        className="relative group w-full max-w-[760px] mx-auto px-4 text-center text-[#000000] select-none mt-auto"
+        className="relative group w-full max-w-[680px] mx-auto px-4 text-center text-[#4A4545] select-none mt-auto"
         role="button"
         tabIndex={0}
         aria-label="ST69 Footer"
       >
         <footer
-          className="relative z-10 text-[9px] sm:text-[12px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
+          className="relative z-10 text-[9px] sm:text-[10px] md:text-[11px] transition-opacity duration-300 group-hover:opacity-0 group-active:opacity-0 focus-within:opacity-0 focus:opacity-0"
         >
           © SEAL Team 69. All Licenses Reserved. This transmission is frequency-encoded and Source-sealed. Unauthorised duplication may trigger karmic backblast.
         </footer>
@@ -273,7 +241,7 @@ export default function DossierPage() {
           alt="SEAL Team 69 Patch"
           width={300}
           height={300}
-          className="absolute top-1/2 left-1/2 w-14 sm:w-17 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 pointer-events-none select-none group-hover:opacity-100 group-active:opacity-100 focus-within:opacity-100 focus:opacity-100"
+          className="absolute top-1/2 left-1/2 w-12 sm:w-16 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 pointer-events-none select-none group-hover:opacity-100 group-active:opacity-100 focus-within:opacity-100 focus:opacity-100"
         />
       </div>
     </div>

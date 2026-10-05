@@ -20,18 +20,19 @@ export default function TipOfTheMemeFooter() {
         w-full 
         max-w-[540px] 
         mx-auto 
-        my-4 sm:my-6 
-        px-4 py-4 
+        mt-3.5 mb-2 sm:mb-4 sm:my-5 
+        px-3 py-3.5 
         sm:px-6 sm:py-6 
         text-center 
         font-['Pirata_One'] 
         text-[#00ffff] 
-        rounded-[24px] 
+        rounded-3xl 
         animate-pulse-border-bg
       ">
       <p className="
-        text-[22px] 
-        sm:text-[36px] 
+        text-[25px] 
+        sm:text-[29px] 
+        md:text-[32px]
         leading-snug 
         mb-2 
         tracking-wide 
@@ -41,7 +42,8 @@ export default function TipOfTheMemeFooter() {
       </p>
       <p className="
         text-[16px] 
-        sm:text-[24px] 
+        sm:text-[22px] 
+        md:text-[24px] 
         font-bold 
         mt-1 
         tracking-wider 

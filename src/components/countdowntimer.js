@@ -30,7 +30,7 @@ export default function VaultCountdownTimer() {
   }, [])
 
   return (
-    <span className="countdown text-xl md:text-3xl">
+    <span className="font-semibold countdown text-xl md:text-3xl">
       {time.days}d {time.hours}h {time.minutes}m {time.seconds}s
     </span>
   )

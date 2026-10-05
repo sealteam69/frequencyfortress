@@ -1,5 +1,5 @@
-import OrgasmButton from "../../components/orgasmredirectbutton-3"
-import DisobedienceCounter from "../../components/disobediencecounter-3"
+import OrgasmButton from "../../components/orgasmredirectbutton-1"
+import DisobedienceCounter from "../../components/disobediencecounter-1"
 
 export default function Orgasm404() {
   return (
@@ -35,6 +35,7 @@ export default function Orgasm404() {
 
         <p
           className="
+
             text-[22px]
             sm:text-[28px]
             md:text-[32px]
@@ -42,14 +43,12 @@ export default function Orgasm404() {
             text-[#8A00C4]
             font-inter
             font-bold
-            max-w-5xl
           "
         >
-          Why are you like this?
-          The definition of insanity is doing the same thing and expecting climax.
+          💦 Oops, you came too early.
         </p>
 
-        <div className="mt-10">
+        <div className="m-10">
           <OrgasmButton />
         </div>
 

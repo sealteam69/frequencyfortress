@@ -20,22 +20,24 @@ export default function SexualSovereignOverride() {
         w-full 
         max-w-[540px] 
         mx-auto 
-        my-4 sm:my-6 
-        px-4 py-5 
+        my-3.5 sm:my-5 
+        px-3 py-4
         sm:px-6 sm:py-6 
         text-center 
         uppercase 
         text-[12px] 
-        sm:text-[18px] 
+        sm:text-[16px] 
+        md:text-[18px]
         tracking-wide 
         rounded-[20px] 
-        sm:rounded-[24px] 
+        sm:rounded-3xl 
         text-[#FF46A2] 
         font-mono 
         animate-pulse-border
       "
     >
       <motion.div
+        className="max-w-[340px] sm:max-w-[540px] mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: [0.3, 1, 0.4, 1] }}
         transition={{ duration: 2.5, repeat: Infinity }}

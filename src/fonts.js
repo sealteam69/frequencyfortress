@@ -3,6 +3,7 @@ import { Redacted, Sofia_Sans_Semi_Condensed, IBM_Plex_Mono, Inter , Pirata_One,
 export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
   variable: '--font-ibm-plex-mono',
   display: 'swap',
 })

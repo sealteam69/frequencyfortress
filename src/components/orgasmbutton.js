@@ -32,7 +32,7 @@ export default function OrgasmButton({ eddieAudioRef }) {
 
     // Redirect after a short ritual delay
     setTimeout(() => {
-      window.location.href = '/orgasm404'
+      window.location.href = '/orgasm404-1'
     }, 1800)
   }, [eddieAudioRef])
 
@@ -58,7 +58,7 @@ export default function OrgasmButton({ eddieAudioRef }) {
         px-6 py-4 sm:px-8 sm:py-5
         bg-[#FF0038] rounded-[28px] sm:rounded-[38px] md:rounded-[40px] lg:rounded-[40px]
         transition-transform duration-200 ease-in-out
-        md:hover:scale-125 active:scale-115
+        hover:scale-125 active:scale-115
         whitespace-nowrap
         cursor-pointer
       "

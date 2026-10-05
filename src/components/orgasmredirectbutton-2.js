@@ -41,17 +41,16 @@ export default function OrgasmButton({
         ref={buttonRef}
         onClick={handleClick}
         className="
+        inline-flex items-center justify-center select-none
+        font-bold text-black
+        text-[16px] sm:text-[20px] md:text-[22px] lg:text-[24px]
         px-6 py-4 sm:px-8 sm:py-5
-        text-[18px] sm:text-[22px] md:text-[26px] 
-        font-['ocr-a-std'] 
-        text-[#2cff05] 
-        bg-[rgb(245,0,0)]
-        rounded-[28px] sm:rounded-[32px] lg:rounded-[36px]
-        shadow-[0_0_0_0px_#2cff05]
-        transition-transform duration-200 ease-in-out 
-        hover:scale-110 
-        cursor-pointer 
-        whitespace-nowrap 
+        bg-[#FF0038] rounded-[28px] sm:rounded-[38px] md:rounded-[40px] lg:rounded-[40px]
+        transition-transform duration-200 ease-in-out
+        md:hover:scale-125 active:scale-115
+        whitespace-nowrap
+        cursor-pointer
+        font-[ocr-a-std]
         "
     >
         {label}

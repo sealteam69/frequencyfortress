@@ -47,7 +47,7 @@ export default function WalletProvisionModule({ label, address }) {
   const isLiveLink = isRevolut || isStripe
 
   return (
-    <div className="text-sm md:text-base relative bg-black rounded-xl p-3 transition-colors duration-200 group flex flex-wrap flex-col items-center text-center">
+    <div className="text-sm md:text-base relative bg-black rounded-2xl p-3 transition-colors duration-200 group flex flex-wrap flex-col items-center text-center">
       <span className="tracking-wider text-[#2CFF05]">{label}</span>
       <div className={`w-full mt-1 ${isLiveLink ? '' : 'pr-10'}`}>
         {isLiveLink ? (
@@ -84,7 +84,7 @@ export default function WalletProvisionModule({ label, address }) {
               value={address}
               aria-label={`${label || 'Address'} — select and copy manually`}
               onFocus={(event) => event.currentTarget.select()}
-              className="mt-2 w-full rounded border border-zinc-500 bg-black p-2 text-xs text-white focus-visible:outline-2 focus-visible:outline-white"
+              className="mt-2 w-full rounded border border-zinc-500 bg-black p- text-xs text-white focus-visible:outline-2 focus-visible:outline-white"
             />
           )}
         </>
