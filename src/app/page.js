@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* Mobile Version - Split Over Two Lines */}
           <div className="block sm:hidden text-center font-bold aberration-2 glow max-w-[95vw] m-1" style={{ fontFamily: 'var(--font-ibm-plex-mono), monospace' }}>
-            <div className="whitespace-nowrap text-[25px]/6.75 tracking-[-0.11rem]">
+            <div className="whitespace-nowrap text-[24px]/6.75 tracking-[-0.1rem]">
               {'T H E  S I G N A L'.split('').map((char, i) => (
                 <span
                   key={i}
@@ -105,7 +105,7 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <div className="whitespace-nowrap text-[25px]/6.75 tracking-[-0.11rem]">
+            <div className="whitespace-nowrap text-[24px]/6.75 tracking-[-0.1rem]">
               {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
                 <span
                   key={i}
