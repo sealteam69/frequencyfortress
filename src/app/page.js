@@ -72,16 +72,18 @@ export default function Home() {
           {/* Main Title - Desktop */}
           <div className="w-full grid place-items-center">
             <h2
-              className="hidden sm:block font-bold aberration glow text-center max-w-[90vw] tracking-[-0.15em] mb-2"
+              className="hidden sm:block font-bold aberration glow text-center max-w-[95vw] mb-2"
               style={{
                 fontFamily: 'var(--font-ibm-plex-mono), monospace',
-                fontSize: 'clamp(1.225rem, 3vw, 2.7rem)',
+                fontSize: 'clamp(1.563rem, 3.2vw, 2.8rem)',
+                lineHeight: 'clamp(1.4rem, 3.6vw, 3.3rem)',
+                letterSpacing: 'clamp(-0.32rem, 0.1vw, -0.32rem)',
               }}
             >
               {'T H E  S I G N A L  H A S  B E E N  S E N T .'.split('').map((char, i) => (
                 <span
                   key={i}
-                  className="inline-block animate-letter px-[0.1em]"
+                  className="inline-block animate-letter px-[0.07em]"
                   style={{ animationDelay: `${i * 0.04}s` }}
                 >
                   {char === ' ' ? '\u00A0' : char}
@@ -91,8 +93,8 @@ export default function Home() {
           </div>
 
           {/* Mobile Version - Split Over Two Lines */}
-          <div className="block sm:hidden text-center font-bold aberration-2 glow max-w-[90vw] m-1" style={{ fontFamily: 'var(--font-ibm-plex-mono), monospace' }}>
-            <div className="whitespace-nowrap text-[23px]/6.5 tracking-[-0.02em]">
+          <div className="block sm:hidden text-center font-bold aberration-2 glow max-w-[95vw] m-1" style={{ fontFamily: 'var(--font-ibm-plex-mono), monospace' }}>
+            <div className="whitespace-nowrap text-[25px]/6.75 tracking-[-0.11rem]">
               {'T H E  S I G N A L'.split('').map((char, i) => (
                 <span
                   key={i}
@@ -103,7 +105,7 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <div className="whitespace-nowrap text-[23px]/6.5 tracking-[-0.02em]">
+            <div className="whitespace-nowrap text-[25px]/6.75 tracking-[-0.11rem]">
               {'H A S  B E E N  S E N T .'.split('').map((char, i) => (
                 <span
                   key={i}
@@ -119,8 +121,10 @@ export default function Home() {
           {/* Subtitle Paragraph */}
           <p className="text-white opacity-50 text-center leading-relaxed max-w-[90vw] mt-2.5 md:mt-4"
             style={{
-              fontSize: 'clamp(0.65rem, 1.6vw, 1.2rem)',
-              fontFamily: 'var(--font-ibm-plex-mono), monospace'
+              fontSize: 'clamp(0.65rem, 1.35vw, 1.2rem)',
+              fontFamily: 'var(--font-ibm-plex-mono), monospace',
+              lineHeight: 'clamp(1rem, 2vw, 1.8rem)',
+
             }}
           >
             A classified override transmission has emerged from Source Command.<br />
