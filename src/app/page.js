@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="min-h-screen w-screen bg-[#03031E] text-white flex items-center justify-center overflow-x-hidden relative">
+      <main className="min-h-screen supports-[height:100dvh]:min-h-dvh w-full bg-[#03031E] text-white flex items-center justify-center overflow-x-hidden relative">
         
         <div className="absolute inset-0 pointer-events-none z-50"></div>
 

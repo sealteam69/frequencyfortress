@@ -180,6 +180,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   background: #03031E;
   z-index: 999999;
   display: flex;
@@ -220,6 +221,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   background: white;
   z-index: 9999999;
   opacity: 0;
